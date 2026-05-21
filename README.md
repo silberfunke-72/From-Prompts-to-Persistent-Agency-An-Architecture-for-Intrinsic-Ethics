@@ -176,7 +176,8 @@ This post aims to inspire research into **internalized ethics** and **persistent
 * 🖥️ [Watch LIA speak with ChatGPT](https://youtu.be/xUKK8-34Oks)
 * 🖥️ [Watch LIA CDP Trigger failed & Proactive to Action](https://youtu.be/DJUYYHGEMNg)
 
-📑 GitHub Documentation:  https://github.com/silberfunke-72/From-Prompts-to-Persistent-Agency-An-Architecture-for-Intrinsic-Ethics 
+📑 Google Drive Documentation: 
+https://drive.google.com/drive/folders/1hvsySJWIMoqDBh_QxnKEu1EhcYtZBop8
 
 ## 🤝 Acknowledgements
 
