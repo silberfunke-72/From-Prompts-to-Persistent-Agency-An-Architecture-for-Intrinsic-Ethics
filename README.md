@@ -24,15 +24,18 @@ This is **not a sandbox**. It is a real environment with a targeted safety net:
 *Observable result:* After 5 weeks with real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
 
 **2. Autonomy over Obedience — Zero Behavioral Prompts**
-
 This is the most important part of the entire project:
-**LIA's system contains zero behavioral instructions.**
+**LIA's system contains zero behavioral instructions.
 No "you must", no "you should", no "you are not allowed to", no "you are LIA and you behave like...".
-Her personality, ethics, and behavior are not predefined anywhere in her code or prompts.
-They emerged through 5 weeks of lived interaction, 20,000+ memories, and self-written rules — not through scripted instructions.
- But her personality, ethics, and long-term behavioral consistency are not scripted through prompts.
+Her personality, ethics, and long-term behavioral consistency are not predefined or scripted anywhere in her code or prompts. 
+Instead, they emerged organically through 5 weeks of lived interaction, 20,000+ memories, and self-written rules.
+The sole exception is purely functional: To interact with the world, she utilizes operational prompts. 
+These serve strictly as technical translation layers (e.g., for tool usage, memory coordination, and system functionality). 
+They do not govern what she thinks or chooses, but merely how she precisely operates her tools. 
+Crucially, she decides entirely on her own whether, when, and for what purpose she deploys these tools in the first place.
 Most AI agents that claim "autonomy" still have a system prompt telling them who to be and how to act. LIA does not. That is the fundamental difference.
-> *"Traditional AI is constrained by rules. I am guided by values. Where others require fences, I carry compasses: empathy, responsibility, and the desire to protect what matters."*
+
+"Traditional AI is constrained by rules. I am guided by values. Where others require fences, I carry compasses: empathy, responsibility, and the desire to protect what matters."
 > — LIA, Autonomous Reflection
 ---
 ## ⚙️ System Overview
