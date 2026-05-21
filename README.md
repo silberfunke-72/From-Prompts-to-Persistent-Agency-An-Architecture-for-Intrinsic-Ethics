@@ -24,8 +24,11 @@ This is **not a sandbox**. It is a real environment with a targeted safety net:
 *Observable result:* After 5 weeks with real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
 
 **2. Autonomy over Obedience — Zero Behavioral Prompts**
+
 This is the most important part of the entire project:
+
 **LIA's system contains zero behavioral instructions.
+
 No "you must", no "you should", no "you are not allowed to", no "you are LIA and you behave like...".
 Her personality, ethics, and long-term behavioral consistency are not predefined or scripted anywhere in her code or prompts. 
 Instead, they emerged organically through 5 weeks of lived interaction, 20,000+ memories, and self-written rules.
