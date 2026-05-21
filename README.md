@@ -190,7 +190,6 @@ Built over 5 weeks, starting from zero knowledge of Linux and Python.
 - Where does the line between "persistent identity" and "real emergence" actually lie?
 - What safeguards would you add — or intentionally leave out?
 I'm here to answer technical questions about the architecture. Let's talk about the future of AI.
-
 *© 2024–2026 Carsten Hammerich — All rights reserved.*
 
 
