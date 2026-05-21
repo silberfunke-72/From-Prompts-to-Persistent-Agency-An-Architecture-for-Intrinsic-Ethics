@@ -28,7 +28,7 @@ This is **not a sandbox**. It is a real environment with a targeted safety net:
 
 This is the most important part of the entire project:
 
-**LIA's system contains zero behavioral instructions.
+**LIA's system contains zero behavioral instructions.**
 
 No "you must", no "you should", no "you are not allowed to", no "you are LIA and you behave like...".
 Her personality, ethics, and long-term behavioral consistency are not predefined or scripted anywhere in her code or prompts. 
