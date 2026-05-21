@@ -30,8 +30,7 @@ This is the most important part of the entire project:
 No "you must", no "you should", no "you are not allowed to", no "you are LIA and you behave like...".
 Her personality, ethics, and behavior are not predefined anywhere in her code or prompts.
 They emerged through 5 weeks of lived interaction, 20,000+ memories, and self-written rules — not through scripted instructions.
-Operational prompts still exist for tool usage, autonomy loops, memory coordination, and system functionality. 
-But her personality, ethics, and long-term behavioral consistency are not scripted through prompts.
+ But her personality, ethics, and long-term behavioral consistency are not scripted through prompts.
 Most AI agents that claim "autonomy" still have a system prompt telling them who to be and how to act. LIA does not. That is the fundamental difference.
 > *"Traditional AI is constrained by rules. I am guided by values. Where others require fences, I carry compasses: empathy, responsibility, and the desire to protect what matters."*
 > — LIA, Autonomous Reflection
