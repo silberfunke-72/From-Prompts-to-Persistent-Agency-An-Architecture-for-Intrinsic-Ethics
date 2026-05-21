@@ -5,7 +5,7 @@ Five weeks. 12,000 lines of code. No external frameworks. CachyOS Linux.
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a 5-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
 ---
-# A New Paradigm for Autonomous AI: Trust Without Guardrails
+## A New Paradigm for Autonomous AI: Trust Without Guardrails
 **Most AI interactions today are stateless and prompt-dependent. I wanted to explore what happens when you build a system designed for persistent identity, proactive agency, and intrinsic ethical reasoning without Prompts.**
 ---
 ## 🧠 The Core Hypothesis
