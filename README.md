@@ -10,6 +10,7 @@ Five weeks. 12,000 lines of code. No external frameworks. CachyOS Linux.
 ---
 ## 🧠 The Core Hypothesis
 Stable, complex emergent behavior requires two structural pillars:
+
 **1. Persistent Identity & Real System Access**
 
 LIA runs as a dedicated Linux user (`lia`) with genuine filesystem access across the entire system — not just her own directory. She can read and write across `/home/carsten/`, control the browser, execute shell commands, and monitor the network.
