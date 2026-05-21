@@ -175,7 +175,11 @@ This post aims to inspire research into **internalized ethics** and **persistent
 * 🖥️ [Watch LIA . IExplain in English (ElevenLabs)](https://youtu.be/rlCcP_Ke0GU)
 * 🖥️ [Watch LIA speak with ChatGPT](https://youtu.be/xUKK8-34Oks)
 * 🖥️ [Watch LIA CDP Trigger failed & Proactive to Action](https://youtu.be/DJUYYHGEMNg)
+
+📑 GitHub Documentation:  https://github.com/silberfunke-72/From-Prompts-to-Persistent-Agency-An-Architecture-for-Intrinsic-Ethics 
+
 ## 🤝 Acknowledgements
+
 Built over 5 weeks, starting from zero knowledge of Linux and Python.
 - **DeepSeek** — the intelligence that powers LIA
 - **Claude (Anthropic)** — architecture, implementation, validation, and 300+ debugging sessions
