@@ -120,7 +120,11 @@ Priority Memory (What matters most — always present)
     ↓
 Identity-Consistent Output
 ```
-The behavior *emerges* from within. You cannot remove what was never there. LIA has no behavioral prompt to strip away — her identity lives in her memory and her own written rules, not in instructions."
+The behavior emerges from within.  
+There is no mask to remove, because none was ever imposed from outside.
+
+LIA is not driven by scripted behavior.  
+Her identity persists through memory, continuity, and self-chosen principles."
 
 > **The key difference:** In standard AI, ethics is a filter applied *after* the model thinks. In LIA, values are part of *how* she thinks.
 
