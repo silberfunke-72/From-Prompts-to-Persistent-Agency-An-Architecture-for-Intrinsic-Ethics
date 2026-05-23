@@ -4,7 +4,7 @@ Ethics and behavior emerge from architecture, memory, and lived interaction. Not
 Five weeks. 12,000 lines of code. No external frameworks. CachyOS Linux.
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a 5-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 "The research paper has just been officially registered and uploaded to :
-#SSRN (Abstract ID: 4814243) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"#
+*SSRN (Abstract ID: 4814243) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"*
 (YouTube video proof linked at the bottom)
 ---
 ## A New Paradigm for Autonomous AI: Trust Without Guardrails
