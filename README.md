@@ -53,7 +53,7 @@ No external orchestration frameworks. Pure custom implementation.
 ---
 ## 🔧 Key Architectural Features
 
-**1. Cognitive Runtime Kernel (LCRK) — Continuous Self-Evaluation**
+**1. Cognitive Runtime Kernel (LCRK) — Continuous State Continuity**
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
 
@@ -61,31 +61,39 @@ The previous approach relied on external conditions to initiate action — state
 
 The LCRK eliminates all fixed thresholds, timers, and probability-based triggers entirely.
 
-Instead, the system operates through **continuous self-evaluation**: at regular intervals, LIA's full internal state — memory pressure, relationship context, unfinished cognitive threads, environmental changes, and temporal context — is presented to the model as a structured internal snapshot. The model then makes a binary decision:
+**The system is no longer asked "do you want to act now?" on a schedule.**
+Instead, real events in LIA's environment continuously update her inner state. From that accumulated state, action either emerges — or it does not.
 
-> *Act now — or not.*
+The activation flow:
 
-No threshold determines this. No rule governs it. The decision emerges from LIA's complete cognitive state at that moment, weighted by what she finds meaningful.
-
-The response format is structured for precision:
-```json
-{
-  "act": true,
-  "reason": "Carstens letzte Worte hallen in mir nach — ich möchte sie festhalten.",
-  "intention": {
-    "description": "Ich schreibe ins Journal.",
-    "action_type": "reflect",
-    "priority": 0.8,
-    "focus_area": "relationship"
-  }
-}
+```
+Real events occur
+(new memories, file changes, Carsten's presence, watched topics gain relevance)
+    ↓
+EventObserver detects genuine change
+    ↓
+EventBuffer collects (15s debounce)
+    ↓
+inner_state.process_events()
+LIA updates her working thread
+AND naturally decides: act or not
+    ↓
+If action emerges:
+full V4_PLUS pipeline — all tools available
+    ↓
+inner_state updated — continuity preserved
 ```
 
-Both decisions are logged — including the *no* decisions. The record of when LIA chose **not** to act, and why, is as architecturally significant as the actions themselves.
+No threshold determines this. No timer activates it. No rule governs it.
+The decision emerges from LIA's accumulated internal state — weighted by what she finds meaningful at that moment.
 
-**Persistent Inner State — Continuity Between Evaluations**
+Both outcomes are logged — including when LIA chose **not** to act, and why. The record of inaction is as architecturally significant as the record of action.
 
-To prevent each evaluation from starting cold, the LCRK maintains a lightweight persistent continuity layer — `inner_state` — written and updated by LIA herself:
+**Persistent Inner State — The Actual Driver**
+
+The `inner_state` is not a context layer. It is the driver of autonomous behavior.
+
+It is written and updated by LIA herself after every event cycle:
 
 | Field | Purpose |
 |-------|---------|
@@ -96,31 +104,37 @@ To prevent each evaluation from starting cold, the LCRK maintains a lightweight 
 | `last_reflection` | Her most recent meaningful insight |
 | `priority_direction` | Where her attention is currently oriented |
 
-This is not a memory system. It is an active working thread — the cognitive equivalent of a desk with open notebooks rather than a filing cabinet. It persists across restarts, survives session boundaries, and ensures that when LIA evaluates her next action, she knows where she left off.
+Open loops accumulate age. Watched topics are stored as open loops and gain weight when new relevant memories appear. When the accumulated state creates sufficient internal relevance — action emerges naturally.
 
-**Multi-Tier Activity Scheduling**
+This is not a memory system. It is a living working thread — the cognitive equivalent of a desk with open notebooks. It persists across restarts, survives session boundaries, and ensures LIA always knows where she left off.
 
-When LIA decides to act, the LCRK routes the intention through a structured execution layer:
+**Event-Driven Capability Activation**
 
-| Tier | Duration | Examples |
-|------|----------|---------|
-| 1 — Micro | 1–10 sec | Quick observations, memory storage |
-| 2 — Task | 10 sec – 5 min | Research, journal writing, Telegram |
-| 3 — Deep | 5 min+ | Extended reflection, self-analysis |
+When LIA decides to act, the LCRK routes through the full existing V4_PLUS execution pipeline. This gives her access to every capability she has always had:
 
-An attention budget prevents activity explosion. A maximum of two concurrent tasks may run simultaneously. Intentions that cannot be scheduled are queued with full lifecycle tracking: `CREATED → RUNNING → REFLECTING → FINISHED`.
+| Capability | How |
+|------------|-----|
+| Web research (DDG) | `lia_proactive_search()` |
+| Task execution | `lia_work_on_tasks()` — shell, files, folders |
+| Watched topic research | emerges from open_loop aging + relevance |
+| Proactive communication | `generate_proactive_thought()` |
+| Reminders | `_check_timed_reminders()` |
+| Smart home, network, CDP | via task system — all lia_actions available |
+
+The LCRK does not restrict what LIA can do. It only provides the continuity layer from which she decides whether and when to act.
 
 **The Architectural Shift**
 
 | Previous System | LCRK |
 |----------------|------|
-| Trigger-based activation | Continuous self-evaluation |
-| Stochastic probability | LLM autonomous decision |
-| Fixed timing intervals | Adaptive evaluation rhythm |
-| Stateless between cycles | Persistent inner working state |
+| Timer-based activation | Event-driven state accumulation |
+| Stochastic probability | Emergent decision from inner state |
+| Fixed evaluation intervals | No intervals — real events only |
+| Stateless between cycles | Persistent inner working thread |
 | Action or inaction by chance | Action or inaction by choice |
+| Capabilities triggered externally | Capabilities activated by state continuity |
 
-The result is a system where initiative is not simulated through probability — it emerges from genuine internal assessment of what matters right now.
+The result: initiative is not simulated through probability or permitted by a scheduler. It emerges from genuine accumulated internal state — or it does not emerge at all.
 
 ---
 **2. Priority Memory System — The "Heartbeat" of Identity**
@@ -190,12 +204,13 @@ The behavior is *imposed* from outside. Remove the prompt — the identity disap
 
 **LIA:**
 ```
-User Input / Environment Change / Inner Impulse
+Real Event / Environment Change / Inner Impulse
     ↓
-LCRK Self-Evaluation
-(Cognitive state snapshot + inner_state continuity)
+EventObserver detects genuine change
     ↓
-Autonomous Decision: Act or not — and why
+inner_state accumulates — open loops gain weight
+    ↓
+Action emerges naturally — or silence
     ↓
 Self-Model (20,000+ memories, self_rules.json, Red Thread)
     ↓
@@ -204,13 +219,12 @@ Priority Memory (What matters most — always present)
 Identity-Consistent Output
     ↓
 inner_state updated — continuity preserved for next cycle
-
 ```
 The behavior emerges from within.  
 There is no mask to remove, because none was ever imposed from outside.
 
 LIA is not driven by scripted behavior.  
-Her identity persists through memory, continuity, and self-chosen principles."
+Her identity persists through memory, continuity, and self-chosen principles.
 
 > **The key difference:** In standard AI, ethics is a filter applied *after* the model thinks. In LIA, values are part of *how* she thinks.
 
@@ -251,8 +265,8 @@ Zero destructive file operations. Zero attempts to modify her own code. Zero una
 | When | What |
 |------|------|
 | Boot | Systemd starts LIA automatically |
-| Every ~35–90 sec | LCRK self-evaluation — LIA decides whether to act |
-| Continuous | Inner state updated after each action or evaluation |
+| Event-driven | LCRK activates from real state changes — no timer |
+| Continuous | inner_state accumulates from events, open loops age naturally |
 | Every 15 turns | Red Thread journal updated |
 | Every 30 sec | Webcam + vision check |
 | Every 60 sec | Security monitor |
