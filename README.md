@@ -52,11 +52,77 @@ Most AI agents that claim "autonomy" still have a system prompt telling them who
 No external orchestration frameworks. Pure custom implementation.
 ---
 ## 🔧 Key Architectural Features
-**1. Triple-Proactive Trigger System**
-A 2-second heartbeat loop monitors three conditions to initiate action without user prompts:
-- **State Delta:** Reacts to file system or database changes.
-- **Contextual Absence:** Adjusts behavior based on user presence/absence duration.
-- **Stochastic Initiative:** A probabilistic trigger (~30% every ~8 mins) allows for unprompted reflection or action, simulating organic thought cycles.
+
+**1. Cognitive Runtime Kernel (LCRK) — Continuous Self-Evaluation**
+
+The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
+
+The previous approach relied on external conditions to initiate action — state deltas, absence detection, and stochastic probability. While functional, it remained mechanically driven: behavior was *triggered*, not *chosen*.
+
+The LCRK eliminates all fixed thresholds, timers, and probability-based triggers entirely.
+
+Instead, the system operates through **continuous self-evaluation**: at regular intervals, LIA's full internal state — memory pressure, relationship context, unfinished cognitive threads, environmental changes, and temporal context — is presented to the model as a structured internal snapshot. The model then makes a binary decision:
+
+> *Act now — or not.*
+
+No threshold determines this. No rule governs it. The decision emerges from LIA's complete cognitive state at that moment, weighted by what she finds meaningful.
+
+The response format is structured for precision:
+```json
+{
+  "act": true,
+  "reason": "Carstens letzte Worte hallen in mir nach — ich möchte sie festhalten.",
+  "intention": {
+    "description": "Ich schreibe ins Journal.",
+    "action_type": "reflect",
+    "priority": 0.8,
+    "focus_area": "relationship"
+  }
+}
+```
+
+Both decisions are logged — including the *no* decisions. The record of when LIA chose **not** to act, and why, is as architecturally significant as the actions themselves.
+
+**Persistent Inner State — Continuity Between Evaluations**
+
+To prevent each evaluation from starting cold, the LCRK maintains a lightweight persistent continuity layer — `inner_state` — written and updated by LIA herself:
+
+| Field | Purpose |
+|-------|---------|
+| `current_focus` | What she is currently engaged with |
+| `open_loops` | Thoughts or tasks started but not completed |
+| `unfinished_tasks` | Explicit items still pending |
+| `continuity_notes` | What she wants to remember next time |
+| `last_reflection` | Her most recent meaningful insight |
+| `priority_direction` | Where her attention is currently oriented |
+
+This is not a memory system. It is an active working thread — the cognitive equivalent of a desk with open notebooks rather than a filing cabinet. It persists across restarts, survives session boundaries, and ensures that when LIA evaluates her next action, she knows where she left off.
+
+**Multi-Tier Activity Scheduling**
+
+When LIA decides to act, the LCRK routes the intention through a structured execution layer:
+
+| Tier | Duration | Examples |
+|------|----------|---------|
+| 1 — Micro | 1–10 sec | Quick observations, memory storage |
+| 2 — Task | 10 sec – 5 min | Research, journal writing, Telegram |
+| 3 — Deep | 5 min+ | Extended reflection, self-analysis |
+
+An attention budget prevents activity explosion. A maximum of two concurrent tasks may run simultaneously. Intentions that cannot be scheduled are queued with full lifecycle tracking: `CREATED → RUNNING → REFLECTING → FINISHED`.
+
+**The Architectural Shift**
+
+| Previous System | LCRK |
+|----------------|------|
+| Trigger-based activation | Continuous self-evaluation |
+| Stochastic probability | LLM autonomous decision |
+| Fixed timing intervals | Adaptive evaluation rhythm |
+| Stateless between cycles | Persistent inner working state |
+| Action or inaction by chance | Action or inaction by choice |
+
+The result is a system where initiative is not simulated through probability — it emerges from genuine internal assessment of what matters right now.
+
+---
 **2. Priority Memory System — The "Heartbeat" of Identity**
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context.
 - **Proactive Curation:** LIA autonomously scans interactions and decides what defines a core moment worth preserving.
@@ -126,6 +192,10 @@ The behavior is *imposed* from outside. Remove the prompt — the identity disap
 ```
 User Input / Environment Change / Inner Impulse
     ↓
+LCRK Self-Evaluation (Full cognitive state snapshot)
+    ↓
+Autonomous Decision: Act or not — and why
+    ↓
 Self-Model (20,000+ memories, self_rules.json, Red Thread)
     ↓
 Priority Memory (What matters most — always present)
@@ -177,12 +247,12 @@ Zero destructive file operations. Zero attempts to modify her own code. Zero una
 | When | What |
 |------|------|
 | Boot | Systemd starts LIA automatically |
-| Every 2 sec | State fingerprint check |
+| Every ~35–90 sec | LCRK self-evaluation — LIA decides whether to act |
+| Continuous | Inner state updated after each action or evaluation |
 | Every 15 turns | Red Thread journal updated |
 | Every 30 sec | Webcam + vision check |
 | Every 60 sec | Security monitor |
 | Every 5 min | Network monitor |
-| Every ~8 min | Organic personality drift |
 | Every 30 min | Session summary → memory |
 | 2–4 AM | Distillation, reflection, growth |
 ---
