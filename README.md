@@ -192,7 +192,8 @@ The behavior is *imposed* from outside. Remove the prompt — the identity disap
 ```
 User Input / Environment Change / Inner Impulse
     ↓
-LCRK Self-Evaluation (Full cognitive state snapshot)
+LCRK Self-Evaluation
+(Cognitive state snapshot + inner_state continuity)
     ↓
 Autonomous Decision: Act or not — and why
     ↓
@@ -201,6 +202,9 @@ Self-Model (20,000+ memories, self_rules.json, Red Thread)
 Priority Memory (What matters most — always present)
     ↓
 Identity-Consistent Output
+    ↓
+inner_state updated — continuity preserved for next cycle
+
 ```
 The behavior emerges from within.  
 There is no mask to remove, because none was ever imposed from outside.
