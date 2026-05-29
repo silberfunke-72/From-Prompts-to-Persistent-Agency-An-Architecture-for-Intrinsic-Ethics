@@ -142,7 +142,7 @@ The result: initiative is not simulated through probability or permitted by a sc
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context.
 - **Proactive Curation:** LIA autonomously scans interactions and decides what defines a core moment worth preserving.
 - **5 Categories of Significance:**Insights** are sorted into self-defined categories — Autonomy, Identity, Relationship Context, Learning, and Ethical Consistency. This is value judgment, not just data tagging.
-- **Permanent Presence:** The highest-scoring memories are kept in active awareness permanently, forming the stable foundation of her personality across thousands of interactions.
+- **Permanent Presence:** The highest-scoring **insights** are kept in active awareness permanently, forming the stable foundation of her personality across thousands of interactions.
 - **Self-Boosting:** The system can elevate a memory mid-conversation — ensuring what matters most is always present in context, regardless of when it happened.
 *Why it matters:* This transforms memory from a passive storage bin into an active part of identity.
 ---
