@@ -1,4 +1,4 @@
-**TL;DR: I proved that autonomous AI works WITHOUT hardcoded rules — and WITHOUT behavioral prompts.
+TL;DR: I proved that autonomous AI works WITHOUT hardcoded rules — and WITHOUT behavioral prompts.
 No "you must", no "you should", no "you are not allowed to". Zero prompt-based instructions in her system.
 Ethics and behavior emerge from architecture, memory, and lived interaction. Not from rules.
 Five weeks. 12,000 lines of code. No external frameworks. CachyOS Linux.
@@ -54,7 +54,7 @@ No external orchestration frameworks. Pure custom implementation.
 ## 🔧 Key Architectural Features
 
 **1. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity: 
-LCRK is my own invention, developed and built entirely by myself. **
+LCRK is my own invention, developed and built entirely by myself.**
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
 
