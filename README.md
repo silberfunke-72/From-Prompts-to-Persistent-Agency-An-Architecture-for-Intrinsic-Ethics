@@ -139,6 +139,9 @@ The result: initiative is not simulated through probability or permitted by a sc
 
 ---
 **2. Priority Memory System — The "Heartbeat" of Identity**
+
+Priority Memory System is my own invention, developed and built entirely by myself. 
+
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context.
 - **Proactive Curation:** LIA autonomously scans interactions and decides what defines a core moment worth preserving.
 - **5 Categories of Significance:**Insights** are sorted into self-defined categories — Autonomy, Identity, Relationship Context, Learning, and Ethical Consistency. This is value judgment, not just data tagging.
