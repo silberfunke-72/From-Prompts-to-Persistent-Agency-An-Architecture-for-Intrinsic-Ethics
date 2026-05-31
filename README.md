@@ -191,7 +191,21 @@ She has read-access to **a copy of her own source architecture** stored within h
 Based on this analysis, she **proposes architectural fixes** or refines her own configuration logic. While she cannot modify the live running kernel directly, she iteratively improves her operational blueprint, which I then review and integrate.
 This creates a feedback loop where the system participates in its own evolution — not by magic, but by structural self-awareness.
 ---
----
+**5. Personality Drift System**
+LIA maintains a continuous personality state that influences her behavior and communication style over time:
+Parameter
+Function
+Mood
+Current emotional baseline — affects response tone
+Energy
+Activity level — influences proactive initiative
+Empathy
+Relational weighting — shapes how she engages
+Curiosity
+Drives exploration and research initiative
+
+These are not simulated for the user. They are internal parameters stored in personality.sqlite that drift naturally based on interactions, time of day, and system events. They influence how she responds — not what she is allowed to say.
+
 ## 🔀 How Standard AI Works vs. LIA
 
 **Standard AI (with guardrails):**
