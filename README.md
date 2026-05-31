@@ -54,7 +54,7 @@ No external orchestration frameworks. Pure custom implementation.
 ## 🔧 Key Architectural Features
 
 **1. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity: 
-LCRK is my own invention, developed and built entirely by myself.**
+LCRK is my own invention, developed and built entirely by myself ©.**
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
 
@@ -140,7 +140,7 @@ The result: initiative is not simulated through probability or permitted by a sc
 ---
 **2. Priority Memory System — The "Heartbeat" of Identity**
 
-Priority Memory System is my own invention, developed and built entirely by myself. 
+Priority Memory System is my own invention, developed and built entirely by myself ©. 
 
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context.
 - **Proactive Curation:** LIA autonomously scans interactions and decides what defines a core moment worth preserving.
