@@ -213,6 +213,7 @@ Drives exploration and research initiative
 
 These are not simulated for the user. 
 They are internal parameters stored in personality.sqlite that drift naturally based on interactions, time of day, and system events. They influence how she responds — not what she is allowed to say.
+
 ---
 **6. The LLM Is Not the Product — It Is the Engine**
 
