@@ -404,6 +404,7 @@ This repository is published for research documentation and scientific discussio
 No permission is granted to reproduce, commercialize, or redistribute proprietary implementations of these systems without explicit written permission from the author.
 
 All original texts, architectural descriptions, and unpublished implementation details are protected by copyright and remain the intellectual property of the author unless otherwise stated.
+
 ---
 **Questions? Discussion?**
 - How do you design ethics *into* an architecture — not just *onto* it?
