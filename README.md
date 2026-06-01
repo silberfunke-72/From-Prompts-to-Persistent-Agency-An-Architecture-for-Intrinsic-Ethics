@@ -395,7 +395,7 @@ The architectural concepts described in this repository — including but not li
 - Lia Cognitive Runtime Kernel (LCRK)
 - Priority Memory System
 - Persistent Identity Architecture
-- Intrinsic Ethics Framework
+
 
 were independently conceived and developed by Carsten Hammerich.
 
