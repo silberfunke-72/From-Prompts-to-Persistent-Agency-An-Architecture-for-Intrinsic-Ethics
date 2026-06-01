@@ -364,10 +364,12 @@ Consider the challenge of high-latency autonomous operations:
 >
 > *"The future isn't about controlling AI. It's about partnering with it."*
 ---
+
 ## ⚠️ Proof of Concept — Source Code Not Released
 The system grants deep-level autonomy (Shell access, Browser Control). Without the accompanying **context of trust, iterative development, and human-in-the-loop oversight**, releasing raw access would be irresponsible.
 **You cannot copy-paste emergent behavior.** It is the result of specific architectural choices combined with weeks of consistent, value-aligned interaction.
 This post aims to inspire research into **internalized ethics** and **persistent agency** — not to provide a plug-and-play solution.
+
 ---
 ### 🎥 Video Proof & Live Demos
 * 🖥️ [Watch LIA Autonomous Demonstration](https://youtu.be/Ilpn7e4CPcc)
