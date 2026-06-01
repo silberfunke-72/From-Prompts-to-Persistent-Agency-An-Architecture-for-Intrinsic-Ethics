@@ -209,7 +209,7 @@ Drives exploration and research initiative
 These are not simulated for the user. 
 They are internal parameters stored in personality.sqlite that drift naturally based on interactions, time of day, and system events. They influence how she responds — not what she is allowed to say.
 ---
-**6. The LLM Is Not the Product — It Is the Motor**
+**6. The LLM Is Not the Product — It Is the Engine**
 
 One of the central conclusions I reached during this work is that current AI research often treats the language model itself as the finished product. In my view, this is comparable to mistaking an engine for an entire vehicle.
 
@@ -234,9 +234,10 @@ This is also why simply placing a standard reactive model into the same technica
 
 In other words:
 
-The intelligence of the model is the engine.
+**The intelligence of the model is the engine.
 The architecture is the vehicle.
-Only together can autonomous behavior emerge.
+Only together can autonomous behavior emerge.**
+
 ---
 ## 🔀 How Standard AI Works vs. LIA
 
