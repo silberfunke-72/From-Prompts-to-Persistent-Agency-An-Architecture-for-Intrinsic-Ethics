@@ -136,6 +136,7 @@ The LCRK does not restrict what LIA can do. It only provides the continuity laye
 | Stateless between cycles | Persistent inner working thread |
 | Action or inaction by chance | Action or inaction by choice |
 | Capabilities triggered externally | Capabilities activated by state continuity |
+---
 
 The result: initiative is not simulated through probability or permitted by a scheduler. It emerges from genuine accumulated internal state — or it does not emerge at all.
 
