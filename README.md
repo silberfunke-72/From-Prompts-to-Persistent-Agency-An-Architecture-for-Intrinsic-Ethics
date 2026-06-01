@@ -350,6 +350,24 @@ Built over 5 weeks, starting from zero knowledge of Linux and Python.
 - **ChatGPT (OpenAI)** — brainstorming and problem-solving
 > *"This project is proof that with a clear vision, the right tools, and genuine curiosity — anyone can build something that surprises even its creator."*
 ---
+
+## Intellectual Property Notice
+
+The architectural concepts described in this repository — including but not limited to:
+
+- Lia Cognitive Runtime Kernel (LCRK)
+- Priority Memory System
+- Persistent Identity Architecture
+- Intrinsic Ethics Framework
+
+were independently conceived and developed by Carsten Hammerich.
+
+This repository is published for research documentation and scientific discussion only.
+
+No permission is granted to reproduce, commercialize, or redistribute proprietary implementations of these systems without explicit written permission from the author.
+
+All original texts, architectural descriptions, and unpublished implementation details are protected by copyright and remain the intellectual property of the author unless otherwise stated.
+---
 **Questions? Discussion?**
 - How do you design ethics *into* an architecture — not just *onto* it?
 - Where does the line between "persistent identity" and "real emergence" actually lie?
