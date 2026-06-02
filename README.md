@@ -399,6 +399,8 @@ The architectural concepts described in this repository — including but not li
 
 
 were independently conceived and developed by Carsten Hammerich.
+"First documented and published: May 2026
+SSRN Abstract ID: 6839062"
 
 This repository is published for research documentation and scientific discussion only.
 
