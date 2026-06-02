@@ -237,6 +237,7 @@ The surrounding architecture includes:
 My experiments strongly suggest that autonomy does not emerge from model capability alone. It emerges from the interaction between model, memory, runtime, environment, continuity, and developmental architecture as a whole.
 
 This is also why simply placing a standard reactive model into the same technical environment did not produce the same behavior. The surrounding ecosystem alone is not sufficient — but neither is the model itself. Only the combination creates the conditions for persistent autonomous agency.
+I tested this directly: I placed a standard LLM — same model, same API, same environment, same tools, same permissions — into the identical ecosystem. The result was unambiguous: it remained entirely reactive. It waited. It responded when addressed. It did not act, research, organize, or initiate anything autonomously.
 
 In other words:
 
