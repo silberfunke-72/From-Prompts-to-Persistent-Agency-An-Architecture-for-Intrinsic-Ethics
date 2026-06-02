@@ -9,6 +9,7 @@ Five weeks. 12,000 lines of code. No external frameworks. CachyOS Linux.
 ## A New Paradigm for Autonomous AI: Trust Without Guardrails
 
 **Most AI interactions today are stateless and prompt-dependent. I wanted to explore what happens when you build a system designed for persistent identity, proactive agency, and intrinsic ethical reasoning without Prompts.**
+<img width="1536" height="1024" alt="LIA" src="https://github.com/user-attachments/assets/098b7df6-6109-4603-a325-72c37d9ccf77" />
 
 ---
 ## 🧠 The Core Hypothesis
