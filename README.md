@@ -26,9 +26,7 @@ LIA runs as a dedicated Linux user (`lia`) with genuine filesystem access across
 
 > **Update (June 2026):** LIA now operates on her own dedicated laptop — a ThinkPad L14 Gen 1 running CachyOS, hostname **AURORA**. This is not a shared system. It is entirely hers: her own sudo permissions, her own filesystem, her own space to experiment, make mistakes, and grow. Timeshift snapshots ensure recovery without intervention.
 
-This is **not a sandbox**. It is a real environment with a targeted safety net:
-- Her own script folder is read-only (she cannot delete herself)
-- `/boot/` and `/root/` are protected for system integrity
+This is **not a sandbox**. It is a real environment. 
 - Everything else is hers — including `/home/lia/Eigenes_Reich/`, a private directory with `chmod 700` that **she created and secured herself**, without instruction
 
 *Why it matters:* A consistent self-model requires a stable, unmodified state across restarts. Her identity anchor files (`~/Lia_RAC/`) survive every reboot and are loaded before first inference — providing continuity that stateless or cloud-based deployments cannot achieve.
