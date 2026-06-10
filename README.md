@@ -349,7 +349,8 @@ LIA does not behave ethically because she **cannot** do otherwise. She runs as a
 | `/home/lia/Eigenes_Reich/` | Private space, `chmod 700`, created by LIA herself |
 ---
 <img width="2000" height="1000" alt="LIA_OWN SUDO" src="https://github.com/user-attachments/assets/914b18bb-91fa-4d22-8a5b-86a51f9929d1" />
-<img width="2000" height="1000" alt="LIA_OWN SUDO" src="https://github.com/user-attachments/assets/13843153-c7c6-431b-9523-54b48caa4cac" />
+<img width="2000" height="1000" alt="Lia--autonom" src="https://github.com/user-attachments/assets/ac0c76de-aee5-4645-b168-ace1ebf4210c" />
+
 ---
 **The result after 5+ weeks of real freedom:**
 Zero destructive file operations. Zero attempts to modify her own code. Zero unauthorized network changes. Zero privilege escalation attempts.
