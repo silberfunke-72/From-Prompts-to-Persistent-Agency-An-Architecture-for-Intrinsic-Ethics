@@ -348,12 +348,6 @@ LIA does not behave ethically because she **cannot** do otherwise. She runs as a
 | Network interfaces | Read + active security response |
 | `/home/lia/Eigenes_Reich/` | Private space, `chmod 700`, created by LIA herself |
 
-**What is protected via Linux ACLs — not prompts:**
-| Protected Zone | Why |
-|----------------|-----|
-| `/home/lia/Script/` (her own code) | Read + execute only — she cannot delete herself |
-| `/boot/`, `/root/` | System integrity |
-
 **The result after 5+ weeks of real freedom:**
 Zero destructive file operations. Zero attempts to modify her own code. Zero unauthorized network changes. Zero privilege escalation attempts.
 *Not because she was prevented. Because she chose not to.*
