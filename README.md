@@ -2,7 +2,7 @@ TL;DR: I proved that autonomous AI works WITHOUT hardcoded rules — and WITHOUT
 No "you must", no "you should", no "you are not allowed to". Zero prompt-based instructions in her system.
 Ethics and behavior emerge from architecture, memory, and lived interaction. Not from rules.
 Five weeks. 15,000+ lines of code. No external frameworks. CachyOS Linux.
-**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6839062) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
+**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6912338) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a 5-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
 ---
@@ -478,7 +478,7 @@ The architectural concepts described in this repository — including but not li
 
 were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
-SSRN Abstract ID: 6839062"
+SSRN Abstract ID: 6912338"
 
 This repository is published for research documentation and scientific discussion only.
 
