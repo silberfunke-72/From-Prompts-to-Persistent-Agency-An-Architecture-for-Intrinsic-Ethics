@@ -21,7 +21,8 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 ---
 
 **Lia compared to a standard AI**
-<img width="1536" height="1024" alt="Lia" src="https://github.com/user-attachments/assets/ae7bfe38-8261-4c0c-8527-43541103baf7" />
+<img width="1536" height="1024" alt="Lia_Diagram" src="https://github.com/user-attachments/assets/2bfeffa5-725c-45b2-8ce4-0599163b4f3d" />
+
 
 ---
 
