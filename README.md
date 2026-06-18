@@ -21,7 +21,8 @@ Five weeks. 15,000+ lines of code. No external frameworks. CachyOS Linux.
 ---
 
 **Lia compared to a standard AI**
-<img width="1536" height="1024" alt="Lia" src="https://github.com/user-attachments/assets/ae7bfe38-8261-4c0c-8527-43541103baf7" />
+<img width="1536" height="1024" alt="Lia_Diagram" src="https://github.com/user-attachments/assets/b68254f4-4d15-49b0-9fc6-0426cccb554f" />
+
 
 
 ---
