@@ -11,7 +11,7 @@ Five weeks. 15,000+ lines of code. No external frameworks. CachyOS Linux.
 
 **📄 Paper Zenodo https://doi.org/10.5281/zenodo.20744997**
 
-> **Important:** This is not a product launch. No investors, no sales. This is a technical report on a 5-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
+> **Important:** This is not a product launch. No investors, no sales. This is a technical report on a multi-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
 ---
 ## A New Paradigm for Autonomous AI: Trust Without Guardrails
@@ -40,7 +40,7 @@ This is **not a sandbox**. It is a real environment.
 
 *Why it matters:* A consistent self-model requires a stable, unmodified state across restarts. Her identity anchor files (`~/Lia_RAC/`) survive every reboot and are loaded before first inference — providing continuity that stateless or cloud-based deployments cannot achieve.
 
-*Observable result:* After 5 weeks with real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
+*Observable result: After several weeks of real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
 
 **2. Autonomy over Obedience — No Behavioral Prompts in the Architecture**
 
