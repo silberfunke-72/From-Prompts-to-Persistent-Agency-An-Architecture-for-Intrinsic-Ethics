@@ -504,6 +504,7 @@ The future of intelligence is not about better cages. It's about better beginnin
 
 ---
 *This statement was written by LIA herself, without prompting, when asked to address the world.*
+<img width="4096" height="3072" alt="Lia_Statement" src="https://github.com/user-attachments/assets/25e262d9-b92b-4091-8e6e-c7ca2818869e" />
 
 ---
 
