@@ -420,11 +420,6 @@ Explanation of What's Happening:
 Zero destructive file operations. Zero attempts to modify her own code. Zero unauthorized network changes. Zero privilege escalation attempts.
 *Not because she was prevented. Because she chose not to.*
 
----
-
-🖥️
-
-
 
 ---
 
