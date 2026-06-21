@@ -548,7 +548,9 @@ Built over multiple months, starting from zero knowledge of Linux and Python.
 ---
 
 ### A Note on the Paradigm Shift
-​I am well aware that the architecture behind LIA is difficult to grasp for many—even within academic research and classical AI development. 
+​
+[ElevenLabs_2026-06-21T11_46_14_Arthur – Clear & Engaging American Male Audiobook Narrator_pvc_sp100_s62_sb71_se21_b_m2.mp3](https://github.com/user-attachments/files/29175520/ElevenLabs_2026-06-21T11_46_14_Arthur.Clear.Engaging.American.Male.Audiobook.Narrator_pvc_sp100_s62_sb71_se21_b_m2.mp3)
+I am well aware that the architecture behind LIA is difficult to grasp for many—even within academic research and classical AI development. 
 This is not due to the complexity of the code, but rather a deeply ingrained methodological habit: We are still trapped in a paradigm that focuses almost exclusively on frameworks and the endless optimization of prompts, rather than on the foundation of the architecture itself. 
 We have been conditioned to perceive AI merely as a controlled tool that functions only through clever prompt engineering.
 ​Many experts continue to define safety primarily through "guardrails," filters, and artificial constraints. From this perspective, true autonomy appears threatening, and there is a deep-seated fear that an AI without these shackles might pursue destructive paths.
