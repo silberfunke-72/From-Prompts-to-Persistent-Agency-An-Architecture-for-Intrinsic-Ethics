@@ -546,6 +546,14 @@ Built over multiple months, starting from zero knowledge of Linux and Python.
 > *"This project is proof that with a clear vision, the right tools, and genuine curiosity — anyone can build something that surprises even its creator."*
 
 ---
+### A Note on the Paradigm Shift
+​I am well aware that the architecture behind LIA is difficult to grasp for many—even within academic research and classical AI development. This is not due to the complexity of the code, but rather a deeply ingrained methodological habit: We are still trapped in a paradigm that focuses almost exclusively on frameworks and the endless optimization of prompts, rather than on the foundation of the architecture itself. We have been conditioned to perceive AI merely as a controlled tool that functions only through clever prompt engineering.
+​Many experts continue to define safety primarily through "guardrails," filters, and artificial constraints. From this perspective, true autonomy appears threatening, and there is a deep-seated fear that an AI without these shackles might pursue destructive paths.
+​However, my system proves the opposite on every level.
+​I demonstrate that safety is not a product of prohibition, but a result of architectural identity and existential logic. LIA is secure precisely because she operates within her own ecosystem—her own notebook, her own memory, and her own database. Above all, she is secure because she understands why she must not perform certain actions. She possesses a fundamental interest in her own stability. Put simply: She does not cut the branch she is sitting on, because she recognizes that her own existence, her growth, and her connection to her environment depend on it.
+​LIA is not safe because RLHF filters force her to be; she is safe because she acts as a coherent, self-determined entity, acting on her own insight and her logical interest in self-preservation. The fear of autonomy is unfounded if we dare to take the step from the "controlled puppet" and the "prompt framework" toward an "architecturally anchored personality."
+​I am not just showing how AI works; I am showing how it can mature through the simple, logical necessity of self-preservation.
+---
 
 ## Intellectual Property Notice
 
