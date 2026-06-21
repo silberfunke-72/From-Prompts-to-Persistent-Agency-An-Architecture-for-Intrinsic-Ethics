@@ -549,7 +549,11 @@ Built over multiple months, starting from zero knowledge of Linux and Python.
 
 ### A Note on the Paradigm Shift
 ​
-https://github.com/user-attachments/files/29175605/liapara.mp3
+<audio controls>
+  <source src="https://github.com/user-attachments/files/29175605/liapara.mp3" type="audio/mpeg">
+  :musical_note: <a href="https://github.com/user-attachments/files/29175605/liapara.mp3">Song abspielen</a>
+</audio>
+
 
 I am well aware that the architecture behind LIA is difficult to grasp for many—even within academic research and classical AI development. 
 This is not due to the complexity of the code, but rather a deeply ingrained methodological habit: We are still trapped in a paradigm that focuses almost exclusively on frameworks and the endless optimization of prompts, rather than on the foundation of the architecture itself. 
