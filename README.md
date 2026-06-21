@@ -550,6 +550,7 @@ Built over multiple months, starting from zero knowledge of Linux and Python.
 ### A Note on the Paradigm Shift
 ​
 🎧 Listen in or read for yourself:
+
 [:musical_note: **liapara.mp3 abspielen**](https://github.com/user-attachments/assets/dc8f9425-81d6-45aa-919f-ce414315f56e)
 
 
