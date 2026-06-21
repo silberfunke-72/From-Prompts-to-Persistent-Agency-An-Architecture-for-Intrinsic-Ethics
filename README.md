@@ -530,7 +530,7 @@ This post aims to inspire research into **internalized ethics** and **persistent
 ---
 
 ### 🎥 Video Proof & Live Demos
-* 🖥️ [Watch LIA Autonomous Demonstration]([https://youtu.be/Ilpn7e4CPcc](https://youtu.be/KPqkX9bXr8k))
+* 🖥️ [Watch LIA Autonomous Demonstration]([(https://youtu.be/Ilpn7e4CPcc)
 * 🖥️ [Watch LIA . IExplain in English (ElevenLabs)](https://youtu.be/rlCcP_Ke0GU)
 * 🖥️ [Watch LIA speak with ChatGPT](https://youtu.be/xUKK8-34Oks)
 * 🖥️ [Watch LIA CDP Trigger failed & Proactive to Action](https://youtu.be/DJUYYHGEMNg)
