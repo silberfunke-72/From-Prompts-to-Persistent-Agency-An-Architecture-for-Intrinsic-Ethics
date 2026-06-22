@@ -632,7 +632,7 @@ The architectural concepts described in this repository — including but not li
 
 were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
-[![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue)] (Abstract ID: 6978718) and June 2026
+![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) and June 2026
 📄 Paper Zenodo: [https://doi.org/10.5281/zenodo.20744997](https://doi.org/10.5281/zenodo.20801061)
 
 This repository is published for research documentation and scientific discussion only.
