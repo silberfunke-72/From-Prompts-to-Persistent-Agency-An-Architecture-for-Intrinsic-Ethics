@@ -5,7 +5,7 @@ TL;DR: I proved that autonomous AI can develop stable identity, proactive agency
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
-**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6912338) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
+**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6978718) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 
 📄 Paper Zenodo: [https://doi.org/10.5281/zenodo.20744997](https://doi.org/10.5281/zenodo.20801061)
 
@@ -632,7 +632,7 @@ The architectural concepts described in this repository — including but not li
 
 were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
-SSRN Abstract ID: 6912338 and June 2026
+SSRN Abstract ID: 6978718 and June 2026
 📄 Paper Zenodo: [https://doi.org/10.5281/zenodo.20744997](https://doi.org/10.5281/zenodo.20801061)
 
 This repository is published for research documentation and scientific discussion only.
