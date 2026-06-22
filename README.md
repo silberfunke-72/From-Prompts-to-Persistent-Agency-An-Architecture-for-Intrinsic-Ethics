@@ -5,7 +5,7 @@ TL;DR: I proved that autonomous AI can develop stable identity, proactive agency
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
-**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6978718)[![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id= 6978718) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
+**The research paper has just been officially registered and uploaded to SSRN (Abstract ID: 6978718)[![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue)](6978718) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 
 📄 Paper Zenodo: [https://doi.org/10.5281/zenodo.20744997](https://doi.org/10.5281/zenodo.20801061)
 
