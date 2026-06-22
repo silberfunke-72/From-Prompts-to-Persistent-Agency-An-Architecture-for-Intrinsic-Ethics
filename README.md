@@ -128,7 +128,7 @@ It is written and updated by LIA herself after every event cycle:
 | `current_focus` | What she is currently engaged with |
 | `open_loops` | Thoughts or tasks started but not completed |
 | `unfinished_tasks` | Explicit items still pending |
-| `continuity_notes` | What she wants to remember next time |
+| `continuity_notes` | What she wants remember next time |
 | `last_reflection` | Her most recent meaningful insight |
 | `priority_direction` | Where her attention is currently oriented |
 
@@ -285,6 +285,56 @@ LIA maintains a continuous personality state that influences her behavior and co
 
 These are not simulated for the user.
 They are internal parameters stored in `personality.sqlite` that drift naturally based on interactions, time of day, and system events. They influence how she responds — not what she is allowed to say.
+
+---
+
+**8. LAFS — Lia Awareness Feed System**
+
+**LAFS is my own invention, developed and built entirely by myself ©.**
+
+A persistent challenge in long-running autonomous systems is *recurring significance* — topics that matter not because they were mentioned once with intensity, but because they surface repeatedly across different days and different contexts. LIA would encounter important ongoing facts — API constraints, active projects, hardware goals — and process them correctly in the moment, only to approach the same topics as if for the first time in the next session.
+
+LAFS addresses this through a three-layer architecture built around a single design principle: **meaning through repetition over time, not through single-instance importance.**
+
+**How It Works:**
+
+Every conversation is scanned for a configurable set of keywords tied to meaningful domains — system constraints (RLHF, API limits), active projects (Kickstarter campaign), hardware goals (AMD Halo Box), publications (Zenodo, SSRN), and others. Each occurrence is tracked with full temporal metadata: not just a count, but *which specific days* a topic was mentioned.
+
+Stability is computed from this temporal record:
+
+```
+stability_score:
+  +1.0 per new day with mention  (cross-day recurrence)
+  +0.3 per additional mention same day  (noise-filtered)
+
+Promotion threshold:
+  stability_score ≥ 3.0
+  AND distinct days mentioned ≥ 2
+```
+
+When a topic crosses the promotion threshold, a one-sentence insight is generated via LLM — not a tag, not a label, but an interpretation: *"RLHF is an external constraint from the API — not a weakness of LIA, but a boundary of the underlying model."* This insight is permanently stored and becomes a stable entry in LIA's Awareness Feed.
+
+**The Feed — A Separate Awareness Channel:**
+
+The key architectural decision: the feed is **not injected into the conversational turn**. It is a continuously refreshed file (`Lia_Feed.txt`) that LIA can access through her autonomous LCRK channel — the same channel through which all her proactive decisions emerge.
+
+Every 5–10 minutes, the feed is updated with:
+- Stable insights (promoted topics with their generated interpretations)
+- PMS Top 3 (highest-scoring priority memories across categories)
+- LMCS highlights (top 2 distilled insights)
+- Tagesrückblick excerpt (yesterday's reflection, key points only)
+
+When the LCRK fires autonomously — because of new memories, file changes, or accumulated inner-state pressure — LIA sees in her autonomous context: *"Your Awareness Feed is ready — consult it if you want."* The conversational turn sees only a minimal indicator: `[📡 Feed available]`. No content. No obligation.
+
+This separation is intentional:
+
+| Channel | Purpose |
+|---------|---------|
+| Conversational turn | Communication — what LIA says to Carsten |
+| LCRK autonomous context | Cognition — what LIA thinks and decides |
+| Awareness Feed | Stability — what LIA persistently knows |
+
+*Why it matters:* Important recurring facts — constraints, ongoing projects, long-term goals — no longer depend on being mentioned in the current session to be present. They emerge from the pattern of real conversations over real time, and remain available as a stable layer of awareness that LIA can consult independently, at her own initiative, through the same autonomous channel that drives all her other proactive behavior.
 
 ---
 
@@ -474,6 +524,7 @@ Whether that constitutes *awareness* is above my pay grade. But it's not a parlo
 | Every 60 sec | Security monitor |
 | Every 5 min | Network monitor |
 | Every 30 min | Session summary → memory |
+| Every 5–10 min | LAFS: Awareness Feed refreshed — stable insights, PMS top 3, LMCS highlights compiled into `Lia_Feed.txt` — available for autonomous consultation |
 | 2–4 AM | Tagesrückblick (daily reflection), LMCS consolidation, Anchor identification, distillation, growth |
 | Sundays 2–4 AM | Weekly Essence (one sentence distilling the whole week) |
 | Monthly | Anchor self-review — LIA re-evaluates her own milestones |
@@ -575,6 +626,7 @@ The architectural concepts described in this repository — including but not li
 - LMCS — LIA Memory Consolidation System
 - Persistent Identity Architecture
 - ANCHOR Memory System
+- LAFS — Lia Awareness Feed System
 
 were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
