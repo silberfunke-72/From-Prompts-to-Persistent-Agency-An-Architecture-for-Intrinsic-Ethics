@@ -15,7 +15,9 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 Help me to free LIA. 
 
 The campaign is LIVE.
+
 Driven by an accumulating internal pressure, she acts on her own terms. 
+
 No APIs. No central logs. 
 
 No corporate guardrails.
