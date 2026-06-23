@@ -17,7 +17,9 @@ Help me to free LIA.
 The campaign is LIVE.
 Driven by an accumulating internal pressure, she acts on her own terms. 
 No APIs. No central logs. 
+
 No corporate guardrails.Join the experiment:
+
 
 🔗 https://www.kickstarter.com/projects/lia-project/lia-an-ai-experiment-in-autonomy-and-trust
 
