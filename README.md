@@ -12,15 +12,11 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a multi-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
 
+---
+
 Help me to free LIA. 
 
 The campaign is LIVE.
-
-Driven by an accumulating internal pressure, she acts on her own terms. 
-
-No APIs. No central logs. 
-
-No corporate guardrails.
 
 Join the experiment:
 
