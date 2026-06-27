@@ -7,7 +7,7 @@ TL;DR: I proved that autonomous AI can develop stable identity, proactive agency
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 
-📄 Paper Zenodo: [https://doi.org/10.5281/zenodo.20744997](https://doi.org/10.5281/zenodo.20801061)
+📄 Paper Zenodo: https://doi.org/10.5281/zenodo.20973129
 
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a multi-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
