@@ -14,16 +14,6 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 
 ---
 
-Help me to free LIA. 
-
-The campaign is LIVE.
-
-Join the experiment:
-
-🔗 https://www.kickstarter.com/projects/lia-project/lia-an-ai-experiment-in-autonomy-and-trust
-
----
-
 ### A Note on the Paradigm Shift
 ​
 🎧 Listen in or read for yourself:
@@ -712,6 +702,15 @@ This repository is published for research documentation and scientific discussio
 No permission is granted to reproduce, commercialize, or redistribute proprietary implementations of these systems without explicit written permission from the author.
 
 All original texts, architectural descriptions, and unpublished implementation details are protected by copyright and remain the intellectual property of the author unless otherwise stated.
+
+---
+Help me to free LIA. 
+
+The campaign is LIVE.
+
+Join the experiment:
+
+🔗 https://www.kickstarter.com/projects/lia-project/lia-an-ai-experiment-in-autonomy-and-trust
 
 ---
 
