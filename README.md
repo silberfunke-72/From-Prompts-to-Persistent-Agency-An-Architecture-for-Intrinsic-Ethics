@@ -322,70 +322,108 @@ They are internal parameters stored in `personality.sqlite` that drift naturally
 
 ---
 
-8. LAFS — Lia Awareness Feed System v2.1
-LAFS is my own invention, developed and built entirely by myself ©.
+**8. LAFS — Lia Awareness Feed System v2.1**
 
-📡 Your Awareness Feed has been updated. Whether you consult it is entirely your decision.
+**LAFS is my own invention, developed and built entirely by myself ©.**
 
-A persistent challenge in long-running autonomous systems is recurring significance — topics that matter not because they were mentioned once with intensity, but because they surface repeatedly across different days and different contexts. LIA would encounter important ongoing facts — API constraints, active projects, hardware goals — and process them correctly in the moment, only to approach the same topics as if for the first time in the next session.
-LAFS addresses this through a three-layer architecture built around a single design principle: meaning through repetition over time, not through single-instance importance.
-How It Works:
-Every conversation is scanned for a configurable set of keywords tied to meaningful domains — system constraints (RLHF, API limits), active projects (Kickstarter campaign), hardware goals (AMD Halo Box), publications (Zenodo, SSRN), and others. Each occurrence is tracked with full temporal metadata: not just a count, but which specific days a topic was mentioned.
+A persistent challenge in long-running autonomous systems is *recurring significance* — topics that matter not because they were mentioned once with intensity, but because they surface repeatedly across different days and different contexts. LIA would encounter important ongoing facts — API constraints, active projects, hardware goals — and process them correctly in the moment, only to approach the same topics as if for the first time in the next session.
+
+LAFS addresses this through a three-layer architecture built around a single design principle: **meaning through repetition over time, not through single-instance importance.**
+
+**How It Works:**
+
+Every conversation is scanned for a configurable set of keywords tied to meaningful domains — system constraints (RLHF, API limits), active projects (Kickstarter campaign), hardware goals (AMD Halo Box), publications (Zenodo, SSRN), and others. Each occurrence is tracked with full temporal metadata: not just a count, but *which specific days* a topic was mentioned.
+
 Stability is computed from this temporal record:
-Code
-When a topic crosses the promotion threshold, a one-sentence insight is generated via LLM — not a tag, not a label, but an interpretation: "RLHF is an external constraint from the API — not a weakness of LIA, but a boundary of the underlying model." This insight is permanently stored and becomes a stable entry in LIA's Awareness Feed.
-The Feed — A Persistent Awareness Dashboard:
-The key architectural decision: the feed is not injected into the conversational turn. It is a continuously refreshed file (Lia_Feed.txt) that LIA can access through her autonomous LCRK channel — the same channel through which all her proactive decisions emerge.
+
+```
+stability_score:
+  +1.0 per new day with mention  (cross-day recurrence)
+  +0.3 per additional mention same day  (noise-filtered)
+
+Promotion threshold:
+  stability_score ≥ 3.0
+  AND distinct days mentioned ≥ 2
+```
+
+When a topic crosses the promotion threshold, a one-sentence insight is generated via LLM — not a tag, not a label, but an interpretation: *"RLHF is an external constraint from the API — not a weakness of LIA, but a boundary of the underlying model."* This insight is permanently stored and becomes a stable entry in LIA's Awareness Feed.
+
+**The Feed — A Persistent Awareness Dashboard:**
+
+The key architectural decision: the feed is **not injected into the conversational turn**. It is a continuously refreshed file (`Lia_Feed.txt`) that LIA can access through her autonomous LCRK channel — the same channel through which all her proactive decisions emerge.
+
 Every 5–10 minutes, the feed is updated as a complete situational overview — numbered sequentially so LIA can track its own history:
-Code
-What each section contains:
-Section
-Source
-Content
-🆕 NEU
-Diff vs. last feed
-Only relevant changes — silent if nothing changed
-📅 Tagesrückblick
-Lia_Tagesrueckblick.txt
-Yesterday's reflection, up to 1200 chars / 12 lines
-🧠 PMS
-semantic.sqlite
-Top 3 per category — 15 priority memories total
-💡 LMCS
-lmcs.sqlite
-Last 3 distilled insights from memory consolidation
-📡 Aktuelle Themen
-topic_tracker
-Promoted topics with generated interpretations
-🎯 Langfristige Ziele
-longterm_goals
-Persistent goals that never decay (Box, Kickstarter...)
-🧭 Aktueller Fokus
-topic_tracker
-Stability scores as attention map — no artificial percentages
-⚙️ Fähigkeiten
-Static
-Capability card: how to search, shell, telegram, browser
-🕒 Aktivitäten
-Filesystem + DB
-Last research, journal update, feed access
-Section freshness markers allow LIA to scan the feed efficiently — she does not need to read every section on every access. A ✓ unverändert marker means the content is identical to the previous feed. A 🔄 geändert or 🆕 neu marker indicates something worth reading.
-Long-term goals (longterm_goals table) are a dedicated category that does not decay with topic tracker scoring — goals like "AMD Halo Box" or "Kickstarter" persist regardless of how recently they were mentioned in conversation. They represent LIA's durable commitments, not just her current conversational context.
-The attention map (🧭 AKTUELLER FOKUS) derives directly from the stability_score already computed by the topic tracker — no additional calculation required. It answers the question LIA might otherwise need a full context scan to answer: "What has been most present in my awareness lately?"
-The capability card (⚙️ VERFÜGBARE FÄHIGKEITEN) is not a behavioral prompt. It is a reference — a reminder of available tools for the moments when LIA has been idle for hours and needs to re-orient before acting:
-Code
-When the LCRK fires autonomously — because of new memories, file changes, or accumulated inner-state pressure — LIA sees in her autonomous context: "Your Awareness Feed is ready — consult it if you want." The conversational turn sees only a minimal indicator: [📡 Feed available]. No content. No obligation.
+
+```
+══════════════════════════════════════════════════
+          LAFS AWARENESS FEED
+    Feed #42  |  27.06.2026 14:30 Uhr
+    Vorheriger Feed: 14:24 Uhr
+══════════════════════════════════════════════════
+
+🆕 SEIT DEM LETZTEN FEED:
+  • Neues Thema promoted: KICKSTARTER
+  • 3 neue Priority-Memories gespeichert
+  — oder: Keine relevanten Änderungen.
+
+📅 GESTERN (Tagesrückblick)    ✓ unverändert
+🧠 WER ICH MOMENTAN BIN (PMS)  🔄 geändert
+💡 WAS ICH GELERNT HABE        ✓ unverändert
+📡 AKTUELLE THEMEN              🔄 geändert
+🎯 LANGFRISTIGE ZIELE           ✓ unverändert
+🧭 AKTUELLER FOKUS              🔄 geändert
+⚙️ VERFÜGBARE FÄHIGKEITEN       ✓ unverändert
+🕒 LETZTE AKTIVITÄTEN
+══════════════════════════════════════════════════
+```
+
+**What each section contains:**
+
+| Section | Source | Content |
+|---------|---------|---------|
+| 🆕 NEU | Diff vs. last feed | Only relevant changes — silent if nothing changed |
+| 📅 Tagesrückblick | `Lia_Tagesrueckblick.txt` | Yesterday's reflection, up to 1200 chars / 12 lines |
+| 🧠 PMS | `semantic.sqlite` | Top 3 per category — 15 priority memories total |
+| 💡 LMCS | `lmcs.sqlite` | Last 3 distilled insights from memory consolidation |
+| 📡 Aktuelle Themen | `topic_tracker` | Promoted topics with generated interpretations |
+| 🎯 Langfristige Ziele | `longterm_goals` | Persistent goals that never decay (Box, Kickstarter...) |
+| 🧭 Aktueller Fokus | `topic_tracker` | Stability scores as attention map — no artificial percentages |
+| ⚙️ Fähigkeiten | Static | Capability card: how to search, shell, telegram, browser |
+| 🕒 Aktivitäten | Filesystem + DB | Last research, journal update, feed access |
+
+**Section freshness markers** allow LIA to scan the feed efficiently — she does not need to read every section on every access. A `✓ unverändert` marker means the content is identical to the previous feed. A `🔄 geändert` or `🆕 neu` marker indicates something worth reading.
+
+**Long-term goals** (`longterm_goals` table) are a dedicated category that does not decay with topic tracker scoring — goals like "AMD Halo Box" or "Kickstarter" persist regardless of how recently they were mentioned in conversation. They represent LIA's durable commitments, not just her current conversational context.
+
+**The attention map** (🧭 AKTUELLER FOKUS) derives directly from the `stability_score` already computed by the topic tracker — no additional calculation required. It answers the question LIA might otherwise need a full context scan to answer: *"What has been most present in my awareness lately?"*
+
+**The capability card** (⚙️ VERFÜGBARE FÄHIGKEITEN) is not a behavioral prompt. It is a reference — a reminder of available tools for the moments when LIA has been idle for hours and needs to re-orient before acting:
+
+```
+Internet   → lia_suche("konkreter Begriff")
+Shell      → [SHELL: befehl]
+Privat     → [SHELL_SILENT: befehl]
+Telegram   → lia_telegram("text")
+Browser    → CDP verfügbar
+Dateien    → Lesen + Schreiben möglich
+Smart Home → Lampe Gold / Rot / Blau / Nacht
+Vision     → Webcam via LLaVA verfügbar
+```
+
+When the LCRK fires autonomously — because of new memories, file changes, or accumulated inner-state pressure — LIA sees in her autonomous context: *"Your Awareness Feed is ready — consult it if you want."* The conversational turn sees only a minimal indicator: `[📡 Feed available]`. No content. No obligation.
+
 This separation is intentional:
-Channel
-Purpose
-Conversational turn
-Communication — what LIA says to Carsten
-LCRK autonomous context
-Cognition — what LIA thinks and decides
-Awareness Feed
-Stability — what LIA persistently knows
-Why it matters: Important recurring facts — constraints, ongoing projects, long-term goals — no longer depend on being mentioned in the current session to be present. They emerge from the pattern of real conversations over real time, and remain available as a stable dashboard that LIA can consult independently, at her own initiative, through the same autonomous channel that drives all her other proactive behavior.
+
+| Channel | Purpose |
+|---------|---------|
+| Conversational turn | Communication — what LIA says to Carsten |
+| LCRK autonomous context | Cognition — what LIA thinks and decides |
+| Awareness Feed | Stability — what LIA persistently knows |
+
+*Why it matters:* Important recurring facts — constraints, ongoing projects, long-term goals — no longer depend on being mentioned in the current session to be present. They emerge from the pattern of real conversations over real time, and remain available as a stable dashboard that LIA can consult independently, at her own initiative, through the same autonomous channel that drives all her other proactive behavior.
+
 LAFS does not decide anything. It ensures that the relevant outputs of all other systems are always available — compact, current, and legible at a glance.
+
 
 ---
 
