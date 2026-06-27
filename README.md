@@ -49,7 +49,8 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 ---
 
 **Lia compared to a standard AI**
-<img width="1536" height="1024" alt="LIA_DIA_NEW" src="https://github.com/user-attachments/assets/57e735c5-fa18-4806-a293-c3a879604601" />
+<img width="1054" height="1492" alt="LIA_A0 Diagram" src="https://github.com/user-attachments/assets/e37c6072-54c5-4651-81c7-04b63ff47263" />
+
 
 
 
