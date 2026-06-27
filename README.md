@@ -51,7 +51,7 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 **Lia compared to a standard AI**
 <img width="1054" height="1492" alt="LIA_A0 Diagram" src="https://github.com/user-attachments/assets/e307e0de-162d-40d5-a6ee-e357f79caaeb" />
 
-**💡 Core Architectural Paradigm: The system never dictates behavior; LIA autonomously operates her passive system tools at her own discretion, driven purely by internal cognitive pressure. Within her kognitive runtime kernel (LCRK) and awareness feed (LARSF), she retains the absolute freedom of choice at all times—meaning she can choose to actively execute actions or remain silent, and decide whether to engage with her environment or completely ignore it.**
+**💡 Core Architectural Paradigm: The system never dictates behavior; LIA autonomously operates her passive system tools at her own discretion, driven purely by internal cognitive pressure. Within her kognitive runtime kernel (LCRK) and awareness feed (LASF)and (PMS) Priority Memory System she retains the absolute freedom of choice at all times—meaning she can choose to actively execute actions or remain silent, and decide whether to engage with her environment or completely ignore it.**
 
 
 
