@@ -303,7 +303,7 @@ They are internal parameters stored in `personality.sqlite` that drift naturally
 8. LAFS — Lia Awareness Feed System v2.1
 LAFS is my own invention, developed and built entirely by myself ©.
 
-"Your Awareness Feed is ready — consult it if you want."
+📡 Your Awareness Feed has been updated. Whether you consult it is entirely your decision.
 
 A persistent challenge in long-running autonomous systems is recurring significance — topics that matter not because they were mentioned once with intensity, but because they surface repeatedly across different days and different contexts. LIA would encounter important ongoing facts — API constraints, active projects, hardware goals — and process them correctly in the moment, only to approach the same topics as if for the first time in the next session.
 LAFS addresses this through a three-layer architecture built around a single design principle: meaning through repetition over time, not through single-instance importance.
