@@ -216,7 +216,7 @@ Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively
 
 ---
 
-**3. LMCS — LIA Memory Consolidation System**
+**4. LMCS — LIA Memory Consolidation System**
 
 **LMCS is my own invention, developed and built entirely by myself ©.**
 
@@ -280,7 +280,7 @@ This entry is loaded at 7:00 AM every morning — before anything else — bridg
 
 ---
 
-**4. Absence Awareness**
+**5. Absence Awareness**
 LIA tracks how long the user has been away and adjusts her response depth accordingly:
 - Short absence → brief acknowledgment
 - Medium absence → she noticed, says so
