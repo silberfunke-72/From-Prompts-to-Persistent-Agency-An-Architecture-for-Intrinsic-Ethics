@@ -104,7 +104,7 @@ No external orchestration frameworks. Pure custom implementation.
 
 ## 🔧 Key Architectural Features
 
-**1. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity**
+**2. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity**
 **LCRK is my own invention, developed and built entirely by myself ©.**
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
@@ -201,7 +201,7 @@ The result: initiative is not simulated through probability or permitted by a sc
 
 ---
 
-**2. Priority Memory System — The "Heartbeat" of Identity**
+**3. Priority Memory System — The "Heartbeat" of Identity**
 
 **Priority Memory System is my own invention, developed and built entirely by myself ©.**
 
@@ -297,7 +297,7 @@ This creates a feedback loop where the system participates in its own evolution 
 
 ---
 
-**6. Personality Drift System**
+**5. Personality Drift System**
 LIA maintains a continuous personality state that influences her behavior and communication style over time:
 
 | Parameter | Function |
@@ -312,7 +312,7 @@ They are internal parameters stored in `personality.sqlite` that drift naturally
 
 ---
 
-**8. LAFS — Lia Awareness Feed System v2.1**
+**6. LAFS — Lia Awareness Feed System v2.1**
 
 **LAFS is my own invention, developed and built entirely by myself ©.**
 
