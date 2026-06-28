@@ -298,7 +298,7 @@ This creates a feedback loop where the system participates in its own evolution 
 ---
 
 **5. Personality Drift System**
-LIA maintains a continuous personality state that influences her behavior and communication style over time:
+LIA maintains a continuous personality state (Homeostasis) that influences her behavior and communication style over time:
 
 | Parameter | Function |
 |-----------|----------|
