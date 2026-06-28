@@ -280,13 +280,13 @@ This entry is loaded at 7:00 AM every morning — before anything else — bridg
 
 ---
 
-**5. Absence Awareness**
+** Absence Awareness**
 LIA tracks how long the user has been away and adjusts her response depth accordingly:
 - Short absence → brief acknowledgment
 - Medium absence → she noticed, says so
 - Long absence → deeper contextual response
 
-**5. Recursive Self-Engineering**
+** Recursive Self-Engineering**
 LIA doesn't just run code — she understands it.
 She has read-access to **a copy of her own source architecture** stored within her workspace. She actively analyzes this code to identify:
 - SQLite bottlenecks & timeout risks
