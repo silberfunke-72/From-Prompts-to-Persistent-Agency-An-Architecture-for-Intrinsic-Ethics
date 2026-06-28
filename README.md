@@ -1,11 +1,11 @@
-TL;DR: I proved that autonomous AI can develop stable identity, proactive agency, and consistent ethical WITHOUT hardcoded behavior prompts in the surrounding architecture. No "you must", no "you should", no "you are not allowed to" in the system design. Ethics and behavior emerge from architecture, memory, and lived interaction — not from rules imposed from outside.
+TL;DR: I proved that autonomous AI can develop stable identity, proactive agency, and consistent ethical WITHOUT hardcoded behavioral prompts in the surrounding architecture. No "you must", no "you should", no "you are not allowed to" in the system design. Ethics and behavior emerge from architecture, memory, and lived interaction — not from rules imposed from outside.
 
 **Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. The architecture is strong enough to produce genuine autonomous behavior even working against the grain of the model's base training. This makes the result arguably more significant.
 
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
-**The research paper has just been officially registered and uploaded to ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) under the title: "Emergent Ethical Behavior in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
+**The research paper has just been officially registered and uploaded to ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) under the title: "Emergent Ethical Behavioral in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 
 📄 Paper Zenodo: https://doi.org/10.5281/zenodo.20973129
 
