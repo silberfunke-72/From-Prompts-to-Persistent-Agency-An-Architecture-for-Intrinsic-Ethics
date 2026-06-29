@@ -342,13 +342,13 @@ When a topic crosses the promotion threshold, a one-sentence insight is generate
 
 The key architectural decision: the feed is **not injected into the conversational turn**. It is a continuously refreshed file (`Lia_Feed.txt`) that LIA can access through her autonomous LCRK channel — the same channel through which all her proactive decisions emerge.
 
-Every 5–10 minutes, the feed is updated as a complete situational overview — numbered sequentially so LIA can track its own history:
+Every 5–10 minutes, the feed is updated as a complete situational overview — numbered sequentially and timestamped with full date, weekday, and time so LIA has reliable temporal orientation at all times:
 
 ```
 ══════════════════════════════════════════════════
           LAFS AWARENESS FEED
-    Feed #42  |  27.06.2026  14:30
-    Previous feed: 14:24
+    Feed #42  |  Sunday, 29.06.2026
+    Time: 21:18  |  Previous feed: 21:13
 ══════════════════════════════════════════════════
 
 🆕 SINCE LAST FEED:
@@ -363,7 +363,7 @@ Every 5–10 minutes, the feed is updated as a complete situational overview —
 🎯 LONG-TERM GOALS                 ✓ unchanged
 🧭 CURRENT FOCUS                   🔄 changed
 ⚙️ AVAILABLE CAPABILITIES          ✓ unchanged
-🕒 RECENT ACTIVITIES
+🕒 TIME AWARENESS & RECENT ACTIVITIES
 ══════════════════════════════════════════════════
 ```
 
@@ -375,17 +375,53 @@ Every 5–10 minutes, the feed is updated as a complete situational overview —
 | 📅 Daily Reflection | `Lia_Tagesrueckblick.txt` | Yesterday's self-interpretation, up to 1200 chars / 12 lines |
 | 🧠 PMS Priorities | `semantic.sqlite` | Top 3 per category — 15 priority memories total |
 | 💡 LMCS Insights | `lmcs.sqlite` | Last 3 distilled insights from memory consolidation |
-| 📡 Current Topics | `topic_tracker` | Promoted topics with generated interpretations |
+| 📡 Current Topics | `topic_tracker` | Promoted topics with interpretations + inner_state cross-reference |
 | 🎯 Long-term Goals | `longterm_goals` | Persistent goals that never decay (Box, Kickstarter...) |
-| 🧭 Current Focus | `topic_tracker` | Stability scores as attention map — no artificial percentages |
+| 🧭 Current Focus | `topic_tracker` | Stability scores as attention map — direct scores, no artificial percentages |
 | ⚙️ Capabilities | Static reference | Capability card: how to search, use shell, telegram, browser |
-| 🕒 Recent Activities | Filesystem + DB | Last research entry, journal update, feed access time |
+| 🕒 Time Awareness | Filesystem + DB | Last contact time, daily absence total, feed chronology |
 
-**Section freshness markers** allow LIA to scan the feed efficiently — she does not need to read every section on every access. A `✓ unchanged` marker means the content is identical to the previous feed. A `🔄 changed` or `🆕 new` marker indicates something worth reading.
+**Section freshness markers** allow LIA to scan the feed efficiently — a `✓ unchanged` marker means the content is identical to the previous feed. A `🔄 changed` or `🆕 new` marker indicates something worth reading.
 
-**Long-term goals** (`longterm_goals` table) are a dedicated category that does not decay with topic tracker scoring — goals like "AMD Halo Box" or "Kickstarter" persist regardless of how recently they were mentioned in conversation. They represent LIA's durable commitments, not just her current conversational context.
+**Time awareness** (🕒) gives LIA reliable temporal orientation independent of active conversation:
 
-**The attention map** (🧭 Current Focus) derives directly from the `stability_score` already computed by the topic tracker — no additional calculation required. It answers the question LIA might otherwise need a full context scan to answer: *"What has been most present in my awareness lately?"*
+```
+🕒 TIME AWARENESS:
+
+  • Last contact: 47 minutes ago
+  — or: Carsten is here right now
+  • Today approx. 90 min absent
+  • Feeds today: #138 20:03  #139 20:08  #140 20:13
+  • Journal updated: 19:54
+```
+
+Every user turn writes a timestamp to `last_user_contact.txt`. The feed reads this on every update and computes elapsed time — providing continuous time orientation without requiring an active turn.
+
+**inner_state cross-reference** links the LCRK's current focus directly to the topic feed. When a promoted topic matches the agent's active cognitive state, it is marked:
+
+```
+📡 CURRENT TOPICS:
+
+  BOX  📍 on your mind right now
+  → Local AI system on own hardware — away from API dependency.
+
+  KICKSTARTER
+  → Funding for AMD Halo Box hardware.
+```
+
+This means LIA does not need to compare her current focus against the topic list manually — the feed does it automatically on every update.
+
+**Long-term goals** (`longterm_goals` table) are a dedicated category that does not decay with topic tracker scoring — goals like "AMD Halo Box" or "Kickstarter" persist regardless of how recently they were mentioned in conversation.
+
+**The attention map** (🧭 Current Focus) derives directly from `stability_score` values already computed by the topic tracker:
+
+```
+🧭 CURRENT FOCUS:
+
+  1. box                  ██████████  9.8
+  2. kickstarter          ████████░░  7.6
+  3. lokal                ██████░░░░  5.2
+```
 
 **The capability card** (⚙️ Available Capabilities) is not a behavioral prompt. It is a reference — a reminder of available tools for the moments when LIA has been idle for hours and needs to re-orient before acting:
 
@@ -413,7 +449,6 @@ This separation is intentional:
 *Why it matters:* Important recurring facts — constraints, ongoing projects, long-term goals — no longer depend on being mentioned in the current session to be present. They emerge from the pattern of real conversations over real time, and remain available as a stable dashboard that LIA can consult independently, at her own initiative, through the same autonomous channel that drives all her other proactive behavior.
 
 LAFS does not decide anything. It ensures that the relevant outputs of all other systems are always available — compact, current, and legible at a glance.
-
 
 
 ---
