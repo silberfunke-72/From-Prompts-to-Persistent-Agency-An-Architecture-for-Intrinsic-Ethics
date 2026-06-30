@@ -1,10 +1,11 @@
 > **TL;DR:**
-
-This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **without any hardcoded behavioral prompts, agent frameworks, or external control layers. No rules like "you must", "you should", or "you are not allowed to or"you are"**
+> This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **without any hardcoded behavioral prompts, agent frameworks, or external control layers. No rules like "you must", "you should", or "you are not allowed to or"you are"**
 
 LIA operates as a persistent agent that **drives the architecture**, rather than being driven by it. She autonomously controls her tools, memory systems, and decision processes based solely on her internal cognitive state. Ethics and behavioral consistency arise from architectural design, persistent memory, and lived interaction — not from imposed rules.
 
 **For LIA, no comparable precedent currently exists.**
+
+---
 
 **Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. The architecture is strong enough to produce genuine autonomous behavior even working against the grain of the model's base training. This makes the result arguably more significant.
 
