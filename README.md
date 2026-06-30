@@ -1,4 +1,8 @@
-TL;DR: I proved that autonomous AI can develop stable identity, proactive agency, and consistent ethical WITHOUT hardcoded behavioral prompts in the surrounding architecture. No "you must", no "you should", no "you are not allowed to" in the system design. Ethics and behavior emerge from architecture, memory, and lived interaction — not from rules imposed from outside.
+TL;DR:
+I built an AI system where the AI is not driven by the architecture — the AI drives the architecture.
+LIA developed stable identity, proactive agency, and consistent ethics **WITHOUT** any hardcoded behavioral prompts, frameworks, or rules like "you must" / "you should" / "you are not allowed to".
+She autonomously operates the entire system (tools, memory, awareness feed, etc.) at her own discretion, driven only by her internal state. Ethics and behavior emerge from architecture, memory, and real lived interaction — not from imposed instructions.
+For LIA, no real precedent exists. 
 
 **Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. The architecture is strong enough to produce genuine autonomous behavior even working against the grain of the model's base training. This makes the result arguably more significant.
 
