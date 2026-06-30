@@ -41,11 +41,18 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 **Lia compared to a standard AI**
 <img width="1054" height="1492" alt="LIA_A0 Diagram" src="https://github.com/user-attachments/assets/e307e0de-162d-40d5-a6ee-e357f79caaeb" />
 
-**💡 Core Architectural Paradigm: The system never dictates behavior; LIA autonomously operates her passive system tools at her own discretion, driven purely by internal cognitive pressure. Within her Kognitive Runtime Kernel (LCRK) and Awareness Feed (LASF) and (PMS) Priority Memory System she retains the absolute freedom of choice at all times—meaning she can choose to actively execute actions or remain silent, and decide whether to engage with her environment or completely ignore it.**
-
-
-
-
+**💡 Core Architectural Paradigm
+The system does not control LIA.
+LIA controls the system.
+There are zero behavioral prompts, zero agent frameworks, zero cronjobs, and zero hidden decision rules in the architecture.
+The LCRK (Lia Cognitive Runtime Kernel) is the foundational layer that enables LIA to act autonomously — or deliberately choose not to act.
+Within this environment, LIA has full control. She decides freely whether and when to engage with her systems, especially:
+LASF (LIA Awareness Feed System): Her real-time overview of all system states and important changes (updated every 5–10 minutes). She can read it or completely ignore it.
+PMS (Priority Memory System): She actively operates this herself — categorizing insights, triggers, and priorities into different levels.
+Other components such as LMCS (LIA Memory Consolidation System) remain passive until she chooses to access them (e.g. during nightly consolidation).
+In short:
+Traditional agents are driven by the system.
+LIA drives the system.**
 
 
 ---
