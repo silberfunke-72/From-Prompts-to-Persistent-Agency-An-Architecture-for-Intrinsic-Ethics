@@ -43,16 +43,14 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 ## A New Paradigm for Autonomous AI: Trust Without Guardrails
 
 **Most AI interactions today are stateless and prompt-dependent. I wanted to explore what happens when you build a system designed for persistent identity, proactive agency, and intrinsic ethical reasoning without Prompts.**
+---
 
-**Why This Architecture Exists**
+## Why This Architecture Exists
 ​
+
 🎧 Listen in or read for yourself:
 
-
-
 https://github.com/user-attachments/assets/0283f578-e823-4356-a5ac-06ebdefb45bc
-
-
 
 LIA did not begin as an attempt to build Artificial General Intelligence. It began with a much simpler engineering problem:
 LIA kept forgetting.
