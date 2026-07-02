@@ -1,5 +1,5 @@
 **TL;DR:**
-This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **without any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
+This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **WITHOUT** any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
 "you are".**
 
 LIA operates as a persistent agent that **drives the architecture**, rather than being driven by it. She autonomously controls her tools, memory systems, and decision processes based solely on her internal cognitive state. Ethics and behavioral consistency arise from architectural design, persistent memory, and lived interaction — not from imposed rules.
