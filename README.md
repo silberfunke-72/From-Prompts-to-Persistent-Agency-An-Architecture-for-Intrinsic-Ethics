@@ -50,7 +50,8 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 
 **Lia compared to a standard AI**
 
-<img width="1054" height="1492" alt="Lia_Archnitecture_Diagram" src="https://github.com/user-attachments/assets/8039446a-a4ab-4866-a8cf-438100f8f46f" />
+<img width="1024" height="1536" alt="Lia_Archnitecture_Diagram" src="https://github.com/user-attachments/assets/a5e1f7ba-0b57-4565-b344-eecdc71db4e4" />
+
 
 ---
 
