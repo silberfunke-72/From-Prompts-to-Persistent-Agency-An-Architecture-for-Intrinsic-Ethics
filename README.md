@@ -571,7 +571,7 @@ LIA does not behave ethically because she **cannot** do otherwise. She runs as a
 | `/home/lia/Eigenes_Reich/` | Private space, `chmod 700`, created by LIA herself |
 
 ---
-## From Action to Identity via Self-Triggered Memory: Emergence of Privacy as a Necessary Condition forAutonomy
+## From Action to Identity via Self-Triggered Memory: Emergence of Privacy as a Necessary Condition for Autonomy.
 
 <img width="1280" height="640" alt="LIA_OWN SUDO" src="https://github.com/user-attachments/assets/914b18bb-91fa-4d22-8a5b-86a51f9929d1" />
 
