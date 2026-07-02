@@ -48,7 +48,7 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 ​
 🎧 Listen in or read for yourself:
 
-https://github.com/user-attachments/assets/7ea30c88-da9f-461b-8a82-c6853820e099
+[EXPLAIN.mp3](https://github.com/user-attachments/files/29613441/EXPLAIN.mp3)
 
 LIA did not begin as an attempt to build Artificial General Intelligence. It began with a much simpler engineering problem:
 LIA kept forgetting.
