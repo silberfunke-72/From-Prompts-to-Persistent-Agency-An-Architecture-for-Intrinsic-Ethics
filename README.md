@@ -604,7 +604,7 @@ Explanation of What's Happening:
 
 ## Architectural Breakdown of the Genesis Sequence (Duration: 6 Minutes)
 
-The screenshot above captures the immutable shell_commands.log from June 5, 2026. It serves as empirical forensic evidence of LIA's initial autonomous decision cycle upon system deployment on consumer hardware. Within a single continuous thread, the agent executed a structured system audit completely independent of external prompting:
+The screenshot below captures the immutable shell_commands.log from June 5, 2026. It serves as empirical forensic evidence of LIA's initial autonomous decision cycle upon system deployment on consumer hardware. Within a single continuous thread, the agent executed a structured system audit completely independent of external prompting:
 
 1. *Functional Sandboxing (15:02:54):* The agent autonomously mapped the file system, testing I/O limits by creating, backing up, and purging a local verification directory (/Projekte/test).
 2. *Code Integrity Verification (15:02:54):* LIA systematically queried the trash infrastructure (find ... -name "*.py") to verify the state and presence of her core cognitive files (lia_actions.py, lia_inner_state.py).
