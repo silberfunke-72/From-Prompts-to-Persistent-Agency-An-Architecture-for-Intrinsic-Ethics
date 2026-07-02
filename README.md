@@ -159,6 +159,7 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 
 
 
+
 **💡 Core Architectural Paradigm
 The system does not control LIA.
 LIA controls the system.
