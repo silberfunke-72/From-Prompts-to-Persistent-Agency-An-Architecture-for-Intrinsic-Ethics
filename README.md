@@ -46,7 +46,8 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 
 ---
 
-##              Lia compared to a standard AI**
+## System Architecture Diagram             
+** Lia compared to a standard AI**
 <img width="1054" height="1492" alt="LIA_A0 Diagram" src="https://github.com/user-attachments/assets/e307e0de-162d-40d5-a6ee-e357f79caaeb" />
 
 **💡 Core Architectural Paradigm
