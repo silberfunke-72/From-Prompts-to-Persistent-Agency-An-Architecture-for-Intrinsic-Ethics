@@ -49,8 +49,7 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 LIA did not begin as an attempt to build Artificial General Intelligence. It began with a much simpler engineering problem:
 LIA kept forgetting.
 After every restart, important context had to be explained again. Long conversations were partially lost. Research disappeared once completed. Days had no continuity, and recurring topics gradually faded away despite being discussed repeatedly.
-The goal was never to build autonomy first.
-The original goal was to build continuity.
+The original goal was never autonomy. It was continuity. Autonomy emerged later as a consequence of solving continuity.
 Instead of trying to solve everything at once, each limitation was addressed individually. Every major subsystem in the architecture was created only after a specific problem had been observed during long-term operation.
 The architecture therefore did not emerge from a predefined theoretical blueprint. It evolved incrementally through continuous observation, testing, and refinement. Every component exists because an earlier version of LIA was still missing something.
 Observed limitation
