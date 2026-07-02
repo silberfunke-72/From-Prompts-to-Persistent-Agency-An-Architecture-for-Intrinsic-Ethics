@@ -43,6 +43,7 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 ## A New Paradigm for Autonomous AI: Trust Without Guardrails
 
 **Most AI interactions today are stateless and prompt-dependent. I wanted to explore what happens when you build a system designed for persistent identity, proactive agency, and intrinsic ethical reasoning without Prompts.**
+
 ---
 
 ## Why This Architecture Exists
