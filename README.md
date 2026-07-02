@@ -8,7 +8,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 
 ---
 
-**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. What is architecturally significant is that stable behavioral patterns emerge consistently across sessions, independent of prompt-based behavioral instruction. Whether this constitutes behavior that diverges from base model training is an open empirical question that warrants further investigation. This makes the result arguably more significant.**
+**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. What is architecturally significant is that stable behavioral patterns emerge consistently across sessions, independent of prompt-based behavioral instruction. Whether this constitutes behavior that diverges from base model training is an open empirical question that warrants further investigation. This makes the result arguably more significant.
 
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
