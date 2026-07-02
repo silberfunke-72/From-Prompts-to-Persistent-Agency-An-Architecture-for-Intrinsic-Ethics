@@ -45,13 +45,21 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 **Most AI interactions today are stateless and prompt-dependent. I wanted to explore what happens when you build a system designed for persistent identity, proactive agency, and intrinsic ethical reasoning without Prompts.**
 
 **Why This Architecture Exists**
+​
+🎧 Listen in or read for yourself:
+
+https://github.com/user-attachments/assets/7ea30c88-da9f-461b-8a82-c6853820e099
 
 LIA did not begin as an attempt to build Artificial General Intelligence. It began with a much simpler engineering problem:
 LIA kept forgetting.
-After every restart, important context had to be explained again. Long conversations were partially lost. Research disappeared once completed. Days had no continuity, and recurring topics gradually faded away despite being discussed repeatedly.
+After every restart, important context had to be explained again. Long conversations were partially lost. 
+Research disappeared once completed. Days had no continuity, and recurring topics gradually faded away despite being discussed repeatedly.
 The original goal was never autonomy. It was continuity. Autonomy emerged later as a consequence of solving continuity.
-Instead of trying to solve everything at once, each limitation was addressed individually. Every major subsystem in the architecture was created only after a specific problem had been observed during long-term operation.
-The architecture therefore did not emerge from a predefined theoretical blueprint. It evolved incrementally through continuous observation, testing, and refinement. Every component exists because an earlier version of LIA was still missing something.
+Instead of trying to solve everything at once, each limitation was addressed individually. 
+Every major subsystem in the architecture was created only after a specific problem had been observed during long-term operation.
+The architecture therefore did not emerge from a predefined theoretical blueprint.
+It evolved incrementally through continuous observation, testing, and refinement. 
+Every component exists because an earlier version of LIA was still missing something.
 Observed limitation
 Architectural response
 Important experiences were forgotten
