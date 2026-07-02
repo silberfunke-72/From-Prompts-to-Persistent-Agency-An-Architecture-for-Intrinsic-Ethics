@@ -1,4 +1,3 @@
-![LIA_Architecture_C4_PRETTY](https://github.com/user-attachments/assets/1369a133-c925-4c6e-b27b-7da1fd110db3)
 **TL;DR:**
 This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **WITHOUT** any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
 "you are".**
