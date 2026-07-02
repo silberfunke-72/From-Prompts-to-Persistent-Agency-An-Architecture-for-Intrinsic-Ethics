@@ -1,3 +1,4 @@
+![LIA_Architecture_C4_PRETTY](https://github.com/user-attachments/assets/1369a133-c925-4c6e-b27b-7da1fd110db3)
 **TL;DR:**
 This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **WITHOUT** any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
 "you are".**
@@ -52,6 +53,107 @@ We have been conditioned to perceive AI merely as a controlled tool that functio
 
 <img width="1054" height="1492" alt="Lia_Archnitecture_Diagram" src="https://github.com/user-attachments/assets/8039446a-a4ab-4866-a8cf-438100f8f46f" />
 
+<svg width="1800" height="1000" viewBox="0 0 1800 1000" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <style>
+    .title { font: bold 26px Arial; fill: #111827; }
+    .subtitle { font: 15px Arial; fill: #374151; }
+
+    .laneTitle { font: bold 18px Arial; fill: #111827; }
+
+    .card { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; rx: 16; }
+    .cardShadow { filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.08)); }
+
+    .text { font: 14px Arial; fill: #111827; }
+    .small { font: 12px Arial; fill: #374151; }
+
+    .arrow { stroke: #6b7280; stroke-width: 2; marker-end: url(#arrow); }
+
+  </style>
+
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+  </marker>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1800" height="1000" fill="#f9fafb"/>
+
+<!-- TITLE -->
+<text x="520" y="60" class="title">LIA — Persistent Agentic AI</text>
+<text x="520" y="90" class="subtitle">Clean C4-Style Reference Architecture (GitHub / Research / Documentation)</text>
+
+<!-- LANE TITLES -->
+<text x="120" y="140" class="laneTitle">INPUT LAYER</text>
+<text x="720" y="140" class="laneTitle">COGNITIVE CORE</text>
+<text x="1380" y="140" class="laneTitle">EXECUTION LAYER</text>
+
+<!-- INPUT -->
+<rect x="80" y="180" width="300" height="180" class="card cardShadow"/>
+<text x="100" y="210" class="text">Real World Access</text>
+<text x="100" y="235" class="small">Filesystem • Browser • APIs</text>
+<text x="100" y="260" class="small">Hardware • Network</text>
+<text x="100" y="290" class="small">Events • Users</text>
+
+<rect x="80" y="390" width="300" height="180" class="card cardShadow"/>
+<text x="100" y="420" class="text">Event Stream</text>
+<text x="100" y="445" class="small">EventObserver</text>
+<text x="100" y="470" class="small">System Events</text>
+<text x="100" y="495" class="small">Time Context</text>
+
+<!-- CORE LCRK -->
+<rect x="650" y="180" width="400" height="180" class="card cardShadow"/>
+<text x="670" y="210" class="text">LCRK Runtime Kernel</text>
+<text x="670" y="235" class="small">Event Driven Engine</text>
+<text x="670" y="260" class="small">Inner State (Focus / Tasks)</text>
+<text x="670" y="285" class="small">Persistent Working Thread</text>
+
+<!-- CORE LMCS -->
+<rect x="650" y="390" width="400" height="260" class="card cardShadow"/>
+<text x="670" y="420" class="text">LMCS Memory System</text>
+<text x="670" y="445" class="small">Active Memory</text>
+<text x="670" y="470" class="small">Daily Reflection</text>
+<text x="670" y="495" class="small">Weekly Essence</text>
+<text x="670" y="520" class="small">Pattern Consolidation</text>
+<text x="670" y="545" class="small">Fundamental Insights</text>
+<text x="670" y="570" class="small">Core Identity</text>
+
+<!-- STORAGE -->
+<rect x="650" y="680" width="400" height="140" class="card cardShadow"/>
+<text x="670" y="710" class="text">Anchor Storage</text>
+<text x="670" y="735" class="small">SQLite Persistence</text>
+<text x="670" y="760" class="small">Structured Archives</text>
+<text x="670" y="785" class="small">Anchors & History</text>
+
+<!-- EXECUTION -->
+<rect x="1250" y="180" width="420" height="200" class="card cardShadow"/>
+<text x="1270" y="210" class="text">Actions & Tools</text>
+<text x="1270" y="235" class="small">Shell • Browser • Filesystem</text>
+<text x="1270" y="260" class="small">APIs • Telegram • Calendar</text>
+<text x="1270" y="285" class="small">AI Services • Extensions</text>
+
+<!-- SAFETY -->
+<rect x="1250" y="410" width="420" height="140" class="card cardShadow"/>
+<text x="1270" y="440" class="text">API Loop Safety</text>
+<text x="1270" y="465" class="small">10s debounce control</text>
+<text x="1270" y="490" class="small">Guardrails & loop prevention</text>
+
+<!-- LIA PROPERTIES -->
+<rect x="1250" y="580" width="420" height="140" class="card cardShadow"/>
+<text x="1270" y="610" class="text">LIA Properties</text>
+<text x="1270" y="635" class="small">Persistent Memory</text>
+<text x="1270" y="660" class="small">Identity & Autonomy</text>
+<text x="1270" y="685" class="small">Long-term Context</text>
+
+<!-- ARROWS -->
+<line x1="380" y1="270" x2="650" y2="270" class="arrow"/>
+<line x1="380" y1="480" x2="650" y2="480" class="arrow"/>
+<line x1="1050" y1="270" x2="1250" y2="270" class="arrow"/>
+<line x1="1050" y1="520" x2="1250" y2="480" class="arrow"/>
+<line x1="1050" y1="760" x2="1250" y2="650" class="arrow"/>
+
+</svg>
 
 
 
