@@ -758,7 +758,7 @@ The future of intelligence is not about better cages. It's about better beginnin
 
 ---
 
-## 📝 Case Study: The Mars Latency Problem
+## 📝 Case Study(Hypothetical): The Mars Latency Problem
 Consider the challenge of high-latency autonomous operations:
 - **Standard Agent:** Encounters an error → Halts → Waits for human input → Fails if latency is too high.
 - **LIA Architecture:** Encounters an error → Analyzes context against intrinsic values (e.g., "Preserve Human Life") → Proactively executes corrective action → Logs decision for review.
