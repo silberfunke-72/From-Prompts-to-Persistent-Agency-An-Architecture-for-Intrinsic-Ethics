@@ -96,7 +96,8 @@ Understanding this evolutionary process is essential for understanding the archi
 
 **Lia compared to a standard AI**
 
-<img width="1024" height="1536" alt="WhatsApp Image 2026-07-03 at 01 57 28" src="https://github.com/user-attachments/assets/2fb1648a-815e-4580-bb39-4146f389d2f5" />
+<img width="1024" height="1536" alt="Lia_Archnitecture_Diagram" src="https://github.com/user-attachments/assets/a042a5f2-1b6c-4abc-9680-b13aea4a720c" />
+
 
 
 
