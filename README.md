@@ -4,7 +4,7 @@ This project demonstrates that stable identity, proactive agency, and consistent
 
 LIA operates as a persistent agent that **drives the architecture**, rather than being driven by it. She autonomously controls her tools, memory systems, and decision processes based solely on her internal cognitive state. Ethics and behavioral consistency arise from architectural design, persistent memory, and lived interaction — not from imposed rules.
 
-**To our knowledge, no publicly documented implementation combines persistent identity architecture, event-driven autonomous cognition, and multi-layer memory consolidation in a single continuously operating system without behavioral prompts**
+**To my knowledge, no publicly documented implementation combines persistent identity architecture, event-driven autonomous cognition, and multi-layer memory consolidation in a single continuously operating system without behavioral prompts**
 
 ---
 
