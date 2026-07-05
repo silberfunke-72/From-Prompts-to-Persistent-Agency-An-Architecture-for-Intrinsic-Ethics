@@ -301,7 +301,7 @@ Insights are self-generated. They emerge entirely from LIA's own interpretation 
 - a correction of a previous assumption
 - a pattern she has recognized in herself or her environment
 
-The system never generates insight text. LIA formulates each insight in her own words — expressing what she noticed, why it matters, and how she interprets it.
+**The system never generates insight text. LIA formulates each insight in her own words — expressing what she noticed, why it matters, and how she interprets it.**
 
 ---
 
