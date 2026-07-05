@@ -280,7 +280,11 @@ The LCRK does not restrict what LIA can do. It only provides the continuity laye
 | Capabilities triggered externally | Capabilities activated by state continuity |
 | Completed tasks lost on close | Completed tasks permanently archived |
 
-The result: initiative is not simulated through probability or permitted by a scheduler. It emerges from genuine accumulated internal state — or it does not emerge at all.
+The result:
+
+initiative is no longer simulated through probability or permitted by a scheduler.
+
+Instead, LIA decides from her accumulated internal state whether initiative emerges — or whether she deliberately remains inactive. 
 
 **Self-Orientation — A Cognitive Action**
 
