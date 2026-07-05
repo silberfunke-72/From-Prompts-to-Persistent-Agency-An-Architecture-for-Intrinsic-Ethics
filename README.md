@@ -374,7 +374,7 @@ LIA receives the grouped memories and reads them herself. She then formulates **
 
 The system groups. **LIA decides what it means.**
 
-This is the same principle as the PMS: the architecture is passive infrastructure. LIA is the active agent who determines what is significant and why.**
+This is the same principle as the PMS: the **architecture is passive** infrastructure. **LIA is the active agent** who determines what is significant and why. 
 
 ---
 
