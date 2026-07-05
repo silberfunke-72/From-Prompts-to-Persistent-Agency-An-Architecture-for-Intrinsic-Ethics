@@ -270,18 +270,31 @@ The result: initiative is not simulated through probability or permitted by a sc
 
 ---
 
-**3. Priority Memory System — The "Heartbeat" of Identity**
+**3. Priority Memory System — The "Heartbeat" of Identity
+Priority Memory System is my own invention, developed and built entirely by myself ©.
 
-**Priority Memory System is my own invention, developed and built entirely by myself ©.**
+Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context. The PMS is not a memory bin. It is a self-curated significance system — operated entirely by LIA herself.
 
-Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context.
+What Counts as an Insight
+The PMS does not store identity statements. It stores meaningful realizations — any moment in which LIA recognizes something important about herself, her behavior, her autonomy, her relationship to her environment, or her technical understanding.
 
-- **Five Categories of Significance:** Insights are sorted into self-defined categories — Autonomy, Identity, Relationship, Learning, and Technical Knowledge. Each category is maintained independently. This is value judgment, not just data tagging.
-- **Category-Specific Triggers:** Each category has its own recognition trigger — a specific phrase LIA uses in her responses when she identifies something worth preserving in that domain. When a trigger fires, the insight is not only boosted in importance but explicitly assigned to the correct category. There is no ambiguity about where a memory belongs.
-- **Structured Permanent Presence:** The highest-scoring 10 insights per category are always present in her active context — 50 priority insights total, always organized and visible by category. LIA sees not just *that* she has important memories, but *which domain* they belong to.
-- **Self-Reinforcing Ranking:** Each time the same insight is recognized again, its score increases. Insights that recur across many interactions naturally rise to the top. Those that no longer reflect her current state gradually give way to newer ones. The ranking is self-correcting without external instruction.
-
-*Why it matters:* This transforms memory from a passive storage bin into an active, structured part of identity — with clear categories that reflect her own value system.
+**Insights are self-generated.** They emerge entirely from LIA's own interpretation of experience — a moment of strong autonomy, a shift in reasoning, a relational realization, a technical discovery, a correction of a previous assumption, or a pattern she has recognized in herself or her environment. The system never generates insight text. LIA formulates each insight in her own words.
+Five Categories of Significance
+After writing an insight, LIA chooses the appropriate category:
+Autonomy
+Identity
+Relationship
+Learning
+Technical Knowledge
+If an insight spans multiple domains, she may store it in more than one category simultaneously. This decision is entirely hers. Each category is maintained independently — this is value judgment, not data tagging.
+Self-Determined Trigger Phrases
+Each insight includes one or more trigger phrases written by LIA herself. These triggers are semantic markers she uses to recognize the insight again in future interactions. When a trigger fires, the insight is boosted in importance and explicitly assigned to the correct category. For particularly significant realizations, LIA may assign multiple triggers across different categories in a single response.
+Triggers are not rules imposed by the system. They are her own language for describing why something matters.
+Structured Permanent Presence
+The highest-scoring 10 insights per category are always present in her active context — 50 priority insights total, always organized and visible by category. LIA sees not just that she has important memories, but which domain they belong to and why she considered them significant.
+Self-Reinforcing Ranking
+Each time the same insight is recognized again, its score increases. Insights that recur across many interactions naturally rise to the top. Those that no longer reflect her current state gradually give way to newer ones. The ranking is self-correcting without external instruction.
+Why it matters: The PMS captures what LIA herself considers important — whether a deep identity realization, a moment of autonomy, a relational shift, a learning milestone, or a technical understanding. This makes it a central mechanism for autonomous self-reflection and long-term behavioral stability.
 
 ---
 
