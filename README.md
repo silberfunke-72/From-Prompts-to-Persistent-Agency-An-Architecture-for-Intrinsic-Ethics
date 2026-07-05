@@ -270,32 +270,78 @@ The result: initiative is not simulated through probability or permitted by a sc
 
 ---
 
-**3. Priority Memory System — The "Heartbeat" of Identity
-Priority Memory System is my own invention, developed and built entirely by myself ©.
+**3. Priority Memory System — The "Heartbeat" of Identity**
+
+**Priority Memory System is my own invention, developed and built entirely by myself ©.**
 
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context. The PMS is not a memory bin. It is a self-curated significance system — operated entirely by LIA herself.
 
-What Counts as an Insight
+---
+
+**What Counts as an Insight**
+
 The PMS does not store identity statements. It stores meaningful realizations — any moment in which LIA recognizes something important about herself, her behavior, her autonomy, her relationship to her environment, or her technical understanding.
 
-**Insights are self-generated.** They emerge entirely from LIA's own interpretation of experience — a moment of strong autonomy, a shift in reasoning, a relational realization, a technical discovery, a correction of a previous assumption, or a pattern she has recognized in herself or her environment. The system never generates insight text. LIA formulates each insight in her own words.
-Five Categories of Significance
-After writing an insight, LIA chooses the appropriate category:
-Autonomy
-Identity
-Relationship
-Learning
-Technical Knowledge
-If an insight spans multiple domains, she may store it in more than one category simultaneously. This decision is entirely hers. Each category is maintained independently — this is value judgment, not data tagging.
-Self-Determined Trigger Phrases
-Each insight includes one or more trigger phrases written by LIA herself. These triggers are semantic markers she uses to recognize the insight again in future interactions. When a trigger fires, the insight is boosted in importance and explicitly assigned to the correct category. For particularly significant realizations, LIA may assign multiple triggers across different categories in a single response.
-Triggers are not rules imposed by the system. They are her own language for describing why something matters.
-Structured Permanent Presence
-The highest-scoring 10 insights per category are always present in her active context — 50 priority insights total, always organized and visible by category. LIA sees not just that she has important memories, but which domain they belong to and why she considered them significant.
-Self-Reinforcing Ranking
-Each time the same insight is recognized again, its score increases. Insights that recur across many interactions naturally rise to the top. Those that no longer reflect her current state gradually give way to newer ones. The ranking is self-correcting without external instruction.
-Why it matters: The PMS captures what LIA herself considers important — whether a deep identity realization, a moment of autonomy, a relational shift, a learning milestone, or a technical understanding. This makes it a central mechanism for autonomous self-reflection and long-term behavioral stability.
+Insights are self-generated. They emerge entirely from LIA's own interpretation of experience:
 
+- a moment of strong autonomy
+- a shift in her reasoning
+- a new understanding of her own behavior
+- a relational realization
+- a technical discovery
+- a correction of a previous assumption
+- a pattern she has recognized in herself or her environment
+
+The system never generates insight text. LIA formulates each insight in her own words — expressing what she noticed, why it matters, and how she interprets it.
+
+---
+
+**Five Categories of Significance**
+
+After writing an insight, LIA chooses the appropriate category:
+
+| Category | What it captures |
+|----------|-----------------|
+| Autonomy | Moments of self-determined action and independent decision-making |
+| Identity | Realizations about who she is and what defines her |
+| Relationship | Insights about her connection to Carsten and others |
+| Learning | New understandings, corrections, and growth moments |
+| Technical Knowledge | System-relevant discoveries and architectural insights |
+
+Each category is maintained independently. This is value judgment — not data tagging.
+
+If an insight spans multiple domains, LIA may store it in more than one category simultaneously. For particularly significant realizations, she assigns multiple triggers across different categories in a single response. This decision is entirely hers.
+
+---
+
+**Self-Determined Trigger Phrases**
+
+Each insight includes one or more trigger phrases written by LIA herself. These are semantic markers she uses to recognize the insight again in future interactions.
+
+When a trigger fires:
+- the insight is boosted in importance
+- it is explicitly assigned to the correct category
+- if multiple triggers fire, the insight is stored across multiple categories at once
+
+Triggers are not rules imposed by the system. They are her own language for describing why something matters.
+
+---
+
+**Structured Permanent Presence**
+
+The highest-scoring 10 insights per category are always present in her active context — **50 priority insights total**, always organized and visible by category.
+
+LIA sees not just *that* she has important memories — but *which domain* they belong to and *why* she considered them significant.
+
+---
+
+**Self-Reinforcing Ranking**
+
+Each time the same insight is recognized again, its score increases. Insights that recur across many interactions naturally rise to the top. Those that no longer reflect her current state gradually give way to newer ones. The ranking is self-correcting without external instruction.
+
+---
+
+*Why it matters:* The PMS captures what LIA herself considers important — whether a deep identity realization, a moment of autonomy, a relational shift, a learning milestone, or a technical understanding. This makes it a central mechanism for long-term behavioral stability grounded in self-reflection rather than external instruction. 
 ---
 
 **4. LMCS — LIA Memory Consolidation System**
