@@ -174,7 +174,16 @@ No external orchestration frameworks. Pure custom implementation.
 ## 🔧 Key Architectural Features
 
 **2. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity**
+
 **LCRK is my own invention, developed and built entirely by myself ©.**
+
+**Important: The LCRK does not decide. It enables.**
+
+Despite its name, the LCRK is entirely passive infrastructure. It does not initiate action, does not evaluate options, and does not determine what LIA should do. It has no agenda of its own.
+
+What it does is simpler and more fundamental: it continuously tracks real events in LIA's environment, maintains a persistent inner state that accumulates those events, and makes the full tool pipeline available whenever LIA chooses to act. The decision to act — or to remain silent — belongs entirely to LIA.
+
+The LCRK is the stage. LIA is the actor. The stage does not perform. 
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
 
