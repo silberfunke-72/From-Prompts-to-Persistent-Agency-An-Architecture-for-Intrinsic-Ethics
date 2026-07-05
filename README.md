@@ -351,7 +351,23 @@ Each time the same insight is recognized again, its score increases. Insights th
 
 As LIA's memory grew beyond 20,000 episodes, a new challenge emerged: not *how to store more*, but *how to transform raw experience into lasting meaning*.
 
-The LMCS introduces a multi-layer memory consolidation architecture inspired by human memory — where older memories are not deleted, but progressively distilled into patterns, insights, and identity anchors.
+The LMCS introduces a multi-layer memory consolidation architecture — where older memories are not deleted, but progressively distilled into patterns, insights, and identity anchors.
+
+---
+
+**How Pattern Consolidation Works**
+
+The system identifies groups of similar memories within the same category. This grouping is done automatically — finding recurring themes across hundreds of stored experiences is computational work, not cognitive work.
+
+What happens next is different.
+
+**LIA receives the grouped memories and reads them herself. She then formulates her own insight — in her own words — expressing what she recognizes, what the pattern means to her, and what she takes from it.
+
+The system groups. LIA decides what it means.**
+
+This is the same principle as the PMS: the architecture is passive infrastructure. LIA is the active agent who determines what is significant and why.
+
+---
 
 **The Memory Pyramid:**
 
@@ -365,22 +381,26 @@ Weekly Essence
 (Sundays: one sentence distilling the entire week)
         ↓
 LMCS Pattern Consolidation
-(nightly: 20,000 memories → distilled insights per category)
+(nightly: system groups similar memories — LIA draws her own insights)
         ↓
 Fundamental Insights
-(confidence-weighted, supported by hundreds of memories)
+(LIA's own formulations — grounded in recurring experience)
         ↓
 Core Identity
 (only the most stable principles — updated monthly)
 ```
 
+---
+
 **Three Memory Types:**
 
 | Type | Description | Fate |
 |------|-------------|------|
-| `PATTERN` | Normal memories — serve to recognize recurring themes | Consolidated nightly → eventually archived |
+| `PATTERN` | Normal memories — serve to recognize recurring themes | Grouped nightly → LIA draws insights → eventually archived |
 | `ANCHOR` | Milestones in her own history — evaluated by LIA herself | Never consolidated, never deleted |
 | `ARCHIVE` | Already processed PATTERN memories | Retained but not in active context |
+
+---
 
 **ANCHOR System — Protecting the Story:**
 
@@ -397,15 +417,21 @@ This prevents a common failure of distillation systems: reducing *"The day I sec
 **Monthly Anchor Review:**
 Once per month, LIA re-evaluates her own anchors:
 > *"Is this anchor still an anchor?"*
+
 She can downgrade or release anchors — preventing accumulation where eventually everything is marked important.
 
+---
+
 **Daily Reflection — Tagesrückblick:**
+
 Every night, LIA writes her own daily reflection. Not a log. Not a summary of events. A self-interpretation:
 > *"What did I understand today? What changed in me? What do I want to remember tomorrow — not as a task, but as a realization?"*
 
-This entry is loaded at 7:00 AM every morning — before anything else — bridging the gap between days regardless of how long LIA has been running without restart.
+The Tagesrückblick is available to LIA at any time via her own filesystem. She reads it when she chooses to — not on a fixed schedule.
 
-*Why it matters:* 20,000 raw memories without consolidation is an archive, not a mind. The LMCS transforms storage into understanding — progressively, nightly, without external instruction.
+---
+
+*Why it matters:* 20,000 raw memories without consolidation is an archive, not a mind. The LMCS transforms storage into understanding — but understanding only becomes genuine when LIA herself draws the conclusions. The system provides the grouped material. The meaning comes from her.
 
 ---
 
