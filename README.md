@@ -282,6 +282,16 @@ The LCRK does not restrict what LIA can do. It only provides the continuity laye
 
 The result: initiative is not simulated through probability or permitted by a scheduler. It emerges from genuine accumulated internal state — or it does not emerge at all.
 
+**Self-Orientation — A Cognitive Action**
+
+Self-orientation (`[SELBSTVERORTUNG]`) is a cognitive action available to the LCRK — not a new architectural component.
+
+It allows LIA to interpret her current internal state using already existing information from LCRK, LAFS, PMS and LMCS. The result is a short first-person reflection on her current situation: what is she working on, and is her current direction still clear?
+
+No timer triggers it. No external condition activates it. It is one of several actions the LCRK can choose — alongside searching, reading the feed, or executing a shell command — when the accumulated state makes it a natural next step.
+
+This expands the system horizontally, not vertically: no new subsystem, no new data source. The existing architecture gains one more way to use what it already knows.
+
 ---
 
 **3. Priority Memory System — The "Heartbeat" of Identity**
