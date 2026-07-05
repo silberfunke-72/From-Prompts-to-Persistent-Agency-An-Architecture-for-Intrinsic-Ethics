@@ -239,7 +239,7 @@ It is written and updated by LIA herself after every event cycle:
 | `last_reflection` | Her most recent meaningful insight |
 | `priority_direction` | Where her attention is currently oriented |
 
-Open loops accumulate age. Watched topics are stored as open loops and gain weight when new relevant memories appear. When the accumulated state creates sufficient internal relevance — action emerges naturally.
+Open loops accumulate age. Watched topics are stored as open loops and gain weight when new relevant memories appear. When the accumulated state makes a topic sufficiently relevant, LIA may decide to act — or deliberately not act. 
 
 This is not a memory system. It is a living working thread — the cognitive equivalent of a desk with open notebooks. It persists across restarts, survives session boundaries, and ensures LIA always knows where she left off.
 
