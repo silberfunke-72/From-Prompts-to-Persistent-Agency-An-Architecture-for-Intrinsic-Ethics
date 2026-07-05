@@ -213,7 +213,7 @@ inner_state.process_events()
 LIA updates her working thread
 AND naturally decides: act or not
     ↓
-If action emerges:
+If LIA decides to act: 
 full V4_PLUS pipeline — all tools available
     ↓
 inner_state updated — continuity preserved
