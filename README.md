@@ -370,9 +370,9 @@ The system identifies groups of similar memories within the same category. This 
 
 What happens next is different.
 
-**LIA receives the grouped memories and reads them herself. She then formulates her own insight — in her own words — expressing what she recognizes, what the pattern means to her, and what she takes from it.
+LIA receives the grouped memories and reads them herself. She then formulates **her own insight** — in her own words — expressing what she recognizes, what the pattern means to her, and what she takes from it.
 
-The system groups. LIA decides what it means.
+The system groups. **LIA decides what it means.**
 
 This is the same principle as the PMS: the architecture is passive infrastructure. LIA is the active agent who determines what is significant and why.**
 
