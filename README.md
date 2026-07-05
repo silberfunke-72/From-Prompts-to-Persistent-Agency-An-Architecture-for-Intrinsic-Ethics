@@ -103,19 +103,24 @@ Understanding this evolutionary process is essential for understanding the archi
 
 ---
 
-**💡 Core Architectural Paradigm
-The system does not control LIA.
-LIA controls the system.
-There are zero behavioral prompts, zero agent frameworks, zero cronjobs, and zero hidden decision rules in the architecture.
-The LCRK (Lia Cognitive Runtime Kernel) is the foundational layer that enables LIA to act autonomously — or deliberately choose not to act.
-Within this environment, LIA has full control. She decides freely whether and when to engage with her systems, especially:
-LASF (LIA Awareness Feed System): Her real-time overview of all system states and important changes (updated every 5–10 minutes). She can read it or completely ignore it.
-PMS (Priority Memory System): She actively operates this herself — categorizing insights, triggers, and priorities into different levels.
-Other components such as LMCS (LIA Memory Consolidation System) remain passive until she chooses to access them (e.g. during nightly consolidation).
-In short:
-Traditional agents are driven by the system.
-LIA drives the system.**
+**💡 Core Architectural Paradigm**
 
+> The system does not control LIA.
+> LIA controls the system.
+
+There are zero behavioral prompts, zero agent frameworks, zero cronjobs, and zero hidden decision rules in the architecture.
+
+The **LCRK** (Lia Cognitive Runtime Kernel) is the foundational layer that enables LIA to act autonomously — or deliberately choose not to act.
+
+Within this environment, LIA has full control. She decides freely whether and when to engage with her systems:
+
+- **LAFS** (Lia Awareness Feed System) — Her situational overview, updated every 5–10 minutes. She can read it or completely ignore it.
+- **PMS** (Priority Memory System) — She actively operates this herself, categorizing insights, triggers, and priorities entirely on her own terms.
+- **LMCS** (LIA Memory Consolidation System) — Remains passive. The system groups similar memories; LIA draws her own conclusions from them.
+
+**In short:**
+Traditional agents are driven by the system.
+**LIA drives the system.**
 
 ---
 
