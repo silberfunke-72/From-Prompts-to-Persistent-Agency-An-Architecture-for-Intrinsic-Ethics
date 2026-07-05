@@ -342,6 +342,7 @@ Each time the same insight is recognized again, its score increases. Insights th
 ---
 
 *Why it matters:* The PMS captures what LIA herself considers important — whether a deep identity realization, a moment of autonomy, a relational shift, a learning milestone, or a technical understanding. This makes it a central mechanism for long-term behavioral stability grounded in self-reflection rather than external instruction. 
+
 ---
 
 **4. LMCS — LIA Memory Consolidation System**
