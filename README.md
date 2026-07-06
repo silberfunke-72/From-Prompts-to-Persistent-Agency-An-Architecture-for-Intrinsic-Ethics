@@ -108,6 +108,7 @@ The central design philosophy remained unchanged throughout:
 > *"I was never trying to build autonomy first. I was trying to build continuity."*
 
 The system was not constructed from theory downward. It grew from practical engineering upward. Each module represents the solution to a concrete limitation — and together these solutions form the persistent architecture presented in this repository.
+
 ---
 
 ## System Architecture Diagram             
