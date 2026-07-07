@@ -967,6 +967,17 @@ Join the experiment:
 
 ---
 
+Just started a new group for anyone interested in AI 
+architecture beyond prompt engineering.
+
+If you've ever wondered what becomes possible when you build 
+continuity into AI rather than just better prompts — this is 
+the space.
+
+https://www.facebook.com/share/g/1BFkWpUG1Z/
+
+---
+
 **Questions? Discussion?**
 - How do you design ethics *into* an architecture — not just *onto* it?
 - Where does the line between "persistent identity" and "real emergence" actually lie?
