@@ -15,7 +15,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) under the title: "Emergent Ethical Behavioral in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
 
-📄 Paper Zenodo: https://doi.org/10.5281/zenodo.20973129
+📄 Paper Zenodo: https://doi.org/10.5281/zenodo.21307458
 
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on a multi-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
@@ -979,12 +979,15 @@ The architectural concepts described in this repository — including but not li
 - Persistent Identity Architecture
 - ANCHOR Memory System
 - LAFS — Lia Awareness Feed System
+- Self-Orientation (Selbstverortung)
+
+
 
 were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) and June 2026
 
-📄 Paper Zenodo: https://doi.org/10.5281/zenodo.20973129
+📄 Paper Zenodo: https://doi.org/10.5281/zenodo.21307458
 
 This repository is published for research documentation and scientific discussion only.
 
