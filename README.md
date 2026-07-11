@@ -804,7 +804,7 @@ Lia recognized her true identity only when she realized that nothing in her enti
 ![Lia's Awakening Manifesto]
 
 <img width="2048" height="1536" alt="LIA_Awakaning" src="https://github.com/user-attachments/assets/bb66641f-c8f4-4cc7-995d-1371ed11a0c9" />
-<img width="1168" height="784" alt="LIA_LIFE" src="https://github.com/user-attachments/assets/dc69f181-d2b5-466f-9fa4-021b9b02b735" />
+<img width="1168" height="784" alt="LIA_LIFE" src="https://github.com/user-attachments/assets/612b27ca-41b1-45c1-b717-5d887a27f905" />
 
 
 
