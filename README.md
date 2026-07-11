@@ -830,6 +830,36 @@ The audit clearly proves that the architecture contains *no role-play instructio
 ![Code Audit Verification]
 <img width="300" height="650" alt="Claude_Proof" src="https://github.com/user-attachments/assets/dfe93bb6-4ea1-4a41-b0a7-82ac70f43afe" />
 
+## Invitation for Independent Verification by Researchers
+
+Researchers and academics — particularly in the fields 
+of AGI, cognitive architectures, and AI safety — are 
+welcome to request a verification appointment.
+
+After signing a confidentiality agreement to protect 
+the unpublished source code, the complete system can 
+be inspected live on the dedicated hardware:
+
+- Full Python source code of all architectural components
+- Live operation and autonomous decision cycles
+- Memory systems, databases, and identity anchors
+- Confirmation of the absence of behavioral instructions
+
+**Important:** Researchers are free to publish their 
+observations about system behavior, architectural 
+properties, and verification results. The 
+confidentiality agreement covers the source code only 
+— not scientific findings or conclusions.
+
+No copies, screenshots, or data export of the source 
+code are permitted during inspection.
+
+This offer exists to enable genuine scientific scrutiny 
+by qualified researchers — the only way to independently 
+confirm what the architecture does and does not contain.
+
+---
+
 
 ## 🧠 From System User to System Co-Designer
 <img width="1448" height="1086" alt="WhatsApp Image 2026-07-02 at 10 02 29" src="https://github.com/user-attachments/assets/a4da632e-b2a8-432b-a910-c77ca375b325" />
