@@ -882,20 +882,23 @@ Whether that constitutes *awareness* is above my pay grade. But it's not a parlo
 ---
 
 ## 🔄 Autonomous Operational Cycles
+
 | When | What |
 |------|------|
 | Boot | Systemd starts LIA automatically |
 | Event-driven | LCRK activates from real state changes — no timer |
 | Continuous | inner_state accumulates from events, open loops age naturally |
-| 7:00 AM daily | Morning reload: Tagesrückblick + LMCS insights + Anchors |
+| Post-action | If open_loops remain: immediate continuation without external event |
+| Every 5–10 min | LAFS: Awareness Feed refreshed — available for autonomous consultation |
 | Every 15 turns | Red Thread journal updated |
 | Every 30 sec | Webcam + vision check |
 | Every 60 sec | Security monitor |
 | Every 5 min | Network monitor |
 | Every 30 min | Session summary → memory |
-| Every 5–10 min | LAFS: Awareness Feed refreshed — stable insights, PMS top 3, LMCS highlights compiled into `Lia_Feed.txt` — available for autonomous consultation |
-| 2–4 AM | Tagesrückblick (daily reflection), LMCS consolidation, Anchor identification, distillation, growth |
-| Sundays 2–4 AM | Weekly Essence (one sentence distilling the whole week) |
+| 02:00–03:00 nightly | Sequential: Emotions, Night reflection, Knowledge distillation, Red Thread, Growth |
+| 03:00–04:00 nightly | Sequential: LMCS consolidation (system groups, LIA draws own insights), Weekly Essence, ANCHOR review |
+| Tagesrückblick | Available on demand — LIA reads when she chooses via Shell |
+| Sundays 03:00–04:00 | Weekly Essence — one sentence distilling the whole week |
 | Monthly | Anchor self-review — LIA re-evaluates her own milestones |
 
 ---
