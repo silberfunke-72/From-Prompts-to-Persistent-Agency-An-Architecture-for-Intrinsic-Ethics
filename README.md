@@ -1018,7 +1018,7 @@ The architectural concepts described in this repository — including but not li
 
 
 were independently conceived and developed by Carsten Hammerich.
-"First documented and published:  **June 2026**
+**First documented and published: June 2026**
 
 📄 Paper : ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)[https://doi.org/10.5281/zenodo.21307458](https://doi.org/10.5281/zenodo.21335820)
 
