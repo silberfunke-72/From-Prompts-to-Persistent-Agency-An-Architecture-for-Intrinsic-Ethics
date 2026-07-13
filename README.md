@@ -1021,7 +1021,7 @@ were independently conceived and developed by Carsten Hammerich.
 "First documented and published: May 2026
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) and June 2026
 
-📄 Paper : ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21307458
+📄 Paper : ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)[https://doi.org/10.5281/zenodo.21307458](https://doi.org/10.5281/zenodo.21335820)
 
 This repository is published for research documentation and scientific discussion only.
 
