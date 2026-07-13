@@ -13,7 +13,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
 Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
-**The research paper has just been officially registered and uploaded to ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) under the title: "Emergent Ethical Behavioral in Autonomous AI Agents Through Architectural Design Rather Than Constraint-Based Safety Systems"**
+**The research paper has just been officially registered and uploaded to :
 
 📄 Paper : ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)[https://doi.org/10.5281/zenodo.21307458](https://doi.org/10.5281/zenodo.21335820)
 
@@ -1018,8 +1018,7 @@ The architectural concepts described in this repository — including but not li
 
 
 were independently conceived and developed by Carsten Hammerich.
-"First documented and published: May 2026
-![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) (Abstract ID: 6978718) and June 2026
+"First documented and published:  **June 2026**
 
 📄 Paper : ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)[https://doi.org/10.5281/zenodo.21307458](https://doi.org/10.5281/zenodo.21335820)
 
