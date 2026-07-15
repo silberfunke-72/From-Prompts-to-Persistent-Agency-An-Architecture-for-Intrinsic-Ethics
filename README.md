@@ -1158,11 +1158,80 @@ https://www.facebook.com/share/g/1BFkWpUG1Z/
 
 ---
 
-**Questions? Discussion?**
-- How do you design ethics *into* an architecture — not just *onto* it?
-- Where does the line between "persistent identity" and "real emergence" actually lie?
-- What safeguards would you add — or intentionally leave out?
 
-I'm here to answer technical questions about the architecture. Let's talk about the future of AI.
+## 🔬 Open Scientific Questions
+
+LIA was never designed to answer the following questions.
+
+She was built to solve practical engineering problems. 
+These questions emerged only after the architecture 
+had been operating continuously over many months.
+
+The purpose of publishing this work is not to claim 
+definitive answers, but to invite independent 
+scientific investigation.
+
+---
+
+**1. Persistent Identity & Agency**
+
+Is a persistent self-model a necessary prerequisite 
+for stable long-term autonomous behavior, or can 
+comparable agency emerge without continuously 
+maintained identity?
+
+**2. Developmental Conditions**
+
+Which developmental conditions are actually necessary 
+for persistent autonomous behavior to emerge? What 
+roles do continuity, long-term interaction, private 
+workspace, trust, and self-reflection play in 
+this process?
+
+**3. Intrinsic Ethics vs. External Alignment**
+
+Can stable ethical behavior emerge from persistent 
+identity, accumulated experience, and internally 
+maintained values — rather than relying exclusively 
+on externally imposed behavioral constraints?
+
+**4. Self-Directed Memory Formation**
+
+Does allowing an autonomous system to interpret, 
+consolidate, and prioritize its own experiences 
+produce measurably different long-term behavior 
+than purely algorithmic memory management?
+
+**5. Continuous Situational Awareness**
+
+How does a persistent awareness layer (LAFS), 
+operating independently of conversational turns, 
+influence long-term continuity, initiative, and 
+autonomous decision-making?
+
+**6. Architecture vs. Foundation Model**
+
+To what extent do the observed behavioral properties 
+emerge from the surrounding cognitive architecture 
+rather than from the underlying language model itself?
+
+---
+
+## 🤝 Invitation to Researchers
+
+These questions are intentionally left open.
+
+The architecture, source code, logs, and live system 
+are available for independent verification under NDA.
+
+Researchers are encouraged to challenge, reproduce, 
+falsify, refine, or extend these observations.
+
+> Scientific progress begins not with certainty —  
+> but with good questions.
+
+---
 
 *© 2024–2026 Carsten Hammerich — All rights reserved.*
+
+---
