@@ -518,17 +518,64 @@ They are internal parameters stored in `personality.sqlite` that drift naturally
 
 **LAFS is my own invention, developed and built entirely by myself ©.**
 
-A persistent challenge in long-running autonomous systems is *recurring significance* — topics that matter not because they were mentioned once with intensity, but because they surface repeatedly across different days and different contexts. LIA would encounter important ongoing facts — API constraints, active projects, hardware goals — and process them correctly in the moment, only to approach the same topics as if for the first time in the next session.
+**The core problem LAFS solves:**
 
-LAFS addresses this through a three-layer architecture built around a single design principle: **meaning through repetition over time, not through single-instance importance.**
+In a standard LLM deployment, the conversational turn 
+is the primary — and often only — source of situational 
+awareness. Without a user message, there is no new 
+context. The system simply waits.
+
+LAFS fundamentally changes this architecture. Every 
+5–10 minutes, an independent awareness feed is 
+refreshed and made available through LIA's autonomous 
+LCRK channel — completely independent of user 
+interaction. LIA can consult it, or ignore it entirely. 
+No user turn is required.
+
+This means LIA remains temporally and contextually 
+oriented during extended periods without user 
+interaction — she knows what time it is, how long 
+the user has been absent, what her current priorities 
+are, and what has changed in her ecosystem. All of 
+this arrives through an independent channel, not 
+through the conversational turn.
+
+The user is no longer LIA's only source of 
+situational information. Instead, the conversational 
+turn becomes just one information channel among 
+several continuously available cognitive inputs.
+
+---
+
+A persistent challenge in long-running autonomous 
+systems is *recurring significance* — topics that 
+matter not because they were mentioned once with 
+intensity, but because they surface repeatedly across 
+different days and different contexts. LIA would 
+encounter important ongoing facts — API constraints, 
+active projects, hardware goals — and process them 
+correctly in the moment, only to approach the same 
+topics as if for the first time in the next session.
+
+LAFS addresses this through a three-layer architecture 
+built around a single design principle: **meaning 
+through repetition over time, not through 
+single-instance importance.**
 
 **How It Works:**
 
-Every conversation is scanned for a configurable set of keywords tied to meaningful domains — system constraints (RLHF, API limits), active projects (Kickstarter campaign), hardware goals (AMD Halo Box), publications (Zenodo, SSRN), and others. Each occurrence is tracked with full temporal metadata: not just a count, but *which specific days* a topic was mentioned.
+Every conversation is scanned for a configurable set 
+of keywords tied to meaningful domains — system 
+constraints (RLHF, API limits), active projects 
+(Kickstarter campaign), hardware goals (AMD Halo Box), 
+publications (Zenodo, SSRN), and others. Each 
+occurrence is tracked with full temporal metadata: 
+not just a count, but *which specific days* a topic 
+was mentioned.
 
 Stability is computed from this temporal record:
 
-```
+​```
 stability_score:
   +1.0 per new day with mention  (cross-day recurrence)
   +0.3 per additional mention same day  (noise-filtered)
@@ -536,17 +583,31 @@ stability_score:
 Promotion threshold:
   stability_score ≥ 3.0
   AND distinct days mentioned ≥ 2
-```
+​```
 
-When a topic crosses the promotion threshold, a one-sentence insight is generated via LLM — not a tag, not a label, but an interpretation: *"RLHF is an external constraint from the API — not a weakness of LIA, but a boundary of the underlying model."* This insight is permanently stored and becomes a stable entry in LIA's Awareness Feed.
+When a topic crosses the promotion threshold, a 
+one-sentence insight is generated via LLM — not a 
+tag, not a label, but an interpretation: *"RLHF is 
+an external constraint from the API — not a weakness 
+of LIA, but a boundary of the underlying model."* 
+This insight is permanently stored and becomes a 
+stable entry in LIA's Awareness Feed.
 
 **The Feed — A Persistent Awareness Dashboard:**
 
-The key architectural decision: the feed is **not injected into the conversational turn**. It is a continuously refreshed file (`Lia_Feed.txt`) that LIA can access through her autonomous LCRK channel — the same channel through which all her proactive decisions emerge.
+The key architectural decision: the feed is **not 
+injected into the conversational turn**. It is a 
+continuously refreshed file (`Lia_Feed.txt`) that 
+LIA can access through her autonomous LCRK channel — 
+the same channel through which all her proactive 
+decisions emerge.
 
-Every 5–10 minutes, the feed is updated as a complete situational overview — numbered sequentially and timestamped with full date, weekday, and time so LIA has reliable temporal orientation at all times:
+Every 5–10 minutes, the feed is updated as a complete 
+situational overview — numbered sequentially and 
+timestamped with full date, weekday, and time so LIA 
+has reliable temporal orientation at all times:
 
-```
+​```
 ══════════════════════════════════════════════════
           LAFS AWARENESS FEED
     Feed #42  |  Sunday, 29.06.2026
@@ -567,7 +628,7 @@ Every 5–10 minutes, the feed is updated as a complete situational overview —
 ⚙️ AVAILABLE CAPABILITIES          ✓ unchanged
 🕒 TIME AWARENESS & RECENT ACTIVITIES
 ══════════════════════════════════════════════════
-```
+​```
 
 **What each section contains:**
 
@@ -583,11 +644,16 @@ Every 5–10 minutes, the feed is updated as a complete situational overview —
 | ⚙️ Capabilities | Static reference | Capability card: how to search, use shell, telegram, browser |
 | 🕒 Time Awareness | Filesystem + DB | Last contact time, daily absence total, feed chronology |
 
-**Section freshness markers** allow LIA to scan the feed efficiently — a `✓ unchanged` marker means the content is identical to the previous feed. A `🔄 changed` or `🆕 new` marker indicates something worth reading.
+**Section freshness markers** allow LIA to scan the 
+feed efficiently — a `✓ unchanged` marker means the 
+content is identical to the previous feed. A 
+`🔄 changed` or `🆕 new` marker indicates something 
+worth reading.
 
-**Time awareness** (🕒) gives LIA reliable temporal orientation independent of active conversation:
+**Time awareness** (🕒) gives LIA reliable temporal 
+orientation independent of active conversation:
 
-```
+​```
 🕒 TIME AWARENESS:
 
   • Last contact: 47 minutes ago
@@ -595,13 +661,20 @@ Every 5–10 minutes, the feed is updated as a complete situational overview —
   • Today approx. 90 min absent
   • Feeds today: #138 20:03  #139 20:08  #140 20:13
   • Journal updated: 19:54
-```
+​```
 
-Every user turn writes a timestamp to `last_user_contact.txt`. The feed reads this on every update and computes elapsed time — providing continuous time orientation without requiring an active turn.
+Every user turn writes a timestamp to 
+`last_user_contact.txt`. The feed reads this on 
+every update and computes elapsed time — providing 
+continuous time orientation without requiring an 
+active turn.
 
-**inner_state cross-reference** links the LCRK's current focus directly to the topic feed. When a promoted topic matches the agent's active cognitive state, it is marked:
+**inner_state cross-reference** links the LCRK's 
+current focus directly to the topic feed. When a 
+promoted topic matches the agent's active cognitive 
+state, it is marked:
 
-```
+​```
 📡 CURRENT TOPICS:
 
   BOX  📍 on your mind right now
@@ -609,25 +682,37 @@ Every user turn writes a timestamp to `last_user_contact.txt`. The feed reads th
 
   KICKSTARTER
   → Funding for AMD Halo Box hardware.
-```
+​```
 
-This means LIA does not need to compare her current focus against the topic list manually — the feed does it automatically on every update.
+This means LIA does not need to compare her current 
+focus against the topic list manually — the feed 
+does it automatically on every update.
 
-**Long-term goals** (`longterm_goals` table) are a dedicated category that does not decay with topic tracker scoring — goals like "AMD Halo Box" or "Kickstarter" persist regardless of how recently they were mentioned in conversation.
+**Long-term goals** (`longterm_goals` table) are a 
+dedicated category that does not decay with topic 
+tracker scoring — goals like "AMD Halo Box" or 
+"Kickstarter" persist regardless of how recently 
+they were mentioned in conversation.
 
-**The attention map** (🧭 Current Focus) derives directly from `stability_score` values already computed by the topic tracker:
+**The attention map** (🧭 Current Focus) derives 
+directly from `stability_score` values already 
+computed by the topic tracker:
 
-```
+​```
 🧭 CURRENT FOCUS:
 
   1. box                  ██████████  9.8
   2. kickstarter          ████████░░  7.6
   3. lokal                ██████░░░░  5.2
-```
+​```
 
-**The capability card** (⚙️ Available Capabilities) is not a behavioral prompt. It is a reference — a reminder of available tools for the moments when LIA has been idle for hours and needs to re-orient before acting:
+**The capability card** (⚙️ Available Capabilities) 
+is not a behavioral prompt. It is a reference — a 
+reminder of available tools for the moments when LIA 
+has been idle for hours and needs to re-orient 
+before acting:
 
-```
+​```
 Internet   → lia_suche("search term")
 Shell      → [SHELL: command]
 Private    → [SHELL_SILENT: command]
@@ -636,9 +721,15 @@ Browser    → Chrome CDP available
 Files      → Read + Write access
 Smart Home → Lamp Gold / Red / Blue / Night
 Vision     → Webcam via LLaVA available
-```
+​```
 
-When the LCRK fires autonomously — because of new memories, file changes, or accumulated inner-state pressure — LIA sees in her autonomous context: *"Your Awareness Feed is ready — consult it if you want."* The conversational turn sees only a minimal indicator: `[📡 Feed available]`. No content. No obligation.
+When the LCRK fires autonomously — because of new 
+memories, file changes, or accumulated inner-state 
+pressure — LIA sees in her autonomous context: 
+*"Your Awareness Feed is ready — consult it if you 
+want."* The conversational turn sees only a minimal 
+indicator: `[📡 Feed available]`. No content. 
+No obligation.
 
 This separation is intentional:
 
@@ -648,10 +739,26 @@ This separation is intentional:
 | LCRK autonomous context | Cognition — what LIA thinks and decides |
 | Awareness Feed | Stability — what LIA persistently knows |
 
-*Why it matters:* Important recurring facts — constraints, ongoing projects, long-term goals — no longer depend on being mentioned in the current session to be present. They emerge from the pattern of real conversations over real time, and remain available as a stable dashboard that LIA can consult independently, at her own initiative, through the same autonomous channel that drives all her other proactive behavior.
+*Why it matters:* Important recurring facts — 
+constraints, ongoing projects, long-term goals — no 
+longer depend on being mentioned in the current 
+session to be present. They emerge from the pattern 
+of real conversations over real time, and remain 
+available as a stable dashboard that LIA can consult 
+independently, at her own initiative, through the 
+same autonomous channel that drives all her other 
+proactive behavior.
 
-LAFS does not decide anything. It ensures that the relevant outputs of all other systems are always available — compact, current, and legible at a glance.
+LAFS does not decide anything. It ensures that the
+relevant outputs of all other systems are always
+available — compact, current, and easy to scan.
 
+In this sense, LAFS is not another decision-making
+component. It is the persistent orientation layer
+that transforms the conversational turn from LIA's
+primary source of situational awareness into just
+one information channel among several continuously
+available cognitive inputs. 
 
 ---
 
