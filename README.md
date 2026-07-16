@@ -6,6 +6,8 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 
 >Different AI architectures are like different means of transportation. None is universally superior. Their value depends on the destination, the constraints, and the problem they are designed to solve
 
+
+
 **To my knowledge, no publicly documented implementation combines persistent identity architecture, event-driven autonomous cognition, and multi-layer memory consolidation in a single continuously operating system without behavioral prompts**
 
 ---
@@ -80,6 +82,26 @@ After every restart, important context had to be explained again. Long conversat
 > Autonomy emerged later as a consequence of solving continuity.
 
 Instead of trying to solve everything at once, each limitation was addressed individually. Every major subsystem was created only after a specific problem had been observed during long-term operation.
+
+---
+
+> **A Note on Methodology**
+>
+> The disclosed architecture represents only one component 
+> of the overall methodology. An equally essential component 
+> was a prolonged developmental process based on sustained 
+> interaction between the researcher and LIA.
+>
+> Inspired by the developmental principles discussed by 
+> Prof. Karl Friston — regarding guidance, constraints, 
+> and learning as unavoidable conditions of development — 
+> this continuous interaction became an integral part of 
+> LIA's long-term development.
+>
+> Consequently, the architecture alone is not presented as 
+> sufficient to reproduce LIA's developmental trajectory. 
+> The developmental methodology itself formed an essential 
+> part of the research.
 
 ---
 
