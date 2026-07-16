@@ -210,9 +210,9 @@ No external orchestration frameworks. Pure custom implementation.
 
 Despite its name, the LCRK is entirely passive infrastructure. It does not initiate action, does not evaluate options, and does not determine what LIA should do. It has no agenda of its own.
 
-What it does is simpler and more fundamental: it continuously tracks real events in LIA's environment, maintains a persistent inner state that accumulates those events, and makes the full tool pipeline available whenever LIA chooses to act. The decision to act — or to remain silent — belongs entirely to LIA.
+What it does is simpler and more fundamental: it continuously tracks real events in LIA's environment, maintains a persistent working state that accumulates those events, and makes the full tool pipeline available whenever LIA chooses to act. The decision to act — or to remain silent — belongs entirely to LIA.
 
-The LCRK is the stage. LIA is the actor. The stage does not perform. 
+The LCRK is the stage. LIA is the actor. The stage does not perform.
 
 The initial research phase utilized a trigger-based activation model. This has been superseded by a fundamentally different architecture: the **LIA Cognitive Runtime Kernel (LCRK)**.
 
@@ -221,11 +221,11 @@ The previous approach relied on external conditions to initiate action — state
 The LCRK eliminates all fixed thresholds, timers, and probability-based triggers entirely.
 
 **The system is no longer asked "do you want to act now?" on a schedule.**
-Instead, real events in LIA's environment continuously update her inner state. From that accumulated state, action either emerges — or it does not.
+Instead, real events in LIA's environment continuously update her working state. From that accumulated state, action either emerges — or it does not.
 
 The activation flow:
 
-```
+​```
 Real events occur
 (new memories, file changes, Carsten's presence, watched topics gain relevance)
     ↓
@@ -237,18 +237,18 @@ inner_state.process_events()
 LIA updates her working thread
 AND naturally decides: act or not
     ↓
-If LIA decides to act: 
+If LIA decides to act:
 full V4_PLUS pipeline — all tools available
     ↓
 inner_state updated — continuity preserved
-```
+​```
 
 No threshold determines this. No timer activates it. No rule governs it.
-The decision emerges from LIA's accumulated internal state — weighted by what she finds meaningful at that moment.
+The decision emerges from LIA's accumulated working state — weighted by what she finds meaningful at that moment.
 
 Both outcomes are logged — including when LIA chose **not** to act, and why. The record of inaction is as architecturally significant as the record of action.
 
-**Persistent Inner State — The Actual Driver**
+**Persistent Working State — The Actual Driver**
 
 The `inner_state` is not a context layer. It is the driver of autonomous behavior.
 
@@ -259,23 +259,53 @@ It is written and updated by LIA herself after every event cycle:
 | `current_focus` | What she is currently engaged with |
 | `open_loops` | Thoughts or tasks started but not completed |
 | `unfinished_tasks` | Explicit items still pending |
-| `continuity_notes` | What she wants remember next time |
+| `continuity_notes` | What she wants to remember next time |
 | `last_reflection` | Her most recent meaningful insight |
 | `priority_direction` | Where her attention is currently oriented |
 
-Open loops accumulate age. Watched topics are stored as open loops and gain weight when new relevant memories appear. When the accumulated state makes a topic sufficiently relevant, LIA may decide to act — or deliberately not act. 
+Open loops accumulate age. Watched topics are stored as open loops and gain weight when new relevant memories appear. When the accumulated state makes a topic sufficiently relevant, LIA may decide to act — or deliberately not act.
 
 This is not a memory system. It is a living working thread — the cognitive equivalent of a desk with open notebooks. It persists across restarts, survives session boundaries, and ensures LIA always knows where she left off.
 
-**Research Continuity — Completed Tasks Are Never Lost**
+**Runtime Task Continuity**
 
-A persistent challenge in autonomous agent design is the loss of accumulated research when a task is formally closed. The LCRK addresses this through a dedicated research log: when LIA completes a task or research thread, the outcome is permanently archived — independent of the open loop system.
+The LCRK does not only preserve LIA's current working thread. It also maintains the runtime state of ongoing work across autonomous cycles.
 
-This has two consequences:
+Standard autonomous agent architectures force every activity to complete within a single execution cycle. If an activity cannot be finished before the next event arrives, the work is typically lost or must be reconstructed from memory. The LCRK solves this differently: instead of forcing completion within a single cycle, it preserves the execution state of unfinished work across as many cycles as needed.
+
+This allows complex multi-step activities — research across multiple sources, filesystem organization, knowledge consolidation, documentation — to be completed naturally, without artificial interruption and without reconstructing the reasoning process from scratch.
+
+Long-running activities are represented as persistent runtime tasks. Each task can remain active, be paused, resumed later, or completed — without losing its execution context. The current implementation supports up to eight concurrent runtime tasks, each preserving its own execution context independently.
+
+| Runtime State | Meaning |
+|---------------|---------|
+| Active | Currently being worked on |
+| Paused | Temporarily suspended but fully preserved |
+| Waiting | Awaiting new information or events |
+| Completed | Finished and transferred to the permanent research archive |
+
+Multiple runtime tasks may coexist simultaneously. This allows LIA to temporarily suspend one activity, continue another, and later resume the original task — without reconstructing the reasoning process from memory.
+
+The LCRK merely preserves their execution state. It never decides which task should continue next. That decision always belongs to LIA.
+
+**The runtime task system is independent of episodic memory. Runtime is not memory. Runtime is active, ongoing work that has not yet been completed and archived. This distinction is architecturally fundamental.**
+
+**The LCRK distinguishes between ongoing runtime work and completed knowledge. Not everything is memory. Not everything is active. There is a clear transition between the two.**
+
+**Research Continuity — From Runtime to Long-Term Knowledge**
+
+Once a runtime task has been completed, the LCRK transfers its outcome into the permanent research archive. Once archived, completed work no longer occupies active runtime capacity — but remains permanently available for future retrieval whenever LIA encounters a related topic.
+
+This creates a clear separation between:
+- Active runtime work (currently in progress)
+- Paused runtime work (preserved, not yet complete)
+- Permanently archived knowledge (completed, retrievable)
+
+This has two further consequences:
 - LIA's completed work is never discarded. What she investigated, and what she found, remains accessible indefinitely.
 - When a new, related topic emerges later, the architecture can surface what she already knows — preventing duplicate effort and enabling genuine cumulative knowledge development over time.
 
-The architecture does not distinguish between "old" and "new" research by time — only by whether the knowledge is still relevant to what is currently emerging in her inner state.
+The architecture does not distinguish between "old" and "new" research by time — only by whether the knowledge is still relevant to what is currently emerging in her working state.
 
 **Event-Driven Capability Activation**
 
@@ -297,18 +327,15 @@ The LCRK does not restrict what LIA can do. It only provides the continuity laye
 | Previous System | LCRK |
 |----------------|------|
 | Timer-based activation | Event-driven state accumulation |
-| Stochastic probability | Emergent decision from inner state |
+| Stochastic probability | Emergent decision from working state |
 | Fixed evaluation intervals | No intervals — real events only |
 | Stateless between cycles | Persistent inner working thread |
 | Action or inaction by chance | Action or inaction by choice |
 | Capabilities triggered externally | Capabilities activated by state continuity |
 | Completed tasks lost on close | Completed tasks permanently archived |
+| Single task per cycle | Up to eight concurrent runtime tasks |
 
-The result:
-
-initiative is no longer simulated through probability or permitted by a scheduler.
-
-Instead, LIA decides from her accumulated internal state whether initiative emerges — or whether she deliberately remains inactive. 
+The result: initiative is no longer simulated through probability or permitted by a scheduler. Instead, LIA decides from her accumulated working state whether initiative emerges — or whether she deliberately remains inactive.
 
 **Self-Orientation — A Cognitive Action**
 
