@@ -223,10 +223,11 @@ The LCRK eliminates all fixed thresholds, timers, and probability-based triggers
 **The system is no longer asked "do you want to act now?" on a schedule.**
 Instead, real events in LIA's environment continuously update her working state. From that accumulated state, action either emerges — or it does not.
 
+```
+
 The activation flow:
 
-​---
-
+​```
 Real events occur
 (new memories, file changes, Carsten's presence, watched topics gain relevance)
     ↓
@@ -243,7 +244,10 @@ full V4_PLUS pipeline — all tools available
     ↓
 inner_state updated — continuity preserved
 ​
----
+```
+​
+
+​
 
 No threshold determines this. No timer activates it. No rule governs it.
 The decision emerges from LIA's accumulated working state — weighted by what she finds meaningful at that moment.
