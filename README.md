@@ -241,7 +241,8 @@ If LIA decides to act:
 full V4_PLUS pipeline — all tools available
     ↓
 inner_state updated — continuity preserved
-​```
+​
+```
 
 No threshold determines this. No timer activates it. No rule governs it.
 The decision emerges from LIA's accumulated working state — weighted by what she finds meaningful at that moment.
