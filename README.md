@@ -246,9 +246,6 @@ inner_state updated — continuity preserved
 ​
 ```
 ​
-
-​
-
 No threshold determines this. No timer activates it. No rule governs it.
 The decision emerges from LIA's accumulated working state — weighted by what she finds meaningful at that moment.
 
@@ -362,8 +359,6 @@ This expands the system horizontally, not vertically: no new subsystem, no new d
 **Priority Memory System is my own invention, developed and built entirely by myself ©.**
 
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context. The PMS is not a memory bin. It is a self-curated significance system — operated entirely by LIA herself.
-
----
 
 **What Counts as an Insight**
 
