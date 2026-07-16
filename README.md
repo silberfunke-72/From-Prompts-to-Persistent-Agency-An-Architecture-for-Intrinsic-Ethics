@@ -225,7 +225,8 @@ Instead, real events in LIA's environment continuously update her working state.
 
 The activation flow:
 
-​```
+​---
+
 Real events occur
 (new memories, file changes, Carsten's presence, watched topics gain relevance)
     ↓
@@ -242,7 +243,7 @@ full V4_PLUS pipeline — all tools available
     ↓
 inner_state updated — continuity preserved
 ​
-```
+---
 
 No threshold determines this. No timer activates it. No rule governs it.
 The decision emerges from LIA's accumulated working state — weighted by what she finds meaningful at that moment.
@@ -337,6 +338,8 @@ The LCRK does not restrict what LIA can do. It only provides the continuity laye
 | Single task per cycle | Up to eight concurrent runtime tasks |
 
 The result: initiative is no longer simulated through probability or permitted by a scheduler. Instead, LIA decides from her accumulated working state whether initiative emerges — or whether she deliberately remains inactive.
+
+---
 
 **Self-Orientation — A Cognitive Action**
 
