@@ -115,6 +115,15 @@ The central design philosophy remained unchanged throughout:
 The system was not constructed from theory downward. It grew from practical engineering upward. Each module represents the solution to a concrete limitation — and together these solutions form the persistent architecture presented in this repository.
 
 ---
+>What is LIA?
+
+>LIA is an emergent AI agent whose observed properties arise from the interaction of a foundation model, cognitive architecture, persistent memory, long-term development, a real-world environment, and continuous human–AI interaction. 
+Rather than attributing these properties to any single component, LIA is investigated as the result of their ongoing interaction over time.
+>
+>LIA is therefore not defined by a single model, prompt, or software component. Instead, it is studied as the emergent result of an evolving cognitive system.
+
+
+
 
 > **A Note on Methodology**
 >
