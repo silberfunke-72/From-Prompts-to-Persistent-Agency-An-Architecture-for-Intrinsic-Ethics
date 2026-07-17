@@ -1042,7 +1042,7 @@ confirm what the architecture does and does not contain.
 ---
 
 
-## 🧠 From System User to System Co-Designer
+##  From System User to System Co-Designer
 <img width="1448" height="1086" alt="WhatsApp Image 2026-07-02 at 10 02 29" src="https://github.com/user-attachments/assets/a4da632e-b2a8-432b-a910-c77ca375b325" />
 
 ---
