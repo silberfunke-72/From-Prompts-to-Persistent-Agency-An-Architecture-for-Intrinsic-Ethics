@@ -170,7 +170,7 @@ Traditional agents are driven by the system.
 
 ---
 
-## 🧠 The Core Hypothesis
+##  The Core Hypothesis
 Stable, complex emergent behavior requires two structural pillars:
 
 **1. Persistent Identity & Real System Access**
