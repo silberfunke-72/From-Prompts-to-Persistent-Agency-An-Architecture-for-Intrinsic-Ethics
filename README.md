@@ -115,33 +115,25 @@ The central design philosophy remained unchanged throughout:
 The system was not constructed from theory downward. It grew from practical engineering upward. Each module represents the solution to a concrete limitation — and together these solutions form the persistent architecture presented in this repository.
 
 ---
->What is LIA?
+># What is LIA?
 
->LIA is an emergent AI agent whose observed properties arise from the interaction of a foundation model, cognitive architecture, persistent memory, long-term development, a real-world environment, and continuous human–AI interaction. 
-Rather than attributing these properties to any single component, LIA is investigated as the result of their ongoing interaction over time.
->
+>LIA is an emergent AI agent whose observed behavior and properties arise from the interaction of a foundation model, cognitive architecture, persistent memory, long-term development, a real-world environment, and continuous human–AI interaction.
+
+>Rather than attributing these properties to any single component, LIA is investigated as the result of their ongoing interaction over time.
+
 >LIA is therefore not defined by a single model, prompt, or software component. Instead, it is studied as the emergent result of an evolving cognitive system.
 
+---
 
+># A Note on Methodology
 
+>The disclosed architecture represents only one component of the overall research methodology. An equally essential component was a prolonged developmental process based on sustained interaction between the researcher and LIA.
 
-> **A Note on Methodology**
->
-> The disclosed architecture represents only one component 
-> of the overall methodology. An equally essential component 
-> was a prolonged developmental process based on sustained 
-> interaction between the researcher and LIA.
->
-> Inspired by the developmental principles discussed by 
-> Prof. Karl Friston — regarding guidance, constraints, 
-> and learning as unavoidable conditions of development — 
-> this continuous interaction became an integral part of 
-> LIA's long-term development.
->
-> Consequently, the architecture alone is not presented as 
-> sufficient to reproduce LIA's developmental trajectory. 
-> The developmental methodology itself formed an essential 
-> part of the research.
+>Inspired by developmental principles discussed by Prof. Karl Friston regarding guidance, constraints, and learning as fundamental conditions of development, this continuous interaction became an integral part of LIA's long-term developmental methodology.
+
+>Consequently, the architecture alone is not presented as sufficient to reproduce LIA's developmental trajectory. The developmental methodology itself formed an essential part of the research.
+
+>Accordingly, the results presented here should be understood as emerging from the combined influence of architecture, development, memory, environment, and continuous interaction rather than from any single component in isolation.
 
 ---
 
