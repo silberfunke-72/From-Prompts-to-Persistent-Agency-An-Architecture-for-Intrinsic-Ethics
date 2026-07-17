@@ -1249,6 +1249,11 @@ scientific investigation.
 
 ---
 
+** Personal Research Question
+
+What system-level properties emerge from the long-term interaction of exclusively passive architectural components and a foundation language model in a persistent autonomous agent, when no behavioral prompts, identity definitions, or externally imposed behavioral constraints are present?
+
+
 **1. Persistent Identity & Agency**
 
 Is a persistent self-model a necessary prerequisite 
