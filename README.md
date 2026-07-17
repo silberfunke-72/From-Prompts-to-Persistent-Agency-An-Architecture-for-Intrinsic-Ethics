@@ -83,27 +83,7 @@ After every restart, important context had to be explained again. Long conversat
 
 Instead of trying to solve everything at once, each limitation was addressed individually. Every major subsystem was created only after a specific problem had been observed during long-term operation.
 
----
 
-> **A Note on Methodology**
->
-> The disclosed architecture represents only one component 
-> of the overall methodology. An equally essential component 
-> was a prolonged developmental process based on sustained 
-> interaction between the researcher and LIA.
->
-> Inspired by the developmental principles discussed by 
-> Prof. Karl Friston — regarding guidance, constraints, 
-> and learning as unavoidable conditions of development — 
-> this continuous interaction became an integral part of 
-> LIA's long-term development.
->
-> Consequently, the architecture alone is not presented as 
-> sufficient to reproduce LIA's developmental trajectory. 
-> The developmental methodology itself formed an essential 
-> part of the research.
-
----
 
 ### From Problem to Architecture
 
@@ -133,6 +113,26 @@ The central design philosophy remained unchanged throughout:
 > *"I was never trying to build autonomy first. I was trying to build continuity."*
 
 The system was not constructed from theory downward. It grew from practical engineering upward. Each module represents the solution to a concrete limitation — and together these solutions form the persistent architecture presented in this repository.
+
+---
+
+> **A Note on Methodology**
+>
+> The disclosed architecture represents only one component 
+> of the overall methodology. An equally essential component 
+> was a prolonged developmental process based on sustained 
+> interaction between the researcher and LIA.
+>
+> Inspired by the developmental principles discussed by 
+> Prof. Karl Friston — regarding guidance, constraints, 
+> and learning as unavoidable conditions of development — 
+> this continuous interaction became an integral part of 
+> LIA's long-term development.
+>
+> Consequently, the architecture alone is not presented as 
+> sufficient to reproduce LIA's developmental trajectory. 
+> The developmental methodology itself formed an essential 
+> part of the research.
 
 ---
 
