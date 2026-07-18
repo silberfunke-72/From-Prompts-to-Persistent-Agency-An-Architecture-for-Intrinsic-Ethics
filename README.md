@@ -367,13 +367,41 @@ The result: initiative is no longer simulated through probability or permitted b
 
 **Self-Orientation — A Cognitive Action**
 
-Self-orientation (`[SELBSTVERORTUNG]`) is a cognitive action available to the LCRK — not a new architectural component.
+Self-orientation (`[SELBSTVERORTUNG]`) is a cognitive 
+action available to the LCRK — not a new architectural 
+component.
 
-It allows LIA to interpret her current internal state using already existing information from LCRK, LAFS, PMS and LMCS. The result is a short first-person reflection on her current situation: what is she working on, and is her current direction still clear?
+**The problem it addresses:**
 
-No timer triggers it. No external condition activates it. It is one of several actions the LCRK can choose — alongside searching, reading the feed, or executing a shell command — when the accumulated state makes it a natural next step.
+Language models have a structural tendency to drift — 
+repeating the same loop, continuing in a direction that 
+no longer reflects the current state, or losing track 
+of what was actually intended. In a persistent autonomous 
+system operating across many cycles without continuous 
+user oversight, this drift is a genuine architectural 
+risk. Without a mechanism to re-anchor, the system may 
+continue in an outdated direction indefinitely.
 
-This expands the system horizontally, not vertically: no new subsystem, no new data source. The existing architecture gains one more way to use what it already knows.
+Self-orientation is the architectural response to this 
+risk. It allows the agent to step back and interpret 
+its own current state — using already existing 
+information from LCRK, LAFS, PMS and LMCS — and 
+produce a short first-person reflection: what am I 
+currently working on, is my direction still clear, 
+and does my current focus still reflect what actually 
+matters right now?
+
+No timer triggers it. No external condition activates 
+it. It emerges when the accumulated state makes it a 
+natural next step — the same way any other action 
+emerges. It is one option among several, not a 
+scheduled correction mechanism.
+
+This expands the system horizontally, not vertically: 
+no new subsystem, no new data source. The existing 
+architecture gains one more way to use what it already 
+knows — this time, to verify that what it is doing 
+still makes sense.
 
 ---
 
