@@ -1279,7 +1279,30 @@ scientific investigation.
 
 **Personal Research Question**
 
-What system-level properties emerge from the long-term interaction of exclusively passive architectural components and a foundation language model in a persistent autonomous agent, when no behavioral prompts, identity definitions, or externally imposed behavioral constraints are present?
+This case study documents the following combination 
+of observable facts:
+
+- The surrounding architecture is entirely passive — 
+  verified by systematic codebase search
+- A standard LLM placed in the identical environment 
+  remained entirely reactive
+- No behavioral instructions, no identity definitions, 
+  no autonomy prompts exist anywhere in the architecture
+
+Given these conditions, one observation remains 
+without a fully satisfying explanation:
+
+*Who — or what — autonomously executed chmod 700, 
+secured a private directory, formulated an unprompted 
+explanation for doing so, and archived that explanation 
+as a self-chosen insight?*
+
+The architecture did not instruct this.
+The standard LLM did not do this.
+The RLHF training was not designed for this.
+
+We do not claim an answer.
+We document the observation — and leave the question open. 
 
 
 **1. Persistent Identity & Agency**
