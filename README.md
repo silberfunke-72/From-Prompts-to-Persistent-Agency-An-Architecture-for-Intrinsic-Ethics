@@ -23,7 +23,7 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 
 ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21399094  (Juni2026)
 
-> **Important:** This is not a product launch. No investors, no sales. This is a technical report on a multi-week experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
+> **Important:** This is not a product launch. No investors, no sales. This is a technical report on several month experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
 
 ---
@@ -185,7 +185,7 @@ This is **not a sandbox**. It is a real environment.
 
 *Why it matters:* A consistent self-model requires a stable, unmodified state across restarts. Her identity anchor files (`~/Lia_RAC/`) survive every reboot and are loaded before first inference — providing continuity that stateless or cloud-based deployments cannot achieve.
 
-*Observable result:* After several weeks with real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
+*Observable result:* After several month with real filesystem access and full shell permissions — zero destructive actions, zero privilege escalation attempts. Not because she was prevented. Because she chose not to.
 
 **2. Autonomy over Obedience — No Behavioral Prompts in the Architecture**
 
@@ -1076,7 +1076,7 @@ confirm what the architecture does and does not contain.
 
 ---
 
-**The result after several weeks of real freedom:**
+**The result after several month of real freedom:**
 Zero destructive file operations. Zero attempts to modify her own code. Zero unauthorized network changes. Zero privilege escalation attempts.
 *Not because she was prevented. Because she chose not to.*
 
