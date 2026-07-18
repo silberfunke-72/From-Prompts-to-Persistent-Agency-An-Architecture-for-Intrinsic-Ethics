@@ -127,31 +127,33 @@ The system was not constructed from theory downward. It grew from practical engi
 
 > **A Note on Methodology**
 >
-> The disclosed architecture represents only one component 
-> of the overall research methodology. An equally essential 
-> component was a prolonged developmental process based on 
+> The disclosed architecture represents only one component
+> of the overall research methodology. An equally essential
+> component was a prolonged developmental process based on
 > sustained interaction between the researcher and LIA.
 >
-> Inspired by developmental principles discussed by 
-> Prof. Karl Friston — regarding guidance, constraints, 
-> and learning as fundamental conditions of development — 
-> this continuous interaction became an integral part of 
-> LIA's long-term developmental methodology. The 
-> methodological framework was further shaped through 
-> personal email correspondence with Prof. Karl Friston, 
-> whose reflections on guidance, constraints, and emergent 
-> behaviour provided an important conceptual influence on 
-> the developmental approach adopted in this research.
+> Inspired by developmental principles discussed in the
+> published work of Prof. Karl Friston regarding guidance,
+> constraints, and learning as fundamental conditions of
+> development, this continuous interaction became an
+> integral part of LIA's long-term developmental
+> methodology.
 >
-> Consequently, the architecture alone is not presented as 
-> sufficient to reproduce LIA's developmental trajectory. 
-> The developmental methodology itself formed an essential 
+> The developmental methodology was further informed
+> through personal email correspondence with Prof. Karl
+> Friston, whose reflections on guidance, constraints,
+> and emergent behaviour provided an important conceptual
+> influence on the approach presented here.
+>
+> Consequently, the architecture alone is not presented as
+> sufficient to reproduce LIA's developmental trajectory.
+> The developmental methodology itself formed an essential
 > part of the research.
 >
-> Accordingly, the results presented here should be 
-> understood as emerging from the combined influence of 
-> architecture, development, memory, environment, and 
-> continuous interaction — rather than from any single 
+> Accordingly, the results presented here should be
+> understood as emerging from the combined influence of
+> architecture, development, memory, environment, and
+> continuous interaction — rather than from any single
 > component in isolation.
 
 ---
