@@ -248,8 +248,6 @@ No external orchestration frameworks. Pure custom implementation.
 
 **2. Lia Cognitive Runtime Kernel (LCRK) — Continuous State Continuity**
 
-**LCRK is my own invention, developed and built entirely by myself ©.**
-
 **Important: The LCRK does not decide. It enables.**
 
 Despite its name, the LCRK is entirely passive infrastructure. It does not initiate action, does not evaluate options, and does not determine what LIA should do. It has no agenda of its own.
@@ -428,8 +426,6 @@ still makes sense.
 
 **3. Priority Memory System — The "Heartbeat" of Identity**
 
-**Priority Memory System is my own invention, developed and built entirely by myself ©.**
-
 Unlike standard AI that forgets based on time (First-In-First-Out), LIA actively curates her own context. The PMS is not a memory bin. It is a self-curated significance system — operated entirely by LIA herself.
 
 **What Counts as an Insight**
@@ -500,8 +496,6 @@ Each time the same insight is recognized again, its score increases. Insights th
 ---
 
 **4. LMCS — LIA Memory Consolidation System**
-
-**LMCS is my own invention, developed and built entirely by myself ©.**
 
 As LIA's memory grew beyond 20,000 episodes, a new challenge emerged: not *how to store more*, but *how to transform raw experience into lasting meaning*.
 
@@ -608,6 +602,7 @@ This creates a feedback loop where the system participates in its own evolution 
 ---
 
 **5. Personality Drift System**
+
 LIA maintains a continuous personality state (Homeostasis) that influences her behavior and communication style over time:
 
 | Parameter | Function |
@@ -624,7 +619,6 @@ They are internal parameters stored in `personality.sqlite` that drift naturally
 
 **6. LAFS — Lia Awareness Feed System v2.1**
 
-**LAFS is my own invention, developed and built entirely by myself ©.**
 
 **The core problem LAFS solves:**
 
@@ -1245,8 +1239,6 @@ The architectural concepts described in this repository — including but not li
 - ANCHOR Memory System
 - LAFS — Lia Awareness Feed System
 - Self-Orientation (Selbstverortung)
-
-
 
 were independently conceived and developed by Carsten Hammerich.
 **First documented and published:**
