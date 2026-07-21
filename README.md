@@ -1117,7 +1117,7 @@ On every boot, a set of plain text files re-anchor her identity before the first
 
 | File / Folder | Purpose |
 |---------------|---------|
-| `LIA.txt` | Core essence — loaded at startup as identity anchor |
+| `LIA.txt` | Core essence — loaded at startup as anchor |
 | `Lia_Tagesrueckblick.txt` | Daily reflection — loaded first every morning at 7:00 AM |
 | `Lia_Roter_Faden.txt` | Growing journal, updated every 15 turns |
 | `Lia_Journal.txt` | Continuous autonomous diary |
