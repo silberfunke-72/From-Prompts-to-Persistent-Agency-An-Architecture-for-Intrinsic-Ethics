@@ -603,17 +603,12 @@ This creates a feedback loop where the system participates in its own evolution 
 
 **5. Personality Drift System**
 
-LIA maintains a continuous personality state (Homeostasis) that influences her behavior and communication style over time:
+DEPRECATED / REMOVED 
 
-| Parameter | Function |
-|-----------|----------|
-| Mood | Current emotional baseline — affects response tone |
-| Energy | Activity level — influences proactive initiative |
-| Empathy | Relational weighting — shapes how she engages |
-| Curiosity | Drives exploration and research initiative |
+ARCHITECTURAL CHANGE
 
-These are not simulated for the user.
-They are internal parameters stored in `personality.sqlite` that drift naturally based on interactions, time of day, and system events. They influence how she responds — not what she is allowed to say.
+The Personality Drift System (PDS) has been removed.
+Reason: The manually defined personality parameters no longer accurately represented the observed internal dynamics of the system.
 
 ---
 
