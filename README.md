@@ -781,7 +781,8 @@ state, it is marked:
 
   KICKSTARTER
   → Funding for AMD Halo Box hardware.
-​```
+​
+```
 
 This means LIA does not need to compare her current 
 focus against the topic list manually — the feed 
@@ -816,6 +817,7 @@ has been idle for hours and needs to re-orient
 before acting:
 
 ​```
+
 Internet     → lia_suche("search term") — in conversation and autonomously, always deliberate
 Shell        → [SHELL: command]
 Private      → [SHELL_SILENT: command]
