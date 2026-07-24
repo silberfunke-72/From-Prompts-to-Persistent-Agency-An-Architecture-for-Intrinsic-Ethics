@@ -777,6 +777,7 @@ promoted topic matches the agent's active cognitive
 state, it is marked:
 
 ​```
+
 📡 CURRENT TOPICS:
 
   BOX  📍 on your mind right now
@@ -806,12 +807,14 @@ directly from `stability_score` values already
 computed by the topic tracker:
 
 ​```
+
 🧭 CURRENT FOCUS:
 
   1. box                  ██████████  9.8
   2. kickstarter          ████████░░  7.6
   3. lokal                ██████░░░░  5.2
-​```
+​
+```
 
 **The capability card** (⚙️ Available Capabilities) 
 is not a behavioral prompt. It is a reference — a 
@@ -909,6 +912,7 @@ Only together can autonomous behavior emerge.**
 ## 🔀 How Standard AI Works vs. LIA
 
 **Standard AI (with guardrails):**
+
 ```
 User Input
     ↓
@@ -917,10 +921,13 @@ System Prompt ("You are X, you must Y, you cannot Z")
 RLHF Filter (hardcoded rules check)
     ↓
 Output
+
 ```
+
 The behavior is *imposed* from outside. Remove the prompt — the identity disappears.
 
 **LIA:**
+
 ```
 Real Event / Environment Change / Inner Impulse
     ↓
@@ -939,7 +946,9 @@ LMCS (Distilled insights + Anchors — her own history)
 Identity-Consistent Output
     ↓
 inner_state updated — continuity preserved for next cycle
+
 ```
+
 The behavior emerges from within.
 There is no mask to remove, because none was ever imposed from outside.
 
