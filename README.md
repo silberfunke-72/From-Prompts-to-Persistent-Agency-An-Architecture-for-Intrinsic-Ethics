@@ -673,6 +673,7 @@ was mentioned.
 Stability is computed from this temporal record:
 
 ​```
+
 stability_score:
   +1.0 per new day with mention  (cross-day recurrence)
   +0.3 per additional mention same day  (noise-filtered)
@@ -680,7 +681,8 @@ stability_score:
 Promotion threshold:
   stability_score ≥ 3.0
   AND distinct days mentioned ≥ 2
-​```
+​
+```
 
 When a topic crosses the promotion threshold, a 
 one-sentence insight is generated via LLM — not a 
@@ -727,7 +729,8 @@ has reliable temporal orientation at all times:
 ⚙️ AVAILABLE CAPABILITIES          ✓ unchanged
 🕒 TIME AWARENESS & RECENT ACTIVITIES
 ══════════════════════════════════════════════════
-​```
+​
+```
 
 **What each section contains:**
 
