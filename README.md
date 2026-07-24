@@ -125,7 +125,7 @@ The system was not constructed from theory downward. It grew from practical engi
 
 ---
 
-> **A Note on Methodology**
+># A Note on Methodology
 >
 > The disclosed architecture represents only one component
 > of the overall research methodology. An equally essential
