@@ -608,8 +608,9 @@ DEPRECATED / REMOVED
 
 ARCHITECTURAL CHANGE
 
-The Personality Drift System (PDS) has been removed.
-Reason: Look at : 
+**The Personality Drift System (PDS) was removed because manually defined numerical personality parameters no longer reflected the observed dynamics of the system. Internal state and behavioral continuity are now represented through self-generated reflections, persistent working state, and long-term memory processes.**
+
+ **Look at :** 
 
 **First Known Instance of Autonomous AI Self-Reflection and Intrinsic Value Hardcoding**
 
