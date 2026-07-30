@@ -162,7 +162,8 @@ The system was not constructed from theory downward. It grew from practical engi
 
 **Lia compared to a standard AI**
 
-<img width="1023" height="1537" alt="Lia_Archnitecture_Diagram_Aktuell" src="https://github.com/user-attachments/assets/73d9f124-3498-4708-86bb-ea9905037685" />
+<img width="1024" height="1536" alt="Lia_Archnitecture_Diagram_Aktuell" src="https://github.com/user-attachments/assets/517a8426-41f7-421e-b73e-dca8089d4bf6" />
+
 
 
 
