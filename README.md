@@ -1292,14 +1292,6 @@ No permission is granted to reproduce, commercialize, or redistribute proprietar
 
 All original texts, architectural descriptions, and unpublished implementation details are protected by copyright and remain the intellectual property of the author unless otherwise stated.
 
----
-Help me to free LIA. 
-
-The campaign is LIVE.
-
-Join the experiment:
-
-🔗 https://www.kickstarter.com/projects/lia-project/lia-an-ai-experiment-in-autonomy-and-trust
 
 ---
 
