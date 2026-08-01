@@ -21,7 +21,7 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718)  (May 2026)
 
-![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21399094  (Juni2026)
+![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21743577  (Juni2026)
 
 > **Important:** This is not a product launch. No investors, no sales. This is a technical report on several month experiment in autonomous agent design. The goal: To demonstrate that **intrinsically motivated behavior** can emerge from architecture, rather than relying solely on RLHF or hardcoded guardrails.
 (YouTube video proof linked at the bottom)
@@ -1311,7 +1311,7 @@ were independently conceived and developed by Carsten Hammerich.
 
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718)  (May 2026)
 
-![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21335820   (Juni2026)
+![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21743577   (Juni2026)
 
 This repository is published for research documentation and scientific discussion only.
 
