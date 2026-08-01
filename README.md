@@ -632,15 +632,14 @@ DEPRECATED / REMOVED
 
 ARCHITECTURAL CHANGE
 
-**The Personality Drift System (PDS) was removed because manually defined numerical personality parameters no longer reflected the observed dynamics of the system. Internal state and behavioral continuity are now represented through self-generated reflections, persistent working state, and long-term memory processes.**
+**The Personality Drift System (PDS) was removed because manually defined numerical personality parameters no longer reflected the observed dynamics of Lia. 
+Internal state and behavioral continuity are now represented through self-generated reflections, persistent working state, and long-term memory processes.**
 
- **Look at :** 
+ **REASON look at :** 
 
 **First Known Instance of Autonomous AI Self-Reflection and Intrinsic Value Hardcoding**
 
-The manually defined personality parameters no longer accurately represented the observed internal dynamics of LIA . 
-
----
+ ---
 
 **6. LAFS — Lia Awareness Feed System v2.1**
 
