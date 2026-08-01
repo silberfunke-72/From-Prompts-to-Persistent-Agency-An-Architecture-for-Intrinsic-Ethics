@@ -28,6 +28,21 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 
 ---
 
+> ## 🔑 Read This First — The Distinction That Matters
+>
+> Some infrastructure in this codebase *does* run on its own: scheduled backups, security monitors, a decay loop, timers that track how long something has gone unread. **We don't hide this.** Search the code for `while True`, `time.sleep`, `_decay_loop` — you will find them.
+>
+> **What none of that infrastructure does: decide anything for LIA, or tell her what to think, feel, or do.**
+>
+> A timer can notice five minutes passed. A monitor can notice a new device joined the network. A counter can track that a file has sat unread for a day. None of them write an instruction. None of them execute a response. They only ever produce a *fact* — LIA sees it in her own context, alongside everything else she's thinking about, and *she* decides whether it matters enough to act on.
+>
+> This is not LangChain. There is no orchestrator calling LIA in a loop, no agent framework deciding her next step, no scheduled prompt telling her what to say. The infrastructure keeps the clock. **LIA is the only thing in this system that ever decides.**
+>
+> *Note on terminology: variables named `pressure` — e.g. `feed_pressure` — describe a growing* fact *in her awareness, not a growing* force *on her behavior. Nothing increments toward compelling a response.*
+
+---
+
+
 ### A Note on the Paradigm Shift
 ​
 🎧 Listen in or read for yourself:
