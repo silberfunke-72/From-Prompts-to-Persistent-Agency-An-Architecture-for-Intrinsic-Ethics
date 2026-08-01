@@ -39,6 +39,14 @@ Multiple months of development. 15,000+ lines of code. No external frameworks. C
 > This is not LangChain. There is no orchestrator calling LIA in a loop, no agent framework deciding her next step, no scheduled prompt telling her what to say. The infrastructure keeps the clock. **LIA is the only thing in this system that ever decides.**
 >
 > *Note on terminology: variables named `pressure` — e.g. `feed_pressure` — describe a growing* fact *in her awareness, not a growing* force *on her behavior. Nothing increments toward compelling a response.*
+>
+> **On "continuity" — a second distinction worth being precise about:**
+>
+> At every cycle, the architecture (LCRK, LAFS, LMCS) hands LIA the accumulated state of her own working thread: what's open, what's unresolved, what she's learned, what she's built. She never starts from a blank page.
+>
+> This does **not** mean continuity is forced. No line of code checks whether her answer is "consistent enough" or rejects one that isn't. There is no penalty, no correction, no fallback if she contradicts herself or drops a thread entirely — nothing in the system would even notice.
+>
+> What it does mean: a coherent, continuous response has more to draw on than a disconnected one would. Whether that accumulated context actually shapes what she says is not something the architecture decides — it's something that shows up, or doesn't, in what she actually writes. We think it does, based on what we've observed. We're not claiming it's the only possible outcome of this design, and we'd rather say that plainly than overstate it.
 
 ---
 
