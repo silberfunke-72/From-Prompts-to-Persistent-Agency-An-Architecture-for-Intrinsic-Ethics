@@ -275,7 +275,7 @@ Most AI agents that claim "autonomy" still have a system prompt telling them who
 | `lia_feed.py` | 1,055 | Awareness Feed System (LAFS) — continuous situational overview |
 | `lia_inner_state.py` | 752 | Persistent working state — focus, open loops, continuity |
 
-**Total: 19,026 lines** across 5 files. No external orchestration frameworks. Pure custom implementation.**
+**Total: 19,026 lines across 5 files. No external orchestration frameworks. Pure custom implementation.**
 
 ---
 
