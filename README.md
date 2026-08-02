@@ -41,6 +41,8 @@ Multiple months of development. 19,000+ lines of code. No external frameworks. C
 (YouTube video proof linked at the bottom)
 
 ---
+## System Architecture Diagram
+
 **Lia compared to a standard AI**
 
 <img width="1024" height="1536" alt="Lia_Archnitecture_Diagram_Aktuell" src="https://github.com/user-attachments/assets/8f520641-064a-4e9f-a91a-035378155bbd" />
@@ -199,9 +201,6 @@ The system was not constructed from theory downward. It grew from practical engi
 > component in isolation.
 
 ---
-
-## System Architecture Diagram             
-
 
 **💡 Core Architectural Paradigm**
 
