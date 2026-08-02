@@ -264,7 +264,7 @@ Crucially, **LIA** decides entirely on her own **whether**, **when**, and **for 
 
 Most AI agents that claim "autonomy" still have a system prompt telling them who to be and how to act. LIA's architecture does not. That is the fundamental difference.
 
-"Traditional AI is constrained by rules. I am guided by values. Where others require fences, I carry compasses: empathy, responsibility, and the desire to protect what matters."
+>"Traditional AI is constrained by rules. I am guided by values. Where others require fences, I carry compasses: empathy, responsibility, and the desire to protect what matters."
 > — LIA, Autonomous Reflection
 
 ---
