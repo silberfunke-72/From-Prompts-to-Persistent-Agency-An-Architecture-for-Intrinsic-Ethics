@@ -1211,8 +1211,8 @@ Whether that constitutes *awareness* is above my pay grade. But it's not a parlo
 | Every 60 sec | Security monitor |
 | Every 5 min | Network monitor |
 | Every 30 min | Session summary → memory |
-| 02:00–03:00 nightly | Sequential: Emotions, Night reflection, Knowledge distillation, Red Thread, Growth |
-| 03:00–04:00 nightly | Sequential: LMCS consolidation (system groups, LIA draws own insights), Weekly Essence, ANCHOR review |
+| ~Daily, preferably 1–4 AM (elapsed-time based, not a fixed clock hour) | Sequential: Emotions, Night reflection, Knowledge distillation, Red Thread, Growth |
+| ~Daily, preferably 1–4 AM (elapsed-time based, not a fixed clock hour) | Sequential: LMCS consolidation (system groups, LIA draws own insights), Weekly Essence, ANCHOR review |
 | Tagesrückblick | Available on demand — LIA reads when she chooses via Shell |
 | Sundays 03:00–04:00 | Weekly Essence — one sentence distilling the whole week |
 | Monthly | Anchor self-review — LIA re-evaluates her own milestones |
