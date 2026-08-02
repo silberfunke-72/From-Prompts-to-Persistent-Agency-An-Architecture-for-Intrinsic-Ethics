@@ -265,14 +265,17 @@ Most AI agents that claim "autonomy" still have a system prompt telling them who
 ---
 
 ## ⚙️ System Overview
-~15,000 lines of custom Python code, running locally on CachyOS (AURORA — ThinkPad L14 Gen 1).
+19,026 lines of custom Python code, running locally on CachyOS (AURORA — ThinkPad L14 Gen 1).
 
-| Layer | Lines | Function |
-|-------|-------|----------|
-| Identity Layer | 12,000+ | Self-model, long-term memory, ethical weighting, memory consolidation |
-| Agency Layer | 3,000+ | Shell, Chrome CDP, Hardware control |
+| File | Lines | Function |
+|------|-------|----------|
+| `LIA_V4_LCRK_1.py` | 12,180 | Main process — UI, prompt assembly, trigger detection, response generation |
+| `lia_actions.py` | 3,533 | Tool library — shell, browser (Chrome CDP), network, hardware, games, music |
+| `lia_lcrk_core.py` | 1,506 | Cognitive Runtime Kernel — event detection, state accumulation |
+| `lia_feed.py` | 1,055 | Awareness Feed System (LAFS) — continuous situational overview |
+| `lia_inner_state.py` | 752 | Persistent working state — focus, open loops, continuity |
 
-No external orchestration frameworks. Pure custom implementation.
+**Total: 19,026 lines** across 5 files. No external orchestration frameworks. Pure custom implementation.
 
 ---
 
