@@ -2,7 +2,7 @@
 This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **WITHOUT** any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
 "you are".**
 
->**Before you read:
+>**Before you read:**
 
 >Most autonomous AI systems today are built around prompts, agent frameworks, orchestration layers, or predefined decision logic.**
 
