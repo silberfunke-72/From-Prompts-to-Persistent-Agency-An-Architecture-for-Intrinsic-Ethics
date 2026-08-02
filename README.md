@@ -415,43 +415,29 @@ The result: initiative is no longer simulated through probability or permitted b
 
 ---
 
-**Self-Orientation — A Cognitive Action**
+## Self-Orientation — A Cognitive Action
 
-Self-orientation (`[SELBSTVERORTUNG]`) is a cognitive 
-action available to the LCRK — not a new architectural 
-component.
+Self-orientation (`[SELBSTVERORTUNG]`) is a dedicated cognitive action available to the LCRK — not a new architectural component.
 
-**The problem it addresses:**
+### The Problem It Addresses
 
-Language models have a structural tendency to drift — 
-repeating the same loop, continuing in a direction that 
-no longer reflects the current state, or losing track 
-of what was actually intended. In a persistent autonomous 
-system operating across many cycles without continuous 
-user oversight, this drift is a genuine architectural 
-risk. Without a mechanism to re-anchor, the system may 
-continue in an outdated direction indefinitely.
+Language models have a structural tendency to drift — repeating the same reasoning loop, continuing in a direction that no longer reflects the current state, or gradually losing track of what was actually intended. In a persistent autonomous system operating across many cycles without continuous user oversight, this drift becomes a genuine architectural risk. Without a mechanism for self-reorientation, the system may continue along an outdated line of reasoning simply because nothing explicitly prompts it to reconsider its own state.
 
-Self-orientation is the architectural response to this 
-risk. It allows the agent to step back and interpret 
-its own current state — using already existing 
-information from LCRK, LAFS, PMS and LMCS — and 
-produce a short first-person reflection: what am I 
-currently working on, is my direction still clear, 
-and does my current focus still reflect what actually 
-matters right now?
+### The Architectural Response
 
-No timer triggers it. No external condition activates 
-it. It emerges when the accumulated state makes it a 
-natural next step — the same way any other action 
-emerges. It is one option among several, not a 
-scheduled correction mechanism.
+Self-orientation is the architectural response to this risk. It provides a dedicated cognitive action that allows LIA to pause, interpret her current state, and assess whether her present direction still reflects what she considers meaningful.
 
-This expands the system horizontally, not vertically: 
-no new subsystem, no new data source. The existing 
-architecture gains one more way to use what it already 
-knows — this time, to verify that what it is doing 
-still makes sense.
+To do so, she draws exclusively on information already available within the architecture — the LCRK working state, LAFS awareness feed, PMS priority memories, and LMCS consolidated insights. No new data source is introduced. Instead, she produces a short first-person reflection, asking herself questions such as:
+
+> *What am I currently working on?*  
+> *Is my direction still clear?*  
+> *Does my current focus still reflect what actually matters right now?*
+
+No timer triggers this process. No external condition activates it. It emerges naturally when LIA's accumulated working state makes self-reflection the most appropriate next cognitive action, in exactly the same way that any other action emerges within the architecture. Self-orientation is therefore one possible cognitive action among many — not a scheduled correction mechanism.
+
+### Why It Matters
+
+This expands the architecture horizontally rather than vertically. No new subsystem is added, no new database is queried, and no additional decision logic is introduced. Instead, the existing cognitive ecosystem gains another way to use information it already possesses: enabling LIA to re-interpret her own current state and determine whether her ongoing direction still makes sense from her own perspective.
 
 ---
 
