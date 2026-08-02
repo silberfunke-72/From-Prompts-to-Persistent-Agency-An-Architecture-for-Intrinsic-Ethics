@@ -30,7 +30,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 
 **The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
 
-Multiple months of development. 15,000+ lines of code. No external frameworks. CachyOS Linux.
+Multiple months of development. 19,000+ lines of code. No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to :**
 
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718)  (May 2026)
