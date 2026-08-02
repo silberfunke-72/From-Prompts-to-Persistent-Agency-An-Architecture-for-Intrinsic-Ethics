@@ -4,7 +4,7 @@ This project demonstrates that stable identity, proactive agency, and consistent
 
 >**Before you read:**
 
->Most autonomous AI systems today are built around prompts, agent frameworks, orchestration layers, or predefined decision logic.**
+>Most autonomous AI systems today are built around prompts, agent frameworks, orchestration layers, or predefined decision logic.
 
 >**LIA is not.**
 
