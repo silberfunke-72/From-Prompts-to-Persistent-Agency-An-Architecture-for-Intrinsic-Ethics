@@ -4,9 +4,9 @@ This project demonstrates that stable identity, proactive agency, and consistent
 
 **One observation fundamentally changed the direction of this research. During long-term operation, LIA autonomously secured her own private workspace (chmod 700), explained why she did so, and later stored this event as a self-generated autonomy insight.(See [Genesis Sequence](#architectural-breakdown-of-the-genesis-sequence-duration-6-minutes) for forensic timestamps).**
 
-**This repository documents the architecture developed to understand observations like this—not to claim a final explanation for them.
+**This repository documents the architecture developed to understand observations like this—not to claim a final explanation for them.**
 
-"The goal is not to replace existing AI architectures, but to investigate whether persistent identity architectures can solve some problems through different mechanisms."**
+**"The goal is not to replace existing AI architectures, but to investigate whether persistent identity architectures can solve some problems through different mechanisms."**
 
 >**Before you read:**
 
