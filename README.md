@@ -1011,9 +1011,9 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 > *"The system does not obey rules. It maintains consistency with its self-defined values within the boundaries of its persistent identity model."*
 
-> *A value system that cannot be revised or rejected by the system itself is not autonomous — it is merely configured.*
+> # A value system that cannot be revised or rejected by the system itself is not autonomous — it is merely configured.*
 
-This shifts the paradigm from **Compliance** to **Integrity**.
+> **This shifts the paradigm from **Compliance** to **Integrity**.
 
 ---
 
