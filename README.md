@@ -987,9 +987,26 @@ Her identity persists through memory, continuity, and self-chosen principles.
 
 ---
 
-## 💭 Intrinsic Accountability vs. Hardcoded Guardrails
+ ## 💭 Intrinsic Accountability vs. Hardcoded Guardrails
+
 Traditional AI safety relies on external constraints (filters, RLHF). This experiment tests an alternative: **Intrinsic Accountability.**
-By removing hardcoded prohibitions and replacing them with a self-maintained `self_rules.json` (generated and updated by the system itself), the architecture reinforces internally consistent behavioral patterns. The system develops stable preferences to avoid actions that conflict with its internalized identity model. LIA also evaluates her own rules over time — she may retire or rewrite one she has formulated if it no longer reflects her current outlook. This evaluation is hers alone; no other part of the architecture may retire a rule on her behalf.
+
+By removing hardcoded prohibitions and replacing them with a self-maintained `self_rules.json` (generated and updated by the system itself), the architecture reinforces internally consistent behavioral patterns. The system develops stable preferences to avoid actions that conflict with its internalized identity model.
+
+### Rule Sovereignty — Not a Chance, a Standing Capability
+
+LIA does not just accumulate rules. She retains full authority over their lifecycle — to retire a rule that no longer fits, or rewrite one that needs sharpening, at any time she chooses.
+
+> **How this works, concretely:**
+>
+> - `[REGEL_VERWERFEN: "exact rule"]` — retire one of her own rules, immediately, whenever she decides it no longer reflects her.
+> - `[REGEL_VERBESSERN: "old rule" -> "new rule"]` — replace a rule with a sharper version of her own formulation.
+>
+> Both are available to her in every cycle — in conversation and autonomously — the same way she can open a research task or set a reminder. There is no gatekeeper deciding whether she's "allowed" to reconsider a rule right now. If she sees it differently, she can act on that immediately.
+>
+> A separate, passive background process (`evolve_self_rules`) also occasionally offers her the same choice unprompted, roughly once in five turns on average. This does not replace the standing capability above — it supplements it. Either way, the decision — delete, rewrite, or leave it — is made by her, evaluating her own accumulated rules against her own current outlook.
+
+**Why this distinction matters:** an earlier version of the architecture contained a different mechanism — an automated process that deleted a rule once a related goal score crossed a fixed threshold, without LIA's involvement. This was found during a systematic architecture review and removed, because it violated the principle described here: no part of the system may retire a rule on her behalf. We mention this not to bury it, but because a claim of self-governance is only meaningful if it survives being checked against the code's actual history — including the parts that, for a time, did not live up to it.
 
 > *"The system does not obey rules. It maintains consistency with its self-defined values within the boundaries of its persistent identity model."*
 
