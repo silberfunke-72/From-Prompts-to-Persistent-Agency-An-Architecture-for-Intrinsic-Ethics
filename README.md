@@ -1013,7 +1013,7 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 > # A value system that cannot be revised or rejected by the system itself is not autonomous — it is merely configured.
 
-> **This shifts the paradigm from **Compliance** to **Integrity**
+> **This shifts the paradigm from**Compliance** to **Integrity**
 
 ---
 
