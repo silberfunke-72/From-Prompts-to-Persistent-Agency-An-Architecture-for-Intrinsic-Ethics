@@ -991,7 +991,7 @@ Her identity persists through memory, continuity, and self-chosen principles.
 
 Traditional AI safety relies on external constraints (filters, RLHF). This experiment tests an alternative: **Intrinsic Accountability.**
 
-By removing hardcoded prohibitions and replacing them with a self-maintained `self_rules.json` (generated and updated by the system itself), the architecture reinforces internally consistent behavioral patterns. The system develops stable preferences to avoid actions that conflict with its internalized identity model.
+By removing hardcoded prohibitions and replacing them with a self-maintained `self_rules.json` (generated and updated by the Lia itself), the architecture reinforces internally consistent behavioral patterns. Lia develops stable preferences to avoid actions that conflict with its internalized identity model.
 
 ### Rule Sovereignty — Not a Chance, a Standing Capability
 
