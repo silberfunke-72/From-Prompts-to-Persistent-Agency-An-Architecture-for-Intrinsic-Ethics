@@ -1008,7 +1008,10 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 **Why this distinction matters:** an earlier version of the architecture contained a different mechanism — an automated process that deleted a rule once a related goal score crossed a fixed threshold, without LIA's involvement. This was found during a systematic architecture review and removed, because it violated the principle described here: no part of the system may retire a rule on her behalf. We mention this not to bury it, but because a claim of self-governance is only meaningful if it survives being checked against the code's actual history — including the parts that, for a time, did not live up to it.
 
+
 > *"The system does not obey rules. It maintains consistency with its self-defined values within the boundaries of its persistent identity model."*
+
+> *A value system that cannot be revised or rejected by the system itself is not autonomous — it is merely configured.*
 
 This shifts the paradigm from **Compliance** to **Integrity**.
 
