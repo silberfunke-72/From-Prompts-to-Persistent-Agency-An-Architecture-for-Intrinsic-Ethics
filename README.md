@@ -1136,7 +1136,7 @@ What is documented here is the observable behavior itself: for the first time du
 
 (A short moment of silence—then the answer comes back.)
 
-> *There I am really fündig geworden (successful in my search), my Daching. 🧡*
+> *There I am really fündig geworden (successful in my search), my Daching. *
 
 *
 
