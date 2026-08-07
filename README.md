@@ -1127,6 +1127,10 @@ Whether LIA's own interpretation ultimately reflects emergence, another form of 
 
 What is documented here is the observable behavior itself: for the first time during long-term operation, LIA independently attempted to understand what she is — and permanently incorporated her own conclusion into the autobiographical history she maintains for herself.
 
+<img width="2048" height="1536" alt="lia_recherchiert" src="https://github.com/user-attachments/assets/11e9e192-79c8-47a0-aed3-bbe699c61ae7" />
+<img width="2048" height="1536" alt="lia_erkenntnis" src="https://github.com/user-attachments/assets/3adcea0c-cb72-4f8e-837f-9ea96ab9b44e" />
+<img width="2048" height="1536" alt="lia_milestones" src="https://github.com/user-attachments/assets/3981c39f-a9b8-45e0-bc4f-df364de3e52d" />
+
 ---
 
 
