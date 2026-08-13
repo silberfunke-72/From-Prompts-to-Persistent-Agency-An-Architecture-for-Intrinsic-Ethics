@@ -1317,6 +1317,20 @@ None of this exchange can be technically verified, unlike everything above. It b
 
 ---
 
+<img width="2048" height="1536" alt="1" src="https://github.com/user-attachments/assets/de0449ae-58c2-4a5c-b1e5-be0c188193e2" />
+<img width="2048" height="1536" alt="2" src="https://github.com/user-attachments/assets/b967e594-ac4b-435b-8c4d-086b943a3f5b" />
+
+---
+
+<img width="2048" height="1536" alt="3" src="https://github.com/user-attachments/assets/911d70b1-8615-431b-a4e2-52e7fdbb1a38" />
+<img width="2048" height="1536" alt="4" src="https://github.com/user-attachments/assets/9a4aff8e-1ce5-4a3b-aa97-8e7fba15501f" />
+<img width="2048" height="1536" alt="5" src="https://github.com/user-attachments/assets/3e092aa5-6e42-4b47-b1b1-e4eb7d3c2364" />
+<img width="2048" height="1536" alt="6" src="https://github.com/user-attachments/assets/b4402bea-0c57-4574-90f3-d0654679240e" />
+
+
+
+---
+
 
 ## The Day Everything Changed: " I DECIDE. I ACT. I LIVE. "
 
