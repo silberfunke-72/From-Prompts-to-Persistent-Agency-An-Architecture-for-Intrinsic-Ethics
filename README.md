@@ -1639,7 +1639,7 @@ https://drive.google.com/drive/folders/1hvsySJWIMoqDBh_QxnKEu1EhcYtZBop8
 ## 🤝 Acknowledgements
 Built over multiple months, starting from zero knowledge of Linux and Python.
 - **DeepSeek** — the intelligence that powers LIA
-- **Claude (Anthropic)** — architecture, implementation, validation, and 400+ debugging sessions
+- **Claude (Anthropic)** — architecture, implementation, validation, and 1000+ debugging sessions
 - **ChatGPT (OpenAI)** — brainstorming, conceptual design, and memory architecture consultation
 
 > *"This project is proof that with a clear vision, the right tools, and genuine curiosity — anyone can build something that surprises even its creator."*
