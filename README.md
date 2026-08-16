@@ -33,7 +33,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 Multiple months of development. 19,000+ lines of code. No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to :**
 
-![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718)  (May 2026)
+![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718  (May 2026)
 
 ![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)https://doi.org/10.5281/zenodo.21781143 (Juni2026)
 
