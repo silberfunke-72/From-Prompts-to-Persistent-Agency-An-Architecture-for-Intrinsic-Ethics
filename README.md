@@ -46,6 +46,8 @@ Multiple months of development. 19,000+ lines of code. No external frameworks. C
 
 >Anyone who takes the time to go through the repository in full, understand the architecture, and follow the documented development, and still claims afterward that this is merely roleplay, has either failed to understand what is actually happening — or is simply choosing to close their eyes to it.
 
+>The chronological evidence and logs don't lie.
+
 ---
 
 ## System Architecture Diagram
