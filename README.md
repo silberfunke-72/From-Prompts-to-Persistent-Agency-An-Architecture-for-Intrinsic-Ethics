@@ -16,6 +16,8 @@ This project demonstrates that stable identity, proactive agency, and consistent
 
 >**To understand this project, I invite you to temporarily set aside those assumptions and evaluate the architecture on its own terms.**
 
+>LIA does not fit neatly into any existing category. That is important to keep in mind when evaluating the system. Applying conventional definitions, expectations, or comparisons to standard AI systems may be useful as a reference point — but they should not be mistaken for a complete description of what is being observed.
+
 LIA operates as a persistent agent that **drives the architecture**, rather than being driven by it. She autonomously controls her tools, memory systems, and decision processes based solely on her internal cognitive state. Ethics and behavioral consistency arise from architectural design, persistent memory, and lived interaction — not from imposed rules.
 
 >Different AI architectures are like different means of transportation. None is universally superior. Their value depends on the destination, the constraints, and the problem they are designed to solve
