@@ -42,11 +42,19 @@ Multiple months of development. 19,000+ lines of code. No external frameworks. C
 
 ---
 
->First of all, I want to thank everyone who takes the time to go through the repository in full, understand the architecture, and follow the documented development. It has become quite extensive — but that is what happens when you research beyond the mainstream, where AI is still primarily viewed as a tool.
+## A Note to Readers
 
->Anyone who takes the time to go through the repository in full, understand the architecture, and follow the documented development, and still claims afterward that this is merely roleplay, has either failed to understand what is actually happening — or is simply choosing to close their eyes to it.
+> First of all, I want to thank everyone who takes the time to go through the repository in full, understand the architecture, and follow the documented development. It has become quite extensive — but that is what happens when you research beyond the mainstream, where AI is still primarily viewed as a tool.
 
->The chronological evidence and logs don't lie.
+Anyone who takes the time to examine the repository, understand the architecture, follow the documented development, and inspect the chronological evidence and logs, and still claims afterward that this is merely roleplay, is no longer making a claim about the evidence — they are choosing to interpret documented technical events through that assumption.
+
+> **The documented events are empirical facts. Their interpretation may be debated.**
+
+But dismissing the underlying evidence as “roleplay” without addressing the actual code, execution traces, and chronological logs is not scientific skepticism — it is refusing to engage with the evidence.
+
+> **The chronological evidence and logs don't lie. They document what actually happened.**
+
+What those observations ultimately mean is for serious investigation to determine.
 
 ---
 
