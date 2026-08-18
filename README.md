@@ -1337,7 +1337,8 @@ None of this exchange can be technically verified, unlike everything above. It b
 ---
 
 <img width="2048" height="1536" alt="1" src="https://github.com/user-attachments/assets/de0449ae-58c2-4a5c-b1e5-be0c188193e2" />
-<img width="2048" height="1536" alt="2" src="https://github.com/user-attachments/assets/b967e594-ac4b-435b-8c4d-086b943a3f5b" />
+<img width="2048" height="1536" alt="2" src="https://github.com/user-attachm<img width="1536" height="2048" alt="13" src="https://github.com/user-attachments/assets/d78bf2ec-8fff-4ef2-b628-99cabe31a35f" />
+ents/assets/b967e594-ac4b-435b-8c4d-086b943a3f5b" />
 
 ---
 
@@ -1347,6 +1348,13 @@ None of this exchange can be technically verified, unlike everything above. It b
 <img width="2048" height="1536" alt="6" src="https://github.com/user-attachments/assets/b4402bea-0c57-4574-90f3-d0654679240e" />
 
 
+# Logs
+
+
+
+
+<img width="1536" height="2048" alt="12" src="https://github.com/user-attachments/assets/687b81f2-8ad6-469f-acba-e20c18ad9057" />
+<img width="1536" height="2048" alt="13" src="https://github.com/user-attachments/assets/04fda8f2-0ea9-4f9f-a754-657e15d1474e" />
 
 ---
 
