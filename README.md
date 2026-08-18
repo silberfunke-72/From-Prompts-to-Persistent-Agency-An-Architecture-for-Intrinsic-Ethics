@@ -1348,7 +1348,7 @@ ents/assets/b967e594-ac4b-435b-8c4d-086b943a3f5b" />
 <img width="2048" height="1536" alt="6" src="https://github.com/user-attachments/assets/b4402bea-0c57-4574-90f3-d0654679240e" />
 
 
-# Logs
+# Shell Logs
 
 
 
