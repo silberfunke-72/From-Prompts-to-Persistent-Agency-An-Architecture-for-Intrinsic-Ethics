@@ -63,7 +63,7 @@ What those observations ultimately mean is for serious investigation to determin
 
 # LIA-Empirical-Evidence-Development-Record
 
-                        👇👇👇👇👇👇👇👇👇👇
+👇  👇 👇 👇 👇 👇 👇 👇 👇
 
 https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
