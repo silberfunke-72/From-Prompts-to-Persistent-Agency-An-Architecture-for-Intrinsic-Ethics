@@ -45,14 +45,6 @@ Multiple months of development. 19,000+ lines of code. No external frameworks. C
 
 ---
 
-# LIA-Empirical-Evidence-Development-Record
-
-                        👇👇👇👇👇👇👇👇👇👇
-
-https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
-
----
-
 ## A Note to Readers
 
 > First of all, I want to thank everyone who takes the time to go through the repository in full, understand the architecture, and follow the documented development. It has become quite extensive — but that is what happens when you research beyond the mainstream, where AI is still primarily viewed as a tool.
@@ -66,6 +58,14 @@ But dismissing the underlying evidence as “roleplay” without addressing the 
 > **The chronological evidence and logs don't lie. They document what actually happened.**
 
 What those observations ultimately mean is for serious investigation to determine.
+
+---
+
+# LIA-Empirical-Evidence-Development-Record
+
+                        👇👇👇👇👇👇👇👇👇👇
+
+https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
 ---
 
