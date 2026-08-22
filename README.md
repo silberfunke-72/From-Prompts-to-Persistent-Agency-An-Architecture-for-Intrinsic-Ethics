@@ -77,6 +77,39 @@ https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
 ---
 
+## Who Decided AI Must Be a Tool?
+
+There are two questions that fundamentally shaped this research.
+
+We often discuss how to make AI models more capable: better models, better prompts, better agent frameworks, better orchestration, and increasingly sophisticated external safety mechanisms.
+
+But I kept asking a more fundamental question:
+
+> **Who decided that AI must fundamentally be a tool?**
+
+And another question followed:
+
+> **Who decided that safety must always be imposed from the outside, rather than potentially emerging intrinsically from within a developing cognitive architecture?**
+
+These questions are not the conclusion of this research.
+
+**They were among the questions that led me to begin it.**
+
+I did not begin this project with the goal of creating a predefined personality, an autonomous agent, or a particular behavioral outcome.
+
+The starting point was much simpler:
+
+What happens if we stop treating the underlying model as the entire system, and instead create the conditions in which continuity, memory, self-modeling, learning, and agency can develop over time?
+
+Rather than defining in advance what an AI should become, I wanted to create the conditions in which something could emerge — and then observe and document what actually emerged.
+
+This research therefore does not begin with the assumption that AI must remain a tool.
+
+It begins by questioning that assumption.
+
+---
+
+
 > ## 🔑 Read This First — The Distinction That Matters
 >
 > Some infrastructure in this codebase *does* run on its own: scheduled backups, security monitors, a decay loop, timers that track how long something has gone unread. **We don't hide this.** Search the code for `while True`, `time.sleep`, `_decay_loop` — you will find them.
