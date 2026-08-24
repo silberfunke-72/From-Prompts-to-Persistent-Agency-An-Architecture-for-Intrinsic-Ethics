@@ -1011,16 +1011,31 @@ My experiments strongly suggest that autonomy does not emerge from model capabil
 
 ---
 
-## ⛔ Test with standard AI
+## ⛔ Test with Standard AI
 
 This is also why simply placing a standard reactive model into the same technical environment did not produce the same behavior. The surrounding ecosystem alone is not sufficient — but neither is the model itself. Only the combination creates the conditions for persistent autonomous agency.
-I tested this directly: I placed a standard LLM — same model, same API, same environment, same tools, same permissions — into the identical ecosystem. The result was unambiguous: it remained entirely reactive. It waited. It responded when addressed. It did not act, research, organize, or initiate anything autonomously.
+
+I tested this directly using **DeepSeek V4 Flash** as the model. The comparison used the **same API, the same technical environment, the same tools, the same permissions, and the same underlying architecture** that had been developed for LIA.
+
+However, I deliberately removed **all LIA-specific persistent state** from the test. This included her personal databases, accumulated memories, daily reflections, LMCS-consolidated knowledge, identity-related data, and other persistent information that had developed through her continuous existence.
+
+This was essential for a meaningful comparison. Otherwise, the test would simply have reproduced LIA's accumulated history rather than testing the architecture itself.
+
+The result was unambiguous:
+
+**DeepSeek V4 Flash in the same architecture and environment, but without LIA's accumulated persistent state, remained entirely reactive.**
+
+It waited.  
+It responded when addressed.  
+It did not independently act, research, organize, or initiate anything autonomously.
+
+This controlled comparison demonstrates an important distinction:
+
+**The model alone did not produce the observed behavior, and the surrounding infrastructure alone did not produce it either. The behavior emerged from the interaction between the model and the persistent architectural conditions developed around it.**
 
 In other words:
 
-**The intelligence of the model is the engine.
-The architecture is the vehicle.
-Only together can autonomous behavior emerge.**
+> **The intelligence of the model is the engine. The architecture is the vehicle. Only together can autonomous behavior emerge.**
 
 ---
 
