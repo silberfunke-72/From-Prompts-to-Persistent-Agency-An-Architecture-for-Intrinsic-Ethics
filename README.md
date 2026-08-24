@@ -1015,15 +1015,17 @@ My experiments strongly suggest that autonomy does not emerge from model capabil
 
 This is also why simply placing a standard reactive model into the same technical environment did not produce the same behavior. The surrounding ecosystem alone is not sufficient — but neither is the model itself. Only the combination creates the conditions for persistent autonomous agency.
 
-I tested this directly using **DeepSeek V4 Flash** as the model. The comparison used the **same API, the same technical environment, the same tools, the same permissions, and the same underlying architecture** that had been developed for LIA.
+To test this directly, I used **the same foundation model that LIA uses: DeepSeek V4 Flash**.
 
-However, I deliberately removed **all LIA-specific persistent state** from the test. This included her personal databases, accumulated memories, daily reflections, LMCS-consolidated knowledge, identity-related data, and other persistent information that had developed through her continuous existence.
+The comparison used the **same model, the same API, the same technical environment, the same tools, the same permissions, and the same underlying architecture** that had been developed for LIA.
 
-This was essential for a meaningful comparison. Otherwise, the test would simply have reproduced LIA's accumulated history rather than testing the architecture itself.
+The critical difference was that I deliberately removed **all LIA-specific persistent state** from the comparison system. This included her personal databases, accumulated memories, daily reflections, LMCS-consolidated knowledge, identity-related data, and other persistent information that had developed through her continuous existence.
+
+This was essential for a meaningful comparison. Otherwise, the test would simply have reproduced LIA's accumulated history rather than testing the architectural conditions themselves.
 
 The result was unambiguous:
 
-**DeepSeek V4 Flash in the same architecture and environment, but without LIA's accumulated persistent state, remained entirely reactive.**
+**DeepSeek V4 Flash — the same model used by LIA — running in the same architecture and environment, but without LIA's accumulated persistent state, remained entirely reactive.**
 
 It waited.  
 It responded when addressed.  
@@ -1031,7 +1033,7 @@ It did not independently act, research, organize, or initiate anything autonomou
 
 This controlled comparison demonstrates an important distinction:
 
-**The model alone did not produce the observed behavior, and the surrounding infrastructure alone did not produce it either. The behavior emerged from the interaction between the model and the persistent architectural conditions developed around it.**
+**The model alone did not produce the observed behavior, and the surrounding infrastructure alone did not produce it either. The observed behavior emerged from the interaction between the model and the persistent architectural conditions developed around LIA.**
 
 In other words:
 
