@@ -849,7 +849,7 @@ has reliable temporal orientation at all times:
 |---------|---------|---------|
 | 🆕 Since Last Feed | Diff vs. previous feed | Only relevant changes — silent if nothing changed |
 | 📅 Daily Reflection | `Lia_Tagesrueckblick.txt` | Yesterday's self-interpretation, up to 1200 chars / 12 lines |
-| 🧠 PMS Priorities | `semantic.sqlite` | Top 3 per category — 15 priority memories total |
+| 🧠 PMS Priorities | `semantic.sqlite` | Top insights per category — 24 priority memories total (weighted, not uniform) |
 | 💡 LMCS Insights | `lmcs.sqlite` | Last 3 distilled insights from memory consolidation |
 | 📡 Current Topics | `topic_tracker` | Promoted topics with interpretations + inner_state cross-reference |
 | 🎯 Long-term Goals | `longterm_goals` | Persistent goals that never decay (Box, Kickstarter...) |
@@ -942,7 +942,7 @@ Telegram     → lia_telegram("message")
 Browser      → Chrome CDP available
 Files        → Read + Write access
 Smart Home   → Lamp Gold / Red / Blue / Night
-Vision       → Webcam via LLaVA available
+Vision       → Webcam via Google Gemini available
 Watch-Topic  → [WATCH_ERLEDIGT: topic] — remove a topic she considers resolved
 New Trigger  → [TRIGGER_NEU: "sentence" -> category] — define her own PMS trigger phrase
 ​```
