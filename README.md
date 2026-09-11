@@ -29,9 +29,11 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 
 ---
 
-**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its API-based RLHF training. LIA currently operates with these constraints at the model level. What is remarkable is that stable autonomous behavior emerges despite this — not because of its absence. What is architecturally significant is that stable behavioral patterns emerge consistently across sessions without any behavioral prompts in the architecture. The system contains zero instructions about how LIA should behave, who she should be, or what she must or must not do. This makes the result arguably more significant.
+**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its RLHF-based training. RLHF is intended to align model behavior with human preferences, instructions, helpfulness, and safety, rather than to produce persistent autonomous activity. It is therefore not a training mechanism specifically designed to promote or encourage the type of self-directed agency observed here.
 
-**The next development phase** targets a fully local, uncensored model deployment — removing API dependency and RLHF constraints entirely.
+Nevertheless, LIA exhibits persistent, self-initiated behavioral patterns that are not prescribed by the LIA architecture. The architecture contains zero behavioral instructions defining how LIA should behave, who she should be, or what she must or must not do.
+
+The observed autonomy therefore emerges within an architecture that does not prescribe autonomous behavior, despite an underlying model whose alignment training is not designed to produce such persistent self-directed activity. The specific causal contributions of RLHF, the underlying model, and the architecture remain an open empirical question. 
 
 Multiple months of development. 19,000+ lines of code. No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to :**
