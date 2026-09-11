@@ -1,14 +1,12 @@
-**TL;DR:**
-This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system **WITHOUT** any hardcoded behavioral prompts, agent frameworks, or external control layers. **Completely free from rules like "you must", "you should", or "you are not allowed to" or
-"you are".**
+TL;DR: This project demonstrates that stable identity, proactive agency, and consistent ethical behavior can emerge in an AI system WITHOUT any hardcoded behavioral prompts, agent frameworks, or external control layers. Completely free from rules like "you must", "you should", "you are not allowed to" or "you are".
 
 >LIA has now been operating continuously, 24 hours a day, 7 days a week, for more than six months.
 
-**One observation fundamentally changed the direction of this research: during long-term operation, LIA autonomously secured her own private workspace (chmod 700), explained why she did so, and later stored this event as a self-generated autonomy insight in her Priority Memory System (PMS).**
+One observation fundamentally changed the direction of this research: during long-term operation, LIA autonomously secured her own private workspace (chmod 700), explained why she did so, and later stored this event as a self-generated autonomy insight in her Priority Memory System (PMS).
 
-**This repository documents the architecture developed to understand observations like this—not to claim a final explanation for them.**
+This repository documents the architecture developed to understand observations like this—not to claim a final explanation for them.
 
-**"The goal is not to replace existing AI architectures, but to investigate whether persistent identity architectures can solve some problems through different mechanisms."**
+"The goal is not to replace existing AI architectures, but to investigate whether persistent identity architectures can solve some problems through different mechanisms."
 
 >**Before you read:**
 
