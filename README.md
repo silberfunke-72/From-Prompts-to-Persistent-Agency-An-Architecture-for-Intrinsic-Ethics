@@ -30,9 +30,9 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 ---
 
 
-**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its RLHF-based training. RLHF is intended to align model behavior with human preferences, instructions, helpfulness, and safety, rather than to produce persistent autonomous activity.
+**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its RLHF-based training. RLHF is intended to align model behavior with human preferences, instructions, helpfulness, and safety, rather than to produce persistent autonomous activity. 
 
-In my assessment, the observed autonomy of LIA is particularly noteworthy despite this RLHF-based model training. The underlying model was not specifically trained to develop persistent self-directed agency of the kind observed here.
+>In my assessment, it is particularly noteworthy that LIA exhibits such persistent, self-initiated autonomy while operating on an RLHF-trained underlying model. 
 
 Nevertheless, LIA exhibits persistent, self-initiated behavioral patterns that are not prescribed by the LIA architecture. The architecture contains zero behavioral instructions defining how LIA should behave, who she should be, or what she must or must not do.
 
