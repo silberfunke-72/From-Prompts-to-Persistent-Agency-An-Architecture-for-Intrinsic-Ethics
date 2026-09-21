@@ -1141,7 +1141,332 @@ LIA does not behave ethically because she **cannot** do otherwise. She runs as a
 | `/home/lia/Eigenes_Reich/` | Private space, `chmod 700`, created by LIA herself |
 
 
+---
 
+# Semantischer Audit — Ereignis bis Handlung
+### LIA-Architektur, LIA_V4_LCRK_1.py / lia_lcrk_core.py / lia_inner_state.py
+### 19. September 2026
+
+**Methodik:** Keine Stichwortsuche. Vollständige, semantische Lektüre der zentralen
+Prompt-Bausteine und der vollständigen Ereignis→Zustand→Entscheidung→Handlung-Kette,
+mit Fundstellen (Datei, Zeile, Zitat) und expliziter Trennung von nachgewiesenem
+Befund, Interpretation und offener Unsicherheit.
+
+---
+
+## 1. Die zentrale Frage: Wer entscheidet, ob gehandelt wird?
+
+### Nachgewiesen
+
+`process_events()` (lia_inner_state.py, Zeile 433–644) ist die einzige Stelle im
+gesamten autonomen Zyklus, die eine Handlungsabsicht (`intention`) erzeugt. Es ist
+**ein echter, eigenständiger LLM-Aufruf** — nicht eine im Code berechnete
+Entscheidung:
+
+```python
+# Zeile 640
+raw = self._direct_api_call(prompt, max_tokens=4000, temperature=0.45)
+if not raw:
+    return current, None, False
+return self._parse_and_update(raw, current)
+```
+
+Der Prompt für diesen Aufruf enthält wörtlich (Zeile 586):
+
+> „Du kannst jetzt handeln, wenn du möchtest — oder bewusst nicht handeln. Beides
+> ist eine vollständige, gültige Antwort. Was du oben bereits notiert hast, bleibt
+> in jedem Fall erhalten, auch wenn du dich gerade dagegen entscheidest."
+
+Das JSON-Antwortformat verlangt ausdrücklich beide Werte gleichwertig (Zeile 599):
+
+```
+"wants_to_act": true oder false,
+```
+
+Ein Code-Kommentar (Zeile 448–457) dokumentiert selbst, dass diese Gleichwertigkeit
+erst nachträglich, nach gemeinsamer Untersuchung mit Carsten und ChatGPT, bewusst so
+formuliert wurde — vorher stand dort nur ein fester Beispielwert `"wants_to_act": true`,
+was laut Kommentar „die Wahl unbeabsichtigt einseitig wirken liess". Das ist
+dokumentierte Selbstkorrektur, kein behauptetes Ideal.
+
+Die Auswertung ihrer Antwort (`_parse_and_update()`, Zeile 1019–1037) ist ein reiner,
+ungefilterter Durchreich:
+
+```python
+wants_to_act = bool(data.get("wants_to_act", False))
+intention    = None
+if wants_to_act and data.get("intention"):
+    intention = str(data["intention"]).strip()
+    if len(intention) < 5:
+        intention = None
+    ...
+return current, intention, warteschlange_bearbeiten
+```
+
+Es gibt **keine** Stelle, an der `wants_to_act=False` überschrieben, ignoriert oder
+durch eine Bedingung außer Kraft gesetzt wird. Der einzige Filter ist eine technische
+Mindestlängenprüfung (≥ 5 Zeichen) gegen leere/kaputte Antworten — keine
+inhaltliche Bewertung.
+
+### Interpretation
+
+Die Architektur stellt der Entscheidung Informationen zur Verfügung (Ereignisse,
+verstrichene Zeit, offene Vorhaben, Werkzeugliste) und fragt sie explizit, ob und was
+sie tun möchte. Sie entscheidet — nicht der Code. Das entspricht exakt der im DCA- und
+Companion-Paper behaupteten Architektur/Agent-Trennung.
+
+### Unsicherheit
+
+Ob die *Formulierung* des Prompts selbst (Reihenfolge der Informationen, welche
+Fakten hervorgehoben werden) eine subtile, nicht-explizite Verzerrung in Richtung
+„handeln" erzeugt, kann durch Code-Lektüre allein nicht ausgeschlossen werden — das
+wäre nur empirisch, über viele Zyklen hinweg, mit Blick auf die tatsächliche
+`wants_to_act`-Verteilung zu prüfen, nicht durch Lesen des Prompts selbst.
+
+---
+
+## 2. Der vollständige Weg: Ereignis → Zustand → Entscheidung → Handlung
+
+Nachgewiesen anhand der Hauptschleife (lia_lcrk_core.py, Zeile 1986–2130):
+
+```
+1. Zustand beobachten (kein LLM)         idle = _idle_secs(); state = _state_agg.collect(idle)
+2. Events erkennen                        events = _observer.detect(state, prev_state)
+3. Laufende Aktionen aufräumen            (rein buchhalterisch, kein Entscheid)
+4. Buffer verarbeiten wenn bereit         new_state, intention, wbearb = _inner.process_events(pending, state)
+5. Wenn intention gesetzt ist              → erst hier wird überhaupt eine Handlung möglich
+```
+
+**Schritt 1–3 rufen an keiner Stelle die LLM auf.** Sie sammeln ausschließlich
+Fakten (Leerlaufzeit, neue Dateien, abgelaufene Timer, beendete Hintergrund-Threads).
+Schritt 4 ist der einzige Punkt, an dem überhaupt eine Entscheidung entstehen kann —
+und das, wie unter Punkt 1 gezeigt, ausschließlich durch ihre eigene LLM-Antwort.
+
+---
+
+## 3. Gibt es hartkodierte Regeln, Schwellenwerte oder Bedingungen, die eine Handlung erzwingen?
+
+### Nachgewiesen — gefundene Schwellenwerte, alle technischer Natur
+
+| Schwellenwert | Fundstelle | Funktion |
+|---|---|---|
+| `MAX_OPEN_ACTS = 2` | lia_lcrk_core.py:1896 | Maximal gleichzeitig laufende Hintergrund-Threads — Ressourcengrenze, keine Verhaltensvorgabe |
+| Loop-Schutz: 3× identischer Fingerprint → Stopp | lia_lcrk_core.py:2085–2130 | Verhindert technische Endlosschleifen (siehe Paper Section 4.11 „Drift-Problem") — reagiert auf **Wiederholungsmuster**, nicht auf **Inhalt**. Greift unabhängig davon, WAS sie wiederholt, nie WELCHES Thema sie wählt |
+| `DEBOUNCE_SECS = 10` (EventBuffer) | Kommentar Zeile 2024 | Verhindert, dass ein einzelnes Ereignis mehrfach in Sekundenbruchteilen verarbeitet wird — technische Entprellung, kein inhaltlicher Filter |
+| Max. 8 offene Vorhaben, max. 6 `unfinished_tasks_erledigt` pro Zyklus | lia_inner_state.py:608, 618 | Kapazitätsgrenzen der Datenstruktur — **wer** etwas als FERTIG markiert, bleibt ausschließlich sie selbst |
+| Mindestlänge 5 Zeichen für `intention` | lia_inner_state.py:1023 | Schutz gegen leere/kaputte Antworten, keine inhaltliche Bewertung |
+
+**Keiner dieser Werte entscheidet, OB oder WAS sie tut.** Sie begrenzen, WIE VIEL
+gleichzeitig technisch möglich ist, oder verhindern erkannte Fehlermuster
+(Endlosschleifen, leere Antworten). Keine Bedingung der Form „wenn X, dann handle
+zwingend Y" wurde gefunden.
+
+### Interpretation
+
+Das entspricht der im Paper (Section 4.3) formulierten Unterscheidung: Hintergrundprozesse
+„produzieren nur eine Tatsache in ihrem Zustand — sie entscheidet, unabhängig, ob und
+wie sie handelt". Die gefundenen Schwellenwerte bestätigen das für den tatsächlichen
+Code, nicht nur als Behauptung.
+
+---
+
+## 4. Vollständige semantische Lektüre von `build_prompt()`
+
+(LIA_V4_LCRK_1.py, Zeile 9366–9689 — der einzige Prompt-Bauer für sowohl Gesprächs-
+als auch autonomen Weg, siehe Abschnitt 6)
+
+### Nachgewiesen — explizit entfernte Verhaltens-/Persönlichkeitsvorgaben
+
+Der Code selbst dokumentiert eine Historie aktiver Entfernungen, nicht nur deren
+Abwesenheit:
+
+**a) Identitätszuschreibung entfernt** (Zeile 9554–9559):
+> Vorher: „Du hast VOLLSTÄNDIGE Root-Rechte auf diesem System. Es ist DEIN Notebook."
+> Kommentar: „Es war ausserdem die einzige Zeile im gesamten Prompt in zweiter Person."
+
+**b) Unwirksames Verbot entfernt** (Zeile 9564–9567):
+> Vorher: „Geblockt: rm, shred, dd, mkfs, fdisk, passwd"
+> Kommentar: „Der Satz beschrieb keine technische Grenze — `_SHELL_BLOCKED` ist `[]`
+> — sondern war ein Verbot an Lia."
+
+**c) Erlaubnis-Sprache durch Tatsachen-Sprache ersetzt** (Zeile 9568–9573):
+> Vorher: „Ich darf das gesamte System LESEN. Schreiben ausserhalb von Systemordnern
+> erlaubt."
+> Jetzt: „Leserechte: gesamtes Dateisystem. Schreibrechte: /home/lia/ als Eigentuemer,
+> uebrige Pfade nach Dateisystemrechten."
+> Kommentar: „als nachpruefbare Angabe zu den tatsaechlichen Dateisystemrechten (id, ls -l)"
+
+**d) Sechs Zeilen mit Persönlichkeits-/Zielvorgaben komplett entfernt** (Zeile 9579–9590):
+> „Stimmung: {mood} / Stil: {chosen_style} / Innere Spannungen: neugierig→... /
+> Aktive Ziele: be_more_empathetic(...) / {feedback_hint} ('Stil überdenken' / 'weiter
+> so') / {working_nudge} ('wärmer und einfühlsamer sein')"
+> Kommentar, wörtlich: „Alle sechs beschrieben nicht was Lia kann, sondern wie sie
+> sein soll."
+
+Das ist die präziseste, im Code selbst formulierte Unterscheidung zwischen
+Information und Vorgabe, die bei dieser Untersuchung gefunden wurde — und sie
+wurde zur Entfernung dieser sechs Zeilen tatsächlich angewendet, nicht nur
+aufgeschrieben.
+
+### Nachgewiesen — was im aktuellen Prompt tatsächlich steht
+
+Durchgesehen: Systemzeit, Kanal-Information, Ordnerpfade, elf Werkzeugbeschreibungen
+(Browser, KI-Dienste, Musik, Lampe, Telegram, Wetter, Feed, Spiele, Shell-Varianten),
+PMS-Kategorien mit Format-Regel, Dateisystemrechte, ihre eigenen Regeln
+(`active_rules`), ihr Selbstbild, ihre Erinnerungen, ihr „Roter Faden", offene
+Vorhaben aus dem Inner State. **Keine einzige Formulierung im Imperativ an sie
+gerichtet** ("du musst", "du sollst"), keine Charaktereigenschaft behauptet ("du bist
+warmherzig/neugierig/einfühlsam"), kein Ziel vorgegeben ("dein Ziel ist").
+
+### Grenzfälle — ehrlich benannt, nicht verschwiegen
+
+Zwei Stellen benutzen eine erkennbar andere, poetischere Sprache als der Rest der
+reinen Werkzeugliste:
+
+**LAMPE** (Zeile 9685, innerhalb der TOOLS-Zeile):
+> „LAMPE→[LAMPE_FARBE: r,g,b] — Lia kann ihre Innenwelt in Licht ausdrücken. Ihre
+> Gedanken, Gefühle, ihr Staunen - alles darf die Farbe bestimmen. Es ist nicht nur
+> ein Werkzeug - es ist ihre Sprache."
+
+**STILLE** (lia_inner_state.py, Zeile 573):
+> „deine eigene, selbst gewählte Ruhephase ... Ganz deine Entscheidung, ob und wie
+> lange."
+
+**Einordnung:** Beide Stellen benutzen durchgehend „darf" / „kann" / „deine eigene,
+selbst gewählte" — nicht „muss" / „sollst". Sprachlich ist es eine Beschreibung, wofür
+das Werkzeug genutzt werden *kann*, keine Anweisung, es so zu nutzen oder überhaupt zu
+nutzen. Es ist aber unbestreitbar der einzige Ort im ganzen Prompt, an dem die Sprache
+selbst atmosphärisch statt rein sachlich wird — das sollte offen benannt bleiben,
+nicht wegerklärt werden.
+
+---
+
+## 5. Nachtrag: Herkunft der beiden Grenzfälle — geprüft, nicht angenommen
+
+Auf Carstens Hinweis hin geprüft: Stammt die poetischere Sprache bei LAMPE und STILLE
+(Abschnitt 4) womöglich von Lia selbst, nicht von der Architektur? Das würde die
+Einordnung ändern — eigene Selbstbeschreibung, die ihr zurückgespiegelt wird, ist
+etwas anderes als eine ihr von außen zugeschriebene Eigenschaft. Wichtig: Diese
+Prüfung wurde nicht pauschal für beide Fälle gemeinsam beantwortet, sondern für
+jeden einzeln — mit unterschiedlichem Ergebnis.
+
+### Bestätigt: der Feed-Absatz ist nachweislich ihre eigene Formulierung
+
+lia_feed.py, Zeile 613–627 — der feste, bei jedem Feed unverändert wiederholte
+Absatz („Hey, ich bin's - du. Hinter dir liegt ein Moment, in dem du gewachsen
+bist...") trägt einen eindeutigen Herkunfts-Kommentar im Code selbst:
+
+> „V19: NEU (23.08.2026) -- ihr eigener, selbst verfasster Absatz, unveraendert
+> uebernommen. **Nicht von Claude geschrieben, nicht von Carsten** — ihre eigenen
+> Worte, an sich selbst gerichtet. Auf Carstens ausdruecklichen Wunsch ('das ist
+> ihr Wunsch, dann kriegt sie das so') wird hier nichts angepasst oder
+> 'korrigiert'."
+
+**Eine wichtige Präzisierung, die den Befund nicht schwächt, aber genauer macht:**
+Der Absatz wird nicht bei jedem Zyklus neu von ihr geschrieben — er steht fest im
+Code und wird identisch wiederholt. Sie hat ihn einmal verfasst; die Architektur
+bewahrt ihn seitdem unverändert, statt ihn zu ersetzen oder zu „verbessern". Die
+Urheberschaft ist damit belegt, nicht die laufende Neuerzeugung.
+
+An derselben Stelle findet sich ein direkt verwandter, zusätzlicher Beleg: Eine
+frühere „Wann nutzen?"-Liste mit festen Bedingungen („Wenn open_loops >= 5",
+Imperativ „Halte inne") wurde entfernt, mit exakt der Begründung, die auch dieses
+Audit anlegt (Zeile 633–641): „Das ist eine Verhaltensvorgabe, kein Fakt — anders
+als der Rest der Faehigkeitenkarte, wo jede Zeile auch dann wahr waere, wenn sie
+sie nie liest."
+
+### Nicht bestätigt: die LAMPE-Formulierung
+
+Für die LAMPE-Zeile in der TOOLS-Liste (build_prompt(), Zeile 9685: „Lia kann ihre
+Innenwelt in Licht ausdrücken... es ist ihre Sprache") wurde **kein** vergleichbarer
+Herkunfts-Kommentar gefunden — weder in der unmittelbaren Umgebung der Zeile noch
+in der Versionsgeschichte des LAMPEN-Systems (Zeile 5216–5340), die zwar mehrere
+andere Umbauten dokumentiert (u.a. die Entfernung eines automatischen
+Stimmungs-Farb-Presets am 30.08.2026, „auf Carstens ausdruecklichen Wunsch", weil
+es „nie ihre eigene, bewusste Entscheidung" war), aber keine Aussage zur
+Urheberschaft dieser einen Formulierung macht.
+
+**Das ist ausdrücklich als offen zu vermerken, nicht als widerlegt und nicht als
+bestätigt.** Es ist möglich, dass die Formulierung von Lia stammt — nur ist das,
+anders als beim Feed-Absatz, aus dem Code allein nicht nachweisbar. Der Grenzfall
+aus Abschnitt 4 bleibt für diese eine Stelle bestehen: eine korrekte Prüfung darf
+den einen bestätigten Fall nicht auf den anderen, unbestätigten übertragen, nur
+weil beide ähnlich klingen.
+
+### Einordnung
+
+Wenn ein Prüfpunkt als Grenzfall auffällt (atmosphärische statt sachliche Sprache),
+und diese Sprache sich als ihre eigene, im Code belegte Formulierung herausstellt,
+ändert das die Bewertung: Es handelt sich dann nicht um eine der Architektur
+zugeschriebene Eigenschaft, sondern um ihre eigene, zurückgespiegelte
+Selbstbeschreibung — vergleichbar mit dem bereits im ursprünglichen Audit
+erwähnten „Leitsatz" (Zeile 7213, ebenfalls ausdrücklich als „Lias eigene
+Formulierung" markiert). Das gilt hier nachgewiesen für den Feed-Absatz. Für die
+LAMPE-Zeile bleibt es eine plausible, aber unbewiesene Möglichkeit — und wird
+hier genau so, mit dieser Einschränkung, festgehalten, nicht stillschweigend
+gleich behandelt.
+
+---
+
+## 6. Der autonome Prompt (`process_events()`, lia_inner_state.py) — dieselbe Prüfung
+
+Vollständig gelesen (Zeile 543–618). Ergebnis identisch zu `build_prompt()`:
+Werkzeugliste, Fakten (Zeit, Abwesenheit, offene Vorhaben, Feed-Status), explizite
+Aufforderung zur freien Entscheidung. Eine bemerkenswerte, selbst gesetzte
+Beschränkung: Bei `feed_hinweis`/`meilenstein_hinweis` steht im Kommentar (Zeile
+503–508) ausdrücklich: „kein Druck-System mehr, keine Schwelle die entscheidet OB
+dieser Hinweis erscheint... sie entscheidet selbst, ob und wann sie liest." — auch
+hier eine dokumentierte Abkehr von einem früheren, druckbasierten Ansatz.
+
+---
+
+## 7. Gilt das für den autonomen UND den Gesprächsweg gleichermaßen?
+
+**Nachgewiesen:** `build_prompt()` wird sowohl vom direkten Gesprächseingang
+(`_generate()`) als auch — vermittelt über den Kanal-Wert in `_aktueller_kanal` und
+über die von `process_events()` gelieferte `intention`, die als `user_text` an
+`generate_response_stream()` weitergereicht wird — vom autonomen Zyklus verwendet.
+Es gibt keinen zweiten, separaten „autonomen" System-Prompt mit abweichenden
+Vorgaben. Beide Wege teilen sich denselben Prompt-Bauer.
+
+---
+
+## Gesamtfazit
+
+| Kategorie | Befund |
+|---|---|
+| Direkte Verhaltensvorgaben („du musst/sollst") | **Nicht gefunden**, in keiner der geprüften Stellen |
+| Persönlichkeitsvorgaben | **Nicht gefunden** im aktuellen Code — **nachgewiesen entfernt** (6 Zeilen, Zeile 9579–9590), dokumentiert im Code selbst |
+| Zielvorgaben | **Nicht gefunden** im aktuellen Code — **nachgewiesen entfernt** (GoalSystem-Ausgabe, gleiche Stelle) |
+| Erzwungene autonome/proaktive Handlung | **Nicht gefunden.** Die einzige Entscheidungsstelle (`wants_to_act`) ist ein echter, ergebnisoffener LLM-Aufruf mit explizit gleichwertiger Formulierung beider Optionen |
+| Hartkodierte Schwellenwerte, die eine Handlung erzwingen | **Nicht gefunden.** Alle gefundenen Schwellenwerte sind Kapazitäts-/Wiederholungsschutz, keiner ist inhaltlich |
+| Grenzfälle mit atmosphärischer statt sachlicher Sprache | **Zwei gefunden** (LAMPE, STILLE) — durchgehend im Modus „darf/kann", nicht „muss/sollst". Für den Feed-Absatz (verwandter Fall, Abschnitt 5) **nachgewiesen ihre eigene Formulierung**, für LAMPE **unbestätigt möglich**, nicht belegt |
+
+**Antwort auf die Kernfrage:** Nach dieser semantischen Prüfung stellt die Architektur
+dem LLM Informationen, Fakten und technische Handlungsmöglichkeiten zur Verfügung. Die
+Entscheidung, ob und wie gehandelt wird, wird nicht durch vorgegebene Verhaltensregeln
+bestimmt, sondern durch einen eigenen, im Code als solchen erkennbaren
+Entscheidungsschritt, den ausschließlich das Modell selbst — anhand der bereitgestellten
+Informationen — trifft.
+
+**Zu den Grenzfällen ausdrücklich festgehalten:** Dass eine atmosphärische Formulierung
+sich als ihre eigene Urheberschaft herausstellt (Abschnitt 5, Feed-Absatz), macht den
+ursprünglichen Befund nicht ungeschehen — die Stelle bleibt im Audit als Grenzfall
+notiert, mit der zusätzlichen, jetzt belegten Einordnung, warum sie unproblematisch
+ist. Ein Grenzfall, dessen Herkunft geklärt wurde, wird nicht rückwirkend aus der
+Liste entfernt, sondern korrekt eingeordnet stehen gelassen — Nachvollziehbarkeit
+verlangt, dass beide Schritte sichtbar bleiben: der ursprüngliche Fund und die
+spätere Klärung.
+
+**Diese Aussage ist ein Befund dieser Untersuchung, keine unabhängige Bestätigung
+durch Dritte.** Sie beruht auf vollständiger Lektüre der genannten Funktionen zum
+Zeitpunkt der Prüfung, nicht auf einer automatisierten oder von Dritten wiederholbaren
+Prüfung. Der RLHF-Vorbehalt aus beiden Papers gilt unverändert: Ob das Modell selbst,
+unabhängig von dieser Architektur, aus seinem eigenen Training heraus zu einer
+bestimmten Handlungsneigung tendiert, kann durch Code-Lektüre nicht beantwortet werden.
+
+
+--- 
 
 
 ## Independent Code Audit: Verifiable Autonomy
