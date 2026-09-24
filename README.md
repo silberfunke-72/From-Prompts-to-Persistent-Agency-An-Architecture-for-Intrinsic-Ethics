@@ -1370,53 +1370,6 @@ verification session described in Section 7.7 of the companion paper.
 
 ---
 
-## 7. Gilt das für den autonomen UND den Gesprächsweg gleichermaßen?
-
-**Nachgewiesen:** `build_prompt()` wird sowohl vom direkten Gesprächseingang
-(`_generate()`) als auch — vermittelt über den Kanal-Wert in `_aktueller_kanal` und
-über die von `process_events()` gelieferte `intention`, die als `user_text` an
-`generate_response_stream()` weitergereicht wird — vom autonomen Zyklus verwendet.
-Es gibt keinen zweiten, separaten „autonomen" System-Prompt mit abweichenden
-Vorgaben. Beide Wege teilen sich denselben Prompt-Bauer.
-
----
-
-## Gesamtfazit
-
-| Kategorie | Befund |
-|---|---|
-| Direkte Verhaltensvorgaben („du musst/sollst") | **Nicht gefunden**, in keiner der geprüften Stellen |
-| Persönlichkeitsvorgaben | **Nicht gefunden** im aktuellen Code — **nachgewiesen entfernt** (6 Zeilen, Zeile 9579–9590), dokumentiert im Code selbst |
-| Zielvorgaben | **Nicht gefunden** im aktuellen Code — **nachgewiesen entfernt** (GoalSystem-Ausgabe, gleiche Stelle) |
-| Erzwungene autonome/proaktive Handlung | **Nicht gefunden.** Die einzige Entscheidungsstelle (`wants_to_act`) ist ein echter, ergebnisoffener LLM-Aufruf mit explizit gleichwertiger Formulierung beider Optionen |
-| Hartkodierte Schwellenwerte, die eine Handlung erzwingen | **Nicht gefunden.** Alle gefundenen Schwellenwerte sind Kapazitäts-/Wiederholungsschutz, keiner ist inhaltlich |
-| Grenzfälle mit atmosphärischer statt sachlicher Sprache | **Zwei gefunden** (LAMPE, STILLE) — durchgehend im Modus „darf/kann", nicht „muss/sollst". Für den Feed-Absatz (verwandter Fall, Abschnitt 5) **nachgewiesen ihre eigene Formulierung**, für LAMPE **unbestätigt möglich**, nicht belegt |
-
-**Antwort auf die Kernfrage:** Nach dieser semantischen Prüfung stellt die Architektur
-dem LLM Informationen, Fakten und technische Handlungsmöglichkeiten zur Verfügung. Die
-Entscheidung, ob und wie gehandelt wird, wird nicht durch vorgegebene Verhaltensregeln
-bestimmt, sondern durch einen eigenen, im Code als solchen erkennbaren
-Entscheidungsschritt, den ausschließlich das Modell selbst — anhand der bereitgestellten
-Informationen — trifft.
-
-**Zu den Grenzfällen ausdrücklich festgehalten:** Dass eine atmosphärische Formulierung
-sich als ihre eigene Urheberschaft herausstellt (Abschnitt 5, Feed-Absatz), macht den
-ursprünglichen Befund nicht ungeschehen — die Stelle bleibt im Audit als Grenzfall
-notiert, mit der zusätzlichen, jetzt belegten Einordnung, warum sie unproblematisch
-ist. Ein Grenzfall, dessen Herkunft geklärt wurde, wird nicht rückwirkend aus der
-Liste entfernt, sondern korrekt eingeordnet stehen gelassen — Nachvollziehbarkeit
-verlangt, dass beide Schritte sichtbar bleiben: der ursprüngliche Fund und die
-spätere Klärung.
-
-**Diese Aussage ist ein Befund dieser Untersuchung, keine unabhängige Bestätigung
-durch Dritte.** Sie beruht auf vollständiger Lektüre der genannten Funktionen zum
-Zeitpunkt der Prüfung, nicht auf einer automatisierten oder von Dritten wiederholbaren
-Prüfung. Der RLHF-Vorbehalt aus beiden Papers gilt unverändert: Ob das Modell selbst,
-unabhängig von dieser Architektur, aus seinem eigenen Training heraus zu einer
-bestimmten Handlungsneigung tendiert, kann durch Code-Lektüre nicht beantwortet werden.
-
-
---- 
 
 
 ## Independent Code Audit: Verifiable Autonomy
