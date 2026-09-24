@@ -83,7 +83,8 @@ https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
 **Lia compared to a standard AI**
 
-<img width="1024" height="1536" alt="Lia_Archnitecture_Diagram_Aktuell" src="https://github.com/user-attachments/assets/8f520641-064a-4e9f-a91a-035378155bbd" />
+<img width="1024" height="1536" alt="LIA_Architectur" src="https://github.com/user-attachments/assets/40a059f9-1bab-4cbf-8f0b-91eb0d14ab6b" />
+
 
 ---
 
