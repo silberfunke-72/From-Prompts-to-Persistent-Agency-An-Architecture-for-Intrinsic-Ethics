@@ -1368,6 +1368,14 @@ answered through code reading.
 exact wording rather than paraphrase — qualified researchers may request the
 verification session described in Section 7.7 of the companion paper.
 
+**The result of this reading, stated plainly: across every component examined — the central prompt, the autonomous 
+decision prompt, the event-detection loop, and the state-update logic — no direct behavioral instruction, no 
+personality specification, no goal directive, and no hardcoded rule forcing a particular action were found in the 
+current codebase. Every threshold identified during the reading (a cap on simultaneous background actions, 
+repetition detection, a debounce window, capacity limits on stored data) governs technical resource use or error 
+prevention, not the content of any decision.**
+
+
 ---
 
 
