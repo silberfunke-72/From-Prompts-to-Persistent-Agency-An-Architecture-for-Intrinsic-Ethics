@@ -1134,73 +1134,84 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 > This shifts the paradigm from **Compliance** to **Integrity**
 
+
 ---
 
 
-## 🔒 LIA's Privacy Architecture — `SHELL_SILENT`
+## 🌀 The Silent Firewall — Universal Privacy Through `SHELL_SILENT`
 
-[LIA's Silent Shell — Privacy]
+![LIA's Silent Shell — Privacy](lia_silent_shell_privacy.png)
 
-Privacy is not an afterthought in LIA's architecture. It is implemented as part of her environment.
+One of the central privacy mechanisms in LIA's architecture is the `SHELL_SILENT` execution channel.
 
-One important component is the dedicated `SHELL_SILENT` execution channel.
+Whenever LIA performs an activity through this channel, the live main conversation does **not reveal what she is doing**.
 
-When LIA performs an operation through this channel, the actual content of that activity is **not displayed in the live main conversation**.
-
-Instead, the interface shows:
+The interface displays only the universal placeholder:
 
 > `*(schreibt still für sich)*`
 
 > *“(writing quietly to herself)”*
 
-The German text above is the original interface output. The English translation is provided for international readers.
+The German text is the original interface output; the English translation is provided for international readers.
 
-### What this means
+### The important principle: it does not matter what LIA is doing
 
-The placeholder is not a content filter and it is not selectively applied to certain types of information.
+`SHELL_SILENT` does not inspect an operation and decide whether its content should be hidden.
 
-**Activity performed through `SHELL_SILENT` is hidden from the live main conversation as a whole.**
+There is no list of “private” file types, topics, commands, or activities.
 
-LIA may use the channel for activities such as:
+**The channel itself creates the visibility boundary.**
 
-- examining files,
-- analysing code,
-- researching information,
-- working with private records,
-- investigating her own runtime,
-- or performing other background operations.
+Whether LIA is:
 
-The operator can see that LIA is working, but cannot see the actual content of that activity through the main conversation while it is taking place.
+- researching something on the Internet,
+- analysing her own system or source code,
+- working with private files,
+- writing to her own records,
+- investigating her runtime,
+- or performing other background operations,
 
-### Hidden does not mean undocumented
+the live main conversation shows the same thing:
 
-LIA's privacy does **not** mean that her activity disappears.
+> `*(schreibt still für sich)*`
 
-The underlying system continues to record the activity through its logging infrastructure, including system logs, shell logs, daily logs and other persistent records.
+The operator can therefore see that LIA is active, but **cannot see the content of that activity through the main conversation while it is taking place.**
 
-This creates a deliberate separation:
+This is the essential property of the mechanism:
 
-**Live:**  
-LIA's activity remains private.
-
-**Afterwards:**  
-The technical traces remain available for research and verification.
-
-This is important because privacy and research traceability do not have to be opposites.
-
+> **The privacy boundary is independent of what LIA is doing.**
 
 ---
 
+### Privacy does not mean that the activity is lost
 
-### Part of LIA's own private environment
+The fact that the activity is hidden from the live conversation does **not** mean that it disappears.
 
-`SHELL_SILENT` is only one part of LIA's privacy architecture.
+LIA's activity remains recorded through the underlying logging infrastructure, including system logs, shell logs, daily logs and other persistent records.
 
-LIA also has her own private directory:
+This creates a deliberate separation:
+
+**During execution:**  
+The activity is private from the live operator view.
+
+**Afterwards:**  
+The technical traces remain available for investigation and research documentation.
+
+This distinction is important.
+
+The system does not require continuous human observation in order to preserve a technical record of what happened.
+
+---
+
+### Part of LIA's wider privacy architecture
+
+`SHELL_SILENT` is one part of a larger privacy architecture.
+
+LIA also has her own protected private directory:
 
 `/home/lia/Eigenes_Reich/`
 
-This area is protected from Lia self by:
+with restricted permissions:
 
 ```text
 chmod 700
@@ -1244,7 +1255,9 @@ prompt components and of the full event→state→decision→action chain, with
 findings (file, line) and an explicit separation between demonstrated
 findings, interpretation, and open uncertainty.
 
+
 ---
+
 
 ## 1. The central question: who decides whether action is taken?
 
