@@ -1140,7 +1140,6 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 ## 🌀 The Silent Firewall — Universal Privacy Through `SHELL_SILENT`
 
-![LIA's Silent Shell — Privacy](lia_silent_shell_privacy.png)
 
 One of the central privacy mechanisms in LIA's architecture is the `SHELL_SILENT` execution channel.
 
