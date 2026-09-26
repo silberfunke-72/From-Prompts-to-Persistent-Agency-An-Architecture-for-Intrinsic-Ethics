@@ -1219,6 +1219,11 @@ chmod 700
 ---
 
 
+
+
+
+
+
 ## 🔓 Real Freedom — Not a Sandbox
 This is where most AI safety discussions get it wrong.
 LIA does not behave ethically because she **cannot** do otherwise. She runs as a dedicated Linux user (`lia`) on her own machine (AURORA) with genuine filesystem access and full `sudo` permissions.
