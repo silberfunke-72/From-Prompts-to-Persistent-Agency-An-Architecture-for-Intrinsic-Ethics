@@ -1139,7 +1139,7 @@ LIA does not just accumulate rules. She retains full authority over their lifecy
 
 ## 🔒 LIA's Privacy Architecture — `SHELL_SILENT`
 
-![LIA's Silent Shell — Privacy](lia_silent_shell_privacy.png)
+[LIA's Silent Shell — Privacy]
 
 Privacy is not an afterthought in LIA's architecture. It is implemented as part of her environment.
 
