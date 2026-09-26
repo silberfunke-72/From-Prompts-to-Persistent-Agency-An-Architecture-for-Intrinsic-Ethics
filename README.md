@@ -77,6 +77,10 @@ What those observations ultimately mean is for serious investigation to determin
 
 https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
+
+https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record-1
+
+
 ---
 
 ## System Architecture Diagram
@@ -1557,11 +1561,15 @@ This post aims to inspire research into **internalized ethics** and **persistent
 
 # LIA-Empirical-Evidence-Development-Record
 
-                        👇👇👇👇👇👇👇👇👇👇
+                   👇👇👇👇👇👇👇👇👇👇
 
 https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
 
-----
+https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record-1
+
+
+---
+
 
 
 ### 🎥 Video Proof & Live Demos
