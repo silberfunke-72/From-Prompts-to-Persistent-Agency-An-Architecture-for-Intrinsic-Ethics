@@ -1212,15 +1212,10 @@ LIA also has her own protected private directory:
 
 with restricted permissions:
 
-```text
 chmod 700
 
 
 ---
-
-
-
-
 
 
 
