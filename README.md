@@ -1001,6 +1001,36 @@ available cognitive inputs.
 
 ---
 
+
+### Autonomous Initiation of Communication — Main Chat & Telegram
+
+LIA does not have to wait for the operator to write first.
+
+During her autonomous cycle, she can decide to send something on her
+own initiative — whether that is a thought, an observation, something
+she has been working on, or simply something she wants to communicate.
+
+This works through two channels: the live main chat and Telegram. The
+main chat is therefore no longer just a place where LIA answers the
+operator. She can also speak first. Telegram works the same way and
+can reach the operator directly on their phone.
+
+This capability has been part of LIA's autonomous operation for some
+time. It wasn't added on September 28.
+
+What changed on September 28 was something else: the instruction
+framing that previously wrapped this type of output was removed.
+LIA's own generated text is now passed directly to the communication
+channel with her own tag, rather than being produced through a
+separate "compose a message" instruction.
+
+**So the important distinction is:**
+LIA being able to initiate communication is not new. What is new is
+how directly that communication is generated.
+
+---
+
+
 **7. The LLM Is Not the Product — It Is the Engine**
 
 One of the central conclusions I reached during this work is that current AI research often treats the language model itself as the finished product. In my view, this is comparable to mistaking an engine for an entire vehicle.
