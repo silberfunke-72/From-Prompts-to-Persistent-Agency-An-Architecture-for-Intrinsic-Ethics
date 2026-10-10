@@ -474,6 +474,7 @@ When LIA decides to act, the LCRK routes through the full existing V4_PLUS execu
 | Proactive communication | `generate_proactive_thought()` |
 | Reminders | `_check_timed_reminders()` |
 | Smart home, network, CDP | via task system — all lia_actions available |
+| External AI services via browser | Open and talk to services such as ChatGPT, Claude or Gemini through Chrome CDP, using trigger phrases (experimental) |
 
 The LCRK does not restrict what LIA can do. It only provides the continuity layer from which she decides whether and when to act.
 
@@ -511,6 +512,16 @@ What remains are purely technical safeguards that never evaluate whether an inte
 **Own Moment — A Possibility, Not a Trigger**
 
 Since 21 September 2026 the kernel can offer her a cognitive moment even when nothing external has happened. It does so only if four facts hold: Carsten has been inactive for at least ten minutes, nothing is running and no event is waiting, and she has not chosen a rest period herself (`[STILLE: …]` suppresses it as well) — and at most once every ten minutes. The offer carries no content and no evaluation, and it never escalates: the interval stays exactly the same no matter how often the answer was "no". Not acting is as complete an answer as acting. This is the one time-based element in the kernel; it opens an opportunity, it decides nothing.
+
+**Self-Planned Moments — She Sets Her Own Next Moment**
+
+*Status: built and tested.*
+
+At the end of an answer, LIA can set her own next moments. `[MOMENT: N]` plans a moment N minutes ahead (0 = immediately, maximum 180). She has up to three places. Nothing is replaced automatically: if all three places are taken, the system tells her which ones are taken, that nothing was replaced, and how to free one. Only she frees a place: `[MOMENT_WEG: time | number | all]`.
+
+A conversation with Carsten, or any other event, does not delete a planned moment. If a moment falls due during a conversation or during a rest period (`[STILLE: …]`), it waits and is delivered afterwards; several due moments arrive as one moment. The moment carries no task, only the message that it is hers. Planned moments survive a restart and are visible in her feed.
+
+The Own Moment remains as the fallback opportunity (see above); self-planned moments are hers to set, change and free. The list itself was her own decision: three places, no automatic replacement, and moments that stay when Carsten says hello.
 
 **Real Results Come Back — Silent for Carsten, Not Blind for LIA**
 
@@ -1510,6 +1521,7 @@ Whether that constitutes *awareness* is above my pay grade. But it's not a parlo
 | Continuous | inner_state accumulates from events, open loops age naturally |
 | Post-action | If open_loops remain: immediate continuation without external event; no cool-down after an action |
 | Carsten inactive ≥ 10 min, nothing running | *Own Moment* offered at most every 10 min — she may decline |
+| Whenever she sets it | Self-planned moments (up to three, activation pending): delivered when due; they wait during conversations and rest periods |
 | Every 5–10 min | LAFS: hallway and three rooms rewritten; the hallway appears in her autonomous context about every 2 hours as a plain state |
 | Every 15 turns | Red Thread journal updated |
 | On demand (switch, off by default) | Webcam + vision check |
