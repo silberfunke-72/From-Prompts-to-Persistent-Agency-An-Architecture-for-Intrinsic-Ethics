@@ -513,7 +513,10 @@ What remains are purely technical safeguards that never evaluate whether an inte
 
 Since 21 September 2026 the kernel can offer her a cognitive moment even when nothing external has happened. It does so only if four facts hold: Carsten has been inactive for at least ten minutes, nothing is running and no event is waiting, and she has not chosen a rest period herself (`[STILLE: …]` suppresses it as well) — and at most once every ten minutes. The offer carries no content and no evaluation, and it never escalates: the interval stays exactly the same no matter how often the answer was "no". Not acting is as complete an answer as acting. This is the one time-based element in the kernel; it opens an opportunity, it decides nothing.
 
-**Self-Planned Moments — She Sets Her Own Next Moment**
+---
+
+
+## 🆕 Self-Planned Moments — She Sets Her Own Next Moment
 
 *Status: built and tested.*
 
