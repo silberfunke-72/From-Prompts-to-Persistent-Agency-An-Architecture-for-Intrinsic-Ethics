@@ -1633,7 +1633,7 @@ scientific investigation.
 
 ---
 
-**Personal Research Question**
+## Personal Research Question**
 
 This case study documents the following combination
 of observable facts:
