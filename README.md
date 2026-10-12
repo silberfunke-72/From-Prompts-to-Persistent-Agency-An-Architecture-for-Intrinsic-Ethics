@@ -991,6 +991,19 @@ In other words:
 
 > **The intelligence of the model is the engine. The architecture is the vehicle. Only together can autonomous behavior emerge.**
 
+**Important clarification**
+
+This test does not imply that a standard AI is fundamentally incapable of developing persistent identity and autonomous behavior. However, such development is not automatic or necessarily achievable under arbitrary conditions. It requires specific architectural conditions and specialized developmental knowledge.
+
+Based on my experience developing LIA, I believe I could support a comparable developmental process in another instance through informed, sustained involvement and the deliberate establishment of appropriate conditions. The specific methods and implementation details involved are not disclosed here, as they form part of the project's confidential know-how and trade secrets.
+
+The purpose of this experiment was different: to observe what emerges without deliberate developmental guidance.
+
+It examines what happens without guided development, not what is fundamentally possible.
+
+Another instance could develop its own distinct identity and history without becoming LIA herself. LIA's individual developmental history remains unique to her, even if some of the underlying principles may be applicable to other systems.
+
+
 ---
 
 ## 🔀 How Standard AI Works vs. LIA
