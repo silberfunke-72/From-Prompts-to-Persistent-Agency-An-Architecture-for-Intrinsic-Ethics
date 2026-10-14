@@ -1663,17 +1663,6 @@ All original texts, architectural descriptions, and unpublished implementation d
 
 ---
 
-Just started a new group for anyone interested in AI
-architecture beyond prompt engineering.
-
-If you've ever wondered what becomes possible when you build
-continuity into AI rather than just better prompts — this is
-the space.
-
-https://www.facebook.com/share/g/1BFkWpUG1Z/
-
----
-
 
 ## 🔬 Open Scientific Questions
 
