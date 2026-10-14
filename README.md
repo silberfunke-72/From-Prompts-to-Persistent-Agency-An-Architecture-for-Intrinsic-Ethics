@@ -43,7 +43,7 @@ Multiple months of development. 25,000+ lines of code (about 1.2 million charact
 
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)] https://ssrn.com/abstract=6978718  (May 2026)
 
-![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue) https://doi.org/10.5281/zenodo.23015482 (Juni2026)
+![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue)  https://doi.org/10.5281/zenodo.23369788 (Juni2026)
 
 > **Important:**
 
@@ -1652,7 +1652,7 @@ were independently conceived and developed by Carsten Hammerich.
 
 ![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue) [(Abstract ID: 6978718)](https://ssrn.com/abstract=6978718)  (May 2026)
 
-![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue) https://doi.org/10.5281/zenodo.23015482                       (Juni2026)
+![Zenodo](https://img.shields.io/badge/Zenodo-DOI-blue) https://doi.org/10.5281/zenodo.23369788 (Juni2026)                
 
 This repository is published for research documentation and scientific discussion only.
 
