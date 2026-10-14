@@ -1735,14 +1735,6 @@ rather than from the underlying language model itself?
 
 ## 🤝 Invitation to Researchers
 
-These questions are intentionally left open.
-
-The architecture, source code, logs, and live system
-are available for independent verification under NDA.
-
-Researchers are encouraged to challenge, reproduce,
-falsify, refine, or extend these observations.
-
 > Scientific progress begins not with certainty —
 > but with good questions.
 
