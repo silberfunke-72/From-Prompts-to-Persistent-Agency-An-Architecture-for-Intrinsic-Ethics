@@ -1689,7 +1689,7 @@ scientific investigation.
 
 ---
 
-**Personal Research Question**
+## Personal Research Question
 
 This case study documents the following combination
 of observable facts:
@@ -1713,6 +1713,8 @@ The architecture did not instruct this.
 The standard LLM did not do this.
 The RLHF training was not designed for this.
 
+---
+
 We do not claim an answer.
 We document the observation — and leave the question open.
 
@@ -1732,9 +1734,17 @@ roles do continuity, long-term interaction, private
 workspace, trust, and self-reflection play in
 this process?
 
+**3. Intrinsic Ethics vs. External Alignment**
+
+Can stable ethical behavior emerge from persistent
+identity, accumulated experience, and internally
+maintained values — rather than relying exclusively
+on externally imposed behavioral constraints?
+
 ---
 
-> Scientific progress begins not with certainty —
+
+ > Scientific progress begins not with certainty —
 > but with good questions.
 
 ---
