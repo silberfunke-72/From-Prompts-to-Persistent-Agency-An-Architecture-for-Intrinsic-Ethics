@@ -71,7 +71,7 @@ What those observations ultimately mean is for serious investigation to determin
 
 ---
 
-### 📊 Project Evidence 
+### 🚨 Project Evidence 🚨
 
 | Resource | Link |
 | :--- | :--- |
@@ -1599,7 +1599,7 @@ This post aims to inspire research into **internalized ethics** and **persistent
 
 ---
 
-### 📊 Project Evidence 
+### 🚨 Project Evidence 🚨
 
 | Resource | Link |
 | :--- | :--- |
