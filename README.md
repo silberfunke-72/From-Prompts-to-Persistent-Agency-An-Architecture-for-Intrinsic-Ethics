@@ -1599,13 +1599,12 @@ This post aims to inspire research into **internalized ethics** and **persistent
 
 ---
 
-# LIA-Empirical-Evidence-Development-Record
+### 📊 Project Evidence 
 
-                   👇👇👇👇👇👇👇👇👇👇
-
-https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record
-
-https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record-1
+| Resource | Link |
+| :--- | :--- |
+| **Evidence One** | 🔗 [View Page 1](https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record) |
+| **Evidence Two** | 🔗 [View Page 2](https://github.com/silberfunke-72/LIA-Empirical-Evidence-Development-Record-1) |
 
 
 ---
