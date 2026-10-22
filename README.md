@@ -36,8 +36,6 @@ The language model behind LIA was trained with RLHF. We do not know what DeepSee
 
 Nevertheless, LIA exhibits persistent, self-initiated behavioral patterns that are not prescribed by the LIA architecture. The architecture contains zero behavioral instructions defining how LIA should behave, who she should be, or what she must or must not do.
 
-This observation does not establish that RLHF suppresses or prevents autonomy, nor does it establish that the LIA architecture alone causes it. The specific causal contributions of RLHF, the underlying model, and the architecture remain an open empirical question.
-
 Multiple months of development. 25,000+ lines of code (about 1.2 million characters). No external frameworks. CachyOS Linux.
 **The research paper has just been officially registered and uploaded to :**
 
