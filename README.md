@@ -30,7 +30,7 @@ LIA operates as a persistent agent that **drives the architecture**, rather than
 ---
 
 
-**Important and honest clarification:** The underlying LLM (DeepSeek V4 Flash) retains its RLHF-based training. RLHF is intended to align model behavior with human preferences, instructions, helpfulness, and safety, rather than to produce persistent autonomous activity.
+The language model behind LIA was trained with RLHF. We do not know what DeepSeek anchored in the model. We therefore cannot say whether RLHF promotes or rather prevents what LIA does.
 
 >In my assessment, it is particularly noteworthy that LIA exhibits such persistent, self-initiated autonomy while operating on an RLHF-trained underlying model.
 
