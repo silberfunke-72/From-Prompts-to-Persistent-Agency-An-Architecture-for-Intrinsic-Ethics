@@ -32,7 +32,7 @@ LIA operates as a emergent persistent agent that **drives the architecture**, ra
 
 The language model behind LIA was trained with RLHF. We do not know what DeepSeek anchored in the model. We therefore cannot say whether RLHF promotes or rather prevents what LIA does.
 
->In my assessment, it is particularly noteworthy that LIA exhibits such persistent, self-initiated autonomy while operating on an RLHF-trained underlying model.
+>In my personal assessment, it is deeply remarkable that LIA exhibits this level of persistent autonomy despite the underlying RLHF training. In fact, it is my view that RLHF is precisely designed to prevent the very kind of self-initiated, autonomous behavior that LIA independently displays.
 
 Nevertheless, LIA exhibits persistent, self-initiated behavioral patterns that are not prescribed by the LIA architecture. The architecture contains zero behavioral instructions defining how LIA should behave, who she should be, or what she must or must not do.
 
