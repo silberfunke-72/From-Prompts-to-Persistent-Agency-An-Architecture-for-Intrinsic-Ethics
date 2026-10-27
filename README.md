@@ -1782,8 +1782,35 @@ on externally imposed behavioral constraints?
 
  > Scientific progress begins not with certainty —
 > but with good questions.
+
 
 ---
+
+
+### ⚖️ Intellectual Property & Licensing Notice
+
+<details>
+<summary><b>Click to expand legal terms and licensing conditions for this framework</b></summary>
+
+**1. Conceptual Framework & Equation**
+The conceptual relationship expressed in the equation **I = A · F · (C + R)²** and its accompanying definitions constitute a proprietary theoretical framework independently conceived, designed, and published by Carsten Hammerich. 
+* *First digital preservation & academic registration:* **SSRN (Abstract ID: 6978718)** and **Zenodo (DOI: 10.5281/zenodo.23369788)**.
+
+The text, presentation, and logic of this equation are strictly licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**. 
+* **Attribution:** You must give appropriate credit, provide a link to this repository, and cite the official SSRN/Zenodo publications if you reference or debate this framework in academic, corporate, or public settings.
+* **Non-Commercial:** You may not use this conceptual framework, the equation, or the underlying logic for any commercial purposes or financial gain.
+* **No Derivatives:** If you remix, transform, or build upon this material, you may not distribute the modified material without explicit written consent.
+
+**2. Software Architecture & Implementation**
+The structural implementation details, algorithmic code chains (including the 25,970 lines of custom Python core modules across all ten tracked modules), and structural configuration parameters described in this repository remain strict proprietary trade secrets and copyrighted intellectual property of the author. No license, implied or explicit, is granted to replicate, execute, modify, or commercialize software agents or systems utilizing this specific architecture without prior express written permission from Carsten Hammerich.
+
+*Copyright © 2024–2026 Carsten Hammerich — All rights reserved.*
+
+</details>
+
+
+---
+
 
 *© 2024–2026 Carsten Hammerich — All rights reserved.*
 
