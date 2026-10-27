@@ -1782,12 +1782,13 @@ on externally imposed behavioral constraints?
 
  > Scientific progress begins not with certainty —
 > but with good questions.
-
+
+
 
 ---
 
 
-### ⚖️ Intellectual Property & Licensing Notice
+### ⚖️ Intellectual Property & Licensing Notice 09/2026
 
 <details>
 <summary><b>Click to expand legal terms and licensing conditions for this framework</b></summary>
