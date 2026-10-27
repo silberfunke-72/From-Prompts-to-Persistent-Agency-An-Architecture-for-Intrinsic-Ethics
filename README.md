@@ -1788,7 +1788,7 @@ on externally imposed behavioral constraints?
 ---
 
 
-### ⚖️ Intellectual Property & Licensing Notice 09/2026
+### ⚖️ Intellectual Property & Licensing Notice Mai/2026
 
 <details>
 <summary><b>Click to expand legal terms and licensing conditions for this framework</b></summary>
